@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css?family=Assistant:200');
+
+body {
+    font-family: 'Assistant', sans-serif;
+    height: 100vh;
+    background: url('1.jpg') no-repeat center center / cover; 
+    color: #ccc;
+}
+.icons {
+    justify-items: center;
+    text-align: center;
+
+}
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 0  3rem;
+        text-align: center;
+    }
+
+h1, h2 {
+    font-weight: 200;
+    margin: 0.4rem;
+    text-align: center;
+
+}
+h1{
+    color: #D4FFF7              ;
+}
+h2{
+    font-size:2rem;
+    color: #D4FFF7
+}
+
+@media(min-width: 1200px) {
+    h1{
+        font-size:5rem;
+    }
+}
+@media(max-width: 800px) {
+    .container {
+        padding: 0 1 rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
+@media(max-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+.Secondcontainer{
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row
+}
+.Secondcontainer .box{
+    position: relative;
+    width: calc(500px - 30px);
+    height: calc(260px - 30px);
+    background: 	#E6E6FA  ;
+    float: left;
+    margin: 1%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.Secondcontainer .box .icon
+{ 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: 	#E6E6FA    ;
+    transition: 0.5s;
+    z-index: 1;
+}
+.Secondcontainer .box:hover .icon{
+    top: 20px;
+    right: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.Secondcontainer .box .icon .fa
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #BAB8BB          ;
+}
+.Secondcontainer .box:hover .icon .fa{
+    font-size: 40px;
+
+}
+.Secondcontainer .box .content
+{ position: absolute;
+    top: 20%;
+    height: calc(100% - 50px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+   }
+
+.Secondcontainer .box:hover .content {
+    top: 30%;
+}
+.Secondcontainer .box .content h3
+{ 
+    margin : 0 0 10px;
+    padding: 0;
+    color: #393939;
+    font-size: 2rem;
+}
+.Secondcontainer .box .content h3
+{ 
+    margin : 0;
+    padding: 0;
+    color: #393939;
+
+}
