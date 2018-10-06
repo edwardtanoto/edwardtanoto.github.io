@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<title>Board</title>
+	<style>
+	#chessboard, .silver_square, .yellow_square,.green_square,.blue_square {
+		display:block;
+		padding:0px;
+		margin:0px;
+	}
+
+	#chessboard {
+		width:450px;
+		height:600px;
+		border:4px solid #000000;
+		text-align: center;
+	}
+
+	.silver_square, .yellow_square, .green_square, .blue_square{
+		width:225px;
+		height:290px;
+		float:left;
+	}
+
+	.silver_square {
+		background-color:#C0C0C0;
+	}
+
+	.yellow_square {
+		background-color:#fff293;
+	}
+	.green_square {
+		background-color: #00FA9A;
+	}
+	.blue_square {
+		background-color: #00FFFF;
+	}
+	.xd{
+		font-size: 14px;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">				
+				<a class="navbar-brand" href="project1">Project 1</a>
+			</div>
+			<ul class="nav navbar-nav"> 
+				<li class="active xd"><a href="home1.html">Home </a></li>
+				<li class="xd"><a href="aboutus.html">About </a></li>
+				<li class="xd"><a href="form.html">Contact us </a></li>			
+			</ul>>
+		</div>
+	</nav>
+	<div class="row">
+					<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<div id="chessboard">
+				<div>
+					<div class="green_square"></div>
+
+				</div>
+				<div>
+					<div class="blue_square"></div>
+
+				</div>
+				<span>=================================================</span>
+				<div>
+					<div class="yellow_square"></div>
+				</div>
+				<div>
+					<div class="silver_square" ></div>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-4">
+			<label class="xd">
+				<h3>Scores</h3>
+				<li>King= Quantity of allies in an area</li>
+				<li>Queen= 5</li>
+				<li>Knight= 10 times enemy quantity</li>
+				<li>Assassin=3;(autowin when 1 vs 1)</li>
+				<li>Sniper=3;(kill highest opponent point</li>
+				<li>Pawns=@1;(4 Pawns in an area will raise the points into 30</li>
+				<li>Rebel=3;(autowin vs royalty)</li>
+				<li>Bomber= -5 (win area when enemy has more than 3 quantities)</li>
+			</label>
+	</div>
+</div>
+</body>
+</html>
