@@ -5,7 +5,7 @@ body {
     font-family: 'Assistant', sans-serif;
     height: 100vh;
     background: url('1.jpg') no-repeat center center / cover; 
-    color: #ccc;
+    color: black;
 }
 .icons {
     justify-items: center;
@@ -77,7 +77,6 @@ h2{
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
-    padding-left: 0; 
 }
 .Secondcontainer .box .icon
 { 
