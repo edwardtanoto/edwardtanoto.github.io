@@ -5,7 +5,7 @@ body {
     font-family: 'Assistant', sans-serif;
     height: 100vh;
     background: url('1.jpg') no-repeat center center / cover; 
-    color: #ccc;
+    color: black;
 }
 .icons {
     justify-items: center;
@@ -14,7 +14,7 @@ body {
 }
     .container{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;  
         justify-content: center;
         height: 100%;
         padding: 0  3rem;
