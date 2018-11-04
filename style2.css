@@ -3,8 +3,9 @@
 body {
     font-family: 'Assistant', sans-serif;
     height: 100vh;
-    color: #ccc;
+    color: black;
     background-color:white;
+    width: 100%;
 }
 .icons {
     justify-items: center;
@@ -56,10 +57,11 @@ h3, h2{
     h2 {
         font-size: 1.5rem;
     }
+
 }
 @media(max-width: 400px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     h3 {
         font-size: 1.5rem;
@@ -67,62 +69,29 @@ h3, h2{
     h2 {
         font-size: 1.5rem;
     }
+    
 }
-  /* Header Parallax Element Style*/ 
-  .paral {
-    min-height: 600px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-    }
-     
-    /* Paragrapgh for Parallax Section */ 
-    .paral p {
-    font-size: 24px;
-    color:#f5f5f5;
-
-    line-height: 60px;
-    }
-     
-    /* Heading for Parallax Section */ 
-    .paral h1 {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 60px;
-    text-align: center;
-    padding-top: 48px;
-    line-height: 100px;
-    }
+ 
      
     /* Image for Parallax Section */ 
     .paralsec {
-    background-image: url("3.jpg");
+    background-color:#ACFF81  ;
     }
      
     .paralsec1 {
-    background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");}
+    background-color: #FFCF81  }
      
     .paralsec2 {
-    background-image: url("2.jpg");
+    background-color: aquamarine;
     }
      
     /* Add more images for more sections */
      
     /* Remove Bottom Margin from Jumbotron */
     .jumbotron{margin-bottom: 0;}
-     
-    /* Footer */
-    .wn-footer {
-    padding: 2.5rem 0;
-    text-align: center;
-    color: white;
-    background-color: #607D8B;
-    border-top: .05rem solid #e5e5e5;
-    }
-     
-    .wn-footer a {
-    color: yellow;
-    }
 
+     
+   
 
         .center {
             display: block;
@@ -130,3 +99,27 @@ h3, h2{
             margin-right: auto;
             width: 30%;
         }
+        footer {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+        
+            background-color: silver;
+            text-align: center;
+        
+            align-items: center;
+            z-index: 1;
+            }
+            .jumbotron {
+                width: 100%;
+                webkit-box-shadow: 7px 10px 38px 0px rgba(64,64,64,0.38);
+-moz-box-shadow: 7px 10px 38px 0px rgba(64,64,64,0.38);
+box-shadow: 7px 10px 38px 0px rgba(64,64,64,0.38);
+            }
+
+            .pdf {
+                width: 100%;
+                height: 100%;
+            }
