@@ -184,17 +184,18 @@ footer {
         -webkit-box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
 -moz-box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
 box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
-        padding: 0.8em 0.6em;
+        padding: 0.8em 0.6em;}
         h1 {
             font-size: 2em;
         }
         p {
             font-size: 1.2em;
+        }
             .btn {
                 padding: 0.5em;
             }
-        }
         
-    }
+        
+    
 
     
