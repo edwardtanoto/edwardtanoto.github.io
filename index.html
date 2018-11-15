@@ -11,7 +11,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Edward Tanoto</title>
 </head>
@@ -20,50 +20,67 @@
     <br>
   <div class="container">
       <br>
-    <h1>E&nbsp; &nbsp;D&nbsp;&nbsp; W&nbsp;&nbsp; A&nbsp;&nbsp; R&nbsp;&nbsp; D </h1>
-    <h2>The <span class="txt-type" data-wait="3000" data-words='[" Student", " Designer", " Developer"]'></span></h2>
+    <h1>EDWARD&nbsp;&nbsp; TANOTO </h1>
+    <h2>&nbsp;The <span class="txt-type" data-wait="2000" data-words='[" Student", " Designer", " Developer"]'></span></h2>
  <br>
  <br>
- <div class="jumbotron">
-  <h2 style="font-size:2.5rem">Skills</h2>
-  <h4>JAVASCRIPT.HTML.CSS.PYTHON</h4>
-  <hr>
-  <h4>currently developing as a student and working on to be full stack developer</h4>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Click Here</a>
-  </p>
-</div>
-  <div class="row Secondcontainer ">
-    <div class="box  col-md" onclick="">
-        <div class="icon"><i class="fa fa-home 2x" aria-hidden="true"></i></div>
-        <div class="content">
-         <a href="index.html"><h2 style="font-size:24px; color:black;">H O M E</h2></a>
-            <p style="font-size:18px;color:black;">Welcome to my Website </p>
-        </div>
-    </div>
-    <div class="box  col-md" onclick="">
-      <div class="icon"><i class="fa fa-code 2x" aria-hidden="true"></i></div>
-      <div class="content">
-            <a href="project.html"><h2 style="font-size:24px; color:black;"3>P R O J E C T S</h2></a>
-            <p style="font-size:18px;color:black;">Contributing to society while developing as a dev</p>
-      </div>
-    </div>
-    <div class="box  col-md" onclick=""><div class="icon"><i class="fa fa-user 2x" aria-hidden="true"></i></div>
-    <div class="content">
-            <a href="about.html"><h2 style="font-size:24px; color:black;">A B O U T&nbsp;&nbsp;  M E </h2></a>
-            <p style="font-size:18px;color:black;">Everything about my development path</p>
-        </div>
-        
-    </div>
- 
-    </div>
+
+
     
   </div>
+  <div class="wrapper">
+    <header>
+
+          <nav>
+
+                <div class="menu-icon">
+                      <i class="fa fa-bars fa-2x"></i>
+                </div>
+
+                <div class="menu">
+                      <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="project.html">Projects</a></li>
+                            
+                      </ul>
+                </div>
+          </nav>
+
+    </header>
+
+    
+</div>
+
+<script type="text/javascript">
+
+// Menu-toggle button
+
+$(document).ready(function() {
+    $(".menu-icon").on("click", function() {
+          $("nav ul").toggleClass("showing");
+    });
+});
+
+// Scrolling Effect
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop()) {
+          $('nav').addClass('black');
+    }
+
+    else {
+          $('nav').removeClass('black');
+    }
+})
+
+
+</script>
 
   <footer class="row footer" style="text-align:center;">
 
-      &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:edwardt.dev@gmail.com?subject=Hello"><i class="fa fa-envelope-o"style="font-size:32px; text-align:center;" aria-hidden="true"></i></a>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-github" aria-hidden="true" style="font-size:32px;"></i>&nbsp;&nbsp; edwardtanoto
+      &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:edwardt.dev@gmail.com?subject=Hi There!"><i class="fa fa-envelope-o"style="font-size:32px; text-align:center;" aria-hidden="true"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/edwardtanoto"><i class="fa fa-github" aria-hidden="true" style="font-size:32px;"></i></a>&nbsp;&nbsp; edwardtanoto
 </footer>
   <script src="main.js"></script>
 </body>

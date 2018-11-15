@@ -4,7 +4,7 @@
 body {
     font-family: 'Assistant', sans-serif;
     height: 100vh;
-    background:#9CFFEF       no-repeat center center / cover; 
+    background:url(y4.jpg)       no-repeat center center / cover; 
     color: black;
 }
 .icons {
@@ -14,9 +14,10 @@ body {
 }
     .container{
         display: flex;
+        position: absolute;
         flex-direction: column;  
         justify-content: center;
-        height: 100%;
+        height: 90%;
         padding: 0  3rem;
         text-align: center;
     }
@@ -25,14 +26,14 @@ h1, h2 {
     font-weight: 200;
     margin: 0.4rem;
     text-align: center;
-
+    
 }
 h1{
-    color: black             ;
+    color: white           ;
 }
 h2{
     font-size:2rem;
-    color: black;
+    color: white;
 }
 @media(min-width: 1200px) {
     h1{
@@ -54,7 +55,7 @@ h2{
 }
 @media(max-width: 500px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     h2 {
         font-size: 1.5rem;
@@ -184,17 +185,119 @@ footer {
         -webkit-box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
 -moz-box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
 box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
-        padding: 0.8em 0.6em;
+        padding: 0.8em 0.6em;}
         h1 {
-            font-size: 2em;
+            font-size: 4em;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.2em;}
             .btn {
                 padding: 0.5em;
             }
-        }
         
-    }
-
+        
     
+
+            header {
+                width: 100%;
+                height: 40vh;
+                background: url(hero.jpg) no-repeat 50% 50%;
+                background-size: cover;
+          }
+          
+          
+          
+          
+          nav {
+                position: fixed;
+                width: 100%;
+                line-height: 60px;
+          }
+          
+          nav ul {
+                line-height: 60px;
+                list-style: none;
+                background: rgba(0, 0, 0, 0);
+                overflow: hidden;
+                color: #FAD8FF  ;
+                padding: 0;
+                text-align: center;
+                margin:0;
+                
+                transition: 1s;
+          }
+          
+          nav.black ul {
+                background: #FAD8FF    ;
+          }
+          
+          nav ul li {
+                display: inline-block;
+                padding: 16px 40px;;
+          }
+          
+          nav ul li a {
+                text-decoration: none;
+                color: #FF5454   ;
+                font-size: 16px;
+          }
+          
+          .menu-icon {
+                line-height: 60px;
+                width: 100%;
+                background: #FAD8FF ;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 15px 24px;
+                cursor: pointer;
+                color:white;
+                display: none; 
+          }
+          
+          @media(max-width: 786px) {
+          
+                .logo {
+                      position: absolute;
+                      top: 0;
+                    
+                }
+          
+                nav ul {
+                      max-height: 0px;
+                      background: #FAD8FF   ;
+                }
+          
+                nav.black ul {
+                      background: #FAD8FF  ;
+                }
+          
+                .showing {
+                      max-height: 28em;
+                }
+          
+                nav ul li {
+                      box-sizing: border-box;
+                      width: 100%;
+                      padding: 24px;
+                      text-align: center;
+                }
+          
+                .menu-icon {
+                      display: block;
+                }
+          
+          }
+          
+          nav{
+              top: 0;
+              position: absolute;
+          }
+
+          .menu{
+              text-align: center;
+          }
+
+          .about{
+              display:flex;
+            
+          }

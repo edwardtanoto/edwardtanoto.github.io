@@ -67,7 +67,7 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
 function sayHello(language) {
 	var arrHellos = {
 		"Chinese" : "你好世界",
-		"Indonesia" : "Halo Dunia",
+		"Indonesian" : "Halo Dunia",
 		"English" : "Hello world",
 		"Japanese" : "こんにちは世界",
 	};
