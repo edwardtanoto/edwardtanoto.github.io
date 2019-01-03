@@ -86,11 +86,11 @@ function checkTie(){
 }
 
 function minimax(newBoard, player){
-    var availSpots = emptySquares(newBoard);
-    if(checkWin(newBoard, player)){
+    var availSpots = emptySquares();
+    if(checkWin(newBoard, huPlayer)){
         return {score:-10};
     } else if (checkWin(newBoard,aiPlayer)){
-        return {score:20};
+        return {score:10};
     } else if (availSpots.length===0){
         return {score :0};
     }
