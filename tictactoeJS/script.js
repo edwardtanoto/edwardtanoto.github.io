@@ -1,5 +1,5 @@
 var origBoard;
-const huPlayer = '0';
+const huPlayer = 'O';
 const aiPlayer = 'X';
 const winCombos = [
     [0,1,2],
@@ -13,6 +13,7 @@ const winCombos = [
 ];
 const cells = document.querySelectorAll(".cell");
 startGame();
+
 
 function startGame(){
     document.querySelector(".endgame").style.display = "none";
@@ -76,7 +77,7 @@ function bestSpot(){
 function checkTie(){
     if(emptySquares().length==0){
         for(var i= 0; i<cells.length;i++){
-            cells[i].style.backgroundColor ="#64FF5B";
+            cells[i].style.backgroundColor ="#FEE5FA";
             cells[i].removeEventListener('click',turnClick,false);
         }
         declareWinner("Game is tie!")
