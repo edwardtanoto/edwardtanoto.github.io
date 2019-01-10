@@ -127,12 +127,12 @@ box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
           }
           
           nav.black ul {
-                background: #223368    ;
+                background:#E2F4FF;
           }
           
           nav ul li {
                 display: inline-block;
-                padding: 16px 40px;;
+                padding: 6px 40px;;
           }
           
           nav ul li a {
