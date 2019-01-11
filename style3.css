@@ -1,55 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Assistant:200');
 
-body {
-    font-family: 'Assistant', sans-serif;
-    height: 100vh;
-    background-color:#E7FFBC  ; 
-    color: black;
-}
+
 .icons {
     justify-items: center;
     text-align: center;
 
 }
-h2 {
-    font-weight: 200;
-    text-align: center;
-    margin-top: 2vh;
-}
-h1{
-    color: black;          
-}
-h2{
-    font-size:2rem;
-    color: black;
-}
-@media(min-width: 1200px) {
-    h1{
-        font-size:5rem;
-    }
- 
-}
-@media(max-width: 800px) {
-   
-    h1{
-        font-size: 3rem;
-    }
-    h4{
-        font-size: 1rem;
-    }
 
-}
-@media(max-width: 500px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    
-    h4{
-        font-size: 1rem;
-    }
 
     .Secondcontainer {
         margin-bottom:900px;
@@ -62,19 +18,7 @@ h2{
 .myText{
     font-size: 20px;
 }
-footer {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
 
-    background-color: white;
-    text-align: center;
-
-    align-items: center;
-    z-index: 1;
-    }
 
         
           .xop-section {

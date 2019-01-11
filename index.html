@@ -7,22 +7,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
+  <script src="main.js"></script>
+  <script>
+        $(function(){
+            $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+        })
+ 
+  </script>
   <title>Edward Tanoto</title>
 </head>
 <body>
             
-  <BR>
-    <br>
-  <div class="container">
-      <br>
-    <h1>EDWARD&nbsp;&nbsp; TANOTO </h1>
-    <h2>&nbsp;The <span class="txt-type" data-wait="2000" data-words='[" Student", " Designer", " Developer"]'></span></h2>
+  
+  <div class="container" id="home">
+  <br>
+    <h1>EDWARD&nbsp;TANOTO </h1>
+    <h2 style="color:white  ">&nbsp;The <span class="txt-type" data-wait="2000" data-words='[" Student", " Designer", " Developer"]'></span></h2>
  <br>
  <br>
 
@@ -40,9 +86,9 @@
 
                 <div class="menu">
                       <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href=#about>About</a></li>
+                            <li><a href="#projects">Projects</a></li>
                             
                       </ul>
                 </div>
@@ -53,7 +99,9 @@
     
 </div>
 
+
 <script type="text/javascript">
+
 
 // Menu-toggle button
 
@@ -77,7 +125,202 @@ $(window).on("scroll", function() {
 
 
 </script>
+ <br>
+ 
 
+
+ 
+
+ <div class="jumbotronOne">
+
+     <br>
+ <h2 style="font-size:2rem;" id="about">Hello World!</h2>
+ 
+ <hr>
+ <div class="center ">
+<p class="lead">
+<form method="get" action="javascript:void()">
+   <label>
+     <strong>Language:</strong>&nbsp;&nbsp; 
+     <select name="language" id="language">
+         <option>English</option>
+       <option>Chinese</option>
+       <option>Indonesian</option>
+     
+    
+       <option>Japanese</option>
+     </select>
+   </label>&nbsp;&nbsp;
+   <input type="button" onclick="sayHello(this.form.language.options[this.form.language.selectedIndex].value);" value="Say Hello" />
+ </form>
+<hr>
+
+
+</p> 
+
+</div>
+<div class="row">
+<div class="col-md-6">
+     <p style="font-size:1.2rem;margin-left: 16px;">
+       <br>
+       <br>
+       <br>
+        Those are also some languages skill I understand other than javascript and python. I study computer science because I am genuinely passionate to implement my innovation and creativity to  develop apps for people to use in their everyday life, and I want to get a job that related to computer in the future.
+        </p>
+       </div>
+       <div class="col-md-6">
+           <br>
+           <br>
+         <img src="b.png"width=100% height="90%">
+       </div>
+</div>
+</div>
+
+
+
+<div class="jumbotronTwo">
+
+<h2 style="font-size:2rem;">My Goals</h2>
+
+<hr>
+<br>
+<br>
+<div class="row ">
+            <div class="col-md-6">
+                        <br>
+                        <br>
+                        
+                        <img src="iot.png"width="100%">
+                        </div>
+<div class="col-md-6">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p style="font-size: 1.2rem;margin-right: 30px;">Computer science is one of the best field to prepare me for the future technology. I believe that in the next couple of years everything will have computer integrated on it, IoT will make a huge revolutionary change into this world, and I wanted to learn something that relates to it and enjoy the process while learning.  </p>
+     
+</div>
+
+
+
+</div>
+</div>
+
+
+<div class="jumbotronThree">
+
+ <h2 style="font-size:2rem;">How Do I Solve Problems</h2>
+ 
+ <hr>
+ <br>
+ <br>
+ <br>
+ <div class="row ">
+   <div class="col-xl-6">
+<p style="font-size: 1.2rem;margin-left: 16px;">
+   <br> <br> <br>
+Before I made this website and understand not many things about javascript, I made my first web with my first project in it.
+Because my project was similiar to chess and I have no clue how to use javascript or java for OOP, I decided to keep making it with HTML and a little bit of easy Javascript. 
+The UI was only designed to make it just work whatever it takes. The players have to click on each input and manually typed it, then when the other player have put an input, both of them show their area and able to proceed.
+It means I have so much to learn in many fields, and I believe the best way to learn is to just do some projects, which I am working on.
+
+</p>
+</div>
+<div class="col-xl-6">
+<img src="p1.png" width="90%" height="100%">
+</div>
+
+
+</div>
+</div>
+
+<div class="jumbotronFour">
+
+<h2 style="font-size:2rem;">My Process So Far</h2>
+
+<hr>
+<br>
+<br>
+<br>
+<div class="row ">
+            <div class="col-md-6">
+                        <div class="owl-carousel owl-theme"> 
+                                    <div class="item"><img src="fccjavascript.png"></div>
+                                    <div class="item"><img src="image1.jpeg"></div>
+                                    <div class="item"><img src="sljs.jpg"></div>
+                                    <div class="item"><img src="slhtml.jpg"></div>
+                                   
+                                </div>
+                        </div>
+<div class="col-md-6">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+ 
+
+<p style="font-size: 1.2rem; margin-right: 20px;">I have built 2 website before this, but this one is the most developed one, other websites were just built for some practice. I study javascript and python from many sources as a self-taught learner. I learnt most of them from youtube tutorial and sites like <a href="www.freecodecamp.com"> freecodecamp</a> and <a href="www.sololearn.com">sololearn</a> which I found helpful.
+</p>  </div>
+<br> 
+
+<hr>
+
+
+</div>
+</div>
+
+<br>    
+                     
+
+<div class="xop-section">
+            <h2 id="projects">Projects</h2>
+<br>
+<br>
+<br>
+ <ul class="xop-grid">
+   <li>
+     <div class="xop-box xop-img-1">
+       <a href="https://edwardtanoto.github.io/weatherapp/">
+       <div class="xop-info">
+         <h3>React</h3>
+         <p>A weather app to know the temperature and condition after getting location as input and has API of Openweather implemented. </p>
+       </div></a>
+     </div>
+   </li>
+   <li>
+     <div class="xop-box xop-img-2">
+       <a href="budgetAppJS/index.html">
+       <div class="xop-info">
+         <h3>Budget App</h3>
+         <p>This budget app was created with vanilla javascript. It calculate your budget and expenses and allow user to make a list of their expenses. </p>
+       </div></a>
+     </div>
+   </li>
+   <li>
+     <div class="xop-box xop-img-3">
+       <a href="tictactoeJS/index.html">
+       <div class="xop-info">
+         <h3>TicTacToe</h3>
+         <p>Single player game against an AI that implemented with minimax algorithm, created with vanilla javascript.</p>
+       </div></a>
+     </div>
+   </li>
+   <li>
+     <div class="xop-box xop-img-4">
+       <a href="#">
+       <div class="xop-info">
+         <h3>Django </h3>
+         <p>Simple To Do apps to study web development with Python. Coming soon.</p>
+       </div></a>
+     </div>
+   </li>
+ </ul>
+</div>
   <footer class="row-footer">
 
    <a href="mailto:edwardt.dev@gmail.com?subject=Hi There!"><i class="fa fa-envelope-o"style="font-size:32px; text-align:center;" aria-hidden="true"></i></a>
