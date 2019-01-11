@@ -5,7 +5,8 @@ body {
     font-family: 'Assistant', sans-serif;
     height: 100vh;
     background:url(a.jpg)       no-repeat center center / cover; 
-    background-color: #141d3a;
+    background-color: rgb(18, 28, 59);
+    width: 100%;
 }
 .icons {
     justify-items: center;
@@ -17,7 +18,7 @@ body {
         position: relative;
         flex-direction: column;  
         justify-content: center;
-        height: 90%;
+        height: 100%;
         padding: 0  3rem;
         text-align: center;
         width: 100%;
@@ -34,8 +35,19 @@ h1{
 }
 h2{
     font-size:2rem;
-    color: #6B6D6B      ;
+
 }
+
+.owl-carousel .owl-item{
+    height:500px;
+    width:100%;
+}
+
+.owl-nav{
+    text-align: center;
+    font-size: 40px;
+}
+
 @media(min-width: 1200px) {
     h1{
         font-size:5rem;
@@ -82,7 +94,7 @@ footer {
     bottom: 0;
     left: 0;
     padding: 1rem;
-
+   
     background-color: #efefef;
     text-align: center;
 
@@ -90,11 +102,7 @@ footer {
     z-index: 1;
     }
 
-    .jumbotron {
-        -webkit-box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
--moz-box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
-box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
-        padding: 0.8em 0.6em;}
+   
         h1 {
             font-size: 4em;
         }
@@ -118,7 +126,7 @@ box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
                 list-style: none;
                 background: rgba(0, 0, 0, 0);
                 overflow: hidden;
-                color: #223368   ;
+                color: rgb(18, 28, 59)  ;
                 padding: 0;
                 text-align: center;
                 margin:0;
@@ -144,7 +152,7 @@ box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
           .menu-icon {
                 line-height: 60px;
                 width: 100%;
-                background: #223368   ;
+                background: rgb(18, 28, 59)  ;
                 text-align: center;
                 box-sizing: border-box;
                 padding: 15px 24px;
@@ -163,11 +171,11 @@ box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
           
                 nav ul {
                       max-height: 0px;
-                      background: #223368   ;
+                      background: rgb(18, 28, 59)   ;
                 }
           
                 nav.black ul {
-                      background: #223368   ;
+                      background: rgb(18, 28, 59)   ;
                 }
           
                 .showing {
@@ -207,3 +215,16 @@ box-shadow: 9px 10px 67px 0px rgba(0,0,0,0.44);
              background-color:transparent;
              color: white;
           }
+          a[ id= "home" ]:target ~ #main div.panel {
+            -webkit-transform: translateY( 0px);
+            transform: translateY( 0px );
+        }
+        
+        a[ id= "about" ]:target ~ #main div.panel {
+            -webkit-transform: translateY( -500px );
+            transform: translateY( -500px );
+        }
+        a[ id= "projects" ]:target ~ #main div.panel {
+            -webkit-transform: translateY( -1000px );
+            transform: translateY( -1000px );
+        }

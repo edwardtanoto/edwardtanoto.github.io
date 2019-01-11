@@ -1,3 +1,5 @@
+
+
 const TypeWriter = function(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
     this.words = words;
@@ -73,3 +75,21 @@ function sayHello(language) {
 	};
 	alert(arrHellos[language]);
 }
+
+
+
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+      margin:10,
+      responsiveClass:true,
+      autoplay:500,
+      loop:true,
+      autoHeight:true,
+      items:1,
+      nav:true
+      
+  })
+
+  
+})

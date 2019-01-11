@@ -2,9 +2,8 @@
 
 body {
     font-family: 'Assistant', sans-serif;
-    height: 100vh;
-    color: black;
-    background-color:white;
+
+    background-color:rgb(18, 28, 59);
     width: 100%;
 }
 .icons {
@@ -12,14 +11,7 @@ body {
     text-align: center;
 
 }
-    .container{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 0  3rem;
-        text-align: center;
-        margin-top: 10%;
-    }
+  
 
 h1, h3, h2 {
     font-weight: 100;
@@ -29,16 +21,12 @@ h1, h3, h2 {
 }
 
 h3, h2{
-    font-size:2rem;
+  
     color: white;
 
 }
 
-@media(min-width: 1200px) {
-    h1{
-        font-size:2.5rem;
-    }
-}
+
 @media(max-width: 800px) {
     .container {
         padding: 0 1 rem;
@@ -73,26 +61,39 @@ h3, h2{
 }
  
      
-    /* Image for Parallax Section */ 
-    .paralsec {
-    background-color:#BDFFAD  ;
-    }
-     
-    .paralsec1 {
-    background-color: #FFCF81  }
-     
-    .paralsec2 {
-    background-color: aquamarine;
-    }
-     
-    /* Add more images for more sections */
-     
-    /* Remove Bottom Margin from Jumbotron */
-    .jumbotron{margin-bottom: 0;}
-
+   
     
+     
+
+    .jumbotronOne{
+        margin-bottom: 0;
+        background-color: rgb(18, 28, 59)  ;
+        height: 90vh;
+        color: white;
+    }
+
+    .jumbotronTwo{
+        
+        background-color: rgb(18, 28, 59) ;
+        height: 100%;
+        color: white;
+    }
    
 
+    .jumbotronThree{
+        
+        background-color: rgb(18, 28, 59) ;
+        height: 90vh;
+        color: white;
+    }
+   
+    .jumbotronFour{
+        
+        background-color: rgb(18, 28, 59) ;
+        height:80vh;
+        color: white;
+    }
+   
         .center {
             display: block;
             margin-left: auto;
@@ -112,16 +113,11 @@ h3, h2{
             align-items: center;
             z-index: 1;
             }
-            .jumbotron {
-                width: 100%;
-                webkit-box-shadow: 7px 10px 38px 0px rgba(64,64,64,0.38);
--moz-box-shadow: 7px 10px 38px 0px rgba(64,64,64,0.38);
-box-shadow: 7px 10px 38px 0px rgba(64,64,64,0.38);
-            }
+           
 
             .pdf {
-                width: 200%;
-                height: 120%;
+                width: 90%;
+                height: 180%;
             }
             
             
