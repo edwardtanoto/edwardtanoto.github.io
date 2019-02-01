@@ -150,7 +150,7 @@ footer {
           }
           
           .menu-icon {
-                line-height: 60px;
+                line-height: 26px;
                 width: 100%;
                 background: rgb(18, 28, 59)  ;
                 text-align: center;
@@ -179,7 +179,7 @@ footer {
                 }
           
                 .showing {
-                      max-height: 28em;
+                      max-height: 26em;
                 }
           
                 nav ul li {
@@ -228,3 +228,7 @@ footer {
             -webkit-transform: translateY( -1000px );
             transform: translateY( -1000px );
         }
+
+#language{
+    float: left;
+}      

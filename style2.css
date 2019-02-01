@@ -66,14 +66,16 @@ h3, h2{
      
 
     .jumbotronOne{
-        margin-bottom: 0;
+        margin-top:8%;
+        margin-bottom: 105px;
         background-color: rgb(18, 28, 59)  ;
-        height: 90vh;
+        height: 100%;
         color: white;
     }
 
     .jumbotronTwo{
-        
+    
+        margin-bottom: 105px;
         background-color: rgb(18, 28, 59) ;
         height: 100%;
         color: white;
@@ -83,14 +85,15 @@ h3, h2{
     .jumbotronThree{
         
         background-color: rgb(18, 28, 59) ;
-        height: 90vh;
+        height: 100%;
         color: white;
+        margin-bottom: 105px;
     }
    
     .jumbotronFour{
-        
+        margin-bottom: 120px;
         background-color: rgb(18, 28, 59) ;
-        height:80vh;
+        height:100%;
         color: white;
     }
    
@@ -120,4 +123,4 @@ h3, h2{
                 height: 180%;
             }
             
-            
+       
