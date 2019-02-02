@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project 1</title>	
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div class="row">
+		<div class="col-md-6">
+			<ul>
+				<br>
+				<br>
+				<div class="info">
+					<h3>Information</h3>
+					<li>Put input into the box(K,C,Q,etc)</li>
+					<li>Remember, max 4 character per area</li>
+					<li>You can choose 10 of all character</li>
+					<li>Winner is the player who win more area</li>
+					<li>You can add unrelated letter to input to confuse your opponent with max 4 chars</li>
+					<li>The letter must not be the symbol of classes to make the game fair</li>
+					<li>Good luck have fun</li>
+					<br>
+					<br>
+					<h3>Scores</h3>
+					<li>(K)ing= 5 (1)</li>
+					<li>(Q)ueen= 5 (1)</li>
+					<li>(C)avalry= 10 times enemy pawns quantity (1)</li>
+					<li>(A)ssassin=5;(autowin when 1 vs 1) (1)</li>
+					<li>(S)niper=Kill highest point enemy(1)</li>
+					<li>(P)awns=@1;(4 Pawns in an area will raise the points into 30 (4)</li>
+					<li>(R)ebel=1;(autowin vs royalty if teamed up with pawn) (1)</li>
+					<li>(B)omber= -5 or (win area when enemy has 3 or more warriors) (1)</li>
+					<br>
+					<br>
+					<h3>Skills</h3>
+					<li>King in presence with Queen make total points of 30</li>
+					<li>4 Pawn gathers in 1 area make total point of 40</li>
+					<li>Assassin will perform instant kill when 1 vs 1 in an area</li>
+					<li>Sniper kill the highest point character in area</li>
+					<li>Bomber will win the area if opponent has 3 or more quantities</li>
+					<li>Rebel wins the area if there is royalty such as King or Queen and teamed up with pawns</li>
+					<h3>Additional Info</h3>
+					<li>If for example King dies from Sniper and put in same area with Queen,<br/> the 30 points skills wont activate</li>
+					<li>Game system by round plays.
+					<li>P1 moves first than P2 for first area.</li>
+					<li>P2 moves first than P1 for second area, and goes on.</li>
+					<li>After each player submit their moves, reveal the area to declare the winner.</li>
+					<li>You can predict what chars havent been used and outplay the enemy.</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<div id="gameboard">
+					<div>
+						<div class="green_square">
+							<input class="button"type="password" id="myInput">
+							<br>
+							<input class="button"type="password"id="myInput1">
+							<br>
+							<input id="submitId" type="submit" onclick="countScore(tes)">
+							<input class="button1"id="myInput">
+							<br>
+							<br>
+							<input type="checkbox" onclick="myFunction()">Show Area
+							<input type="checkbox" onclick="myFunction1()">Show Area
+							<script>
+								function myFunction() {
+									var x = document.getElementById("myInput");
+									if (x.type === "password") {
+										x.type = "text";
+									} else {
+										x.type = "password";
+									}
+								}
+							</script>
+							<script>
+								function myFunction1() {
+									var y = document.getElementById("myInput1");
+									if (y.type === "password") {
+										y.type = "text";
+									} else {
+										y.type = "password";
+									}
+								}
+							</script>
+					</div>
+					<div>
+						<div class="blue_square">
+							<input class="button"type="password"id="myInput2">
+							<br>
+							<input class="button"type="password"id="myInput3">
+							<br>
+							<input id="submitId" type="submit" onclick="countScore(tes)">
+							<input class="button1" id="myInput">
+							<br>
+							<br>
+							<input type="checkbox" onclick="myFunction2()">Show Area
+	                     	<input type="checkbox" onclick="myFunction3()">Show Area
+
+							<script>
+								function myFunction2() {
+									var x = document.getElementById("myInput2");
+									if (x.type === "password") {
+										x.type = "text";
+									} else {
+										x.type = "password";
+									}
+								}
+							</script>
+														<script>
+								function myFunction3() {
+									var y = document.getElementById("myInput3");
+									if (y.type === "password") {
+										y.type = "text";
+									} else {
+										y.type = "password";
+									}
+								}
+							</script>
+						</div>
+
+					</div>
+					<span>================================================</span>
+					<div>
+						<div class="yellow_square">
+							<input class="button"type="password"id="myInput4">
+							<br>
+							<input class="button"type="password"id="myInput5">
+							<br>
+							<input id="submitId" type="submit" onclick="countScore(tes)">
+							<input class="button1"id="myInput">
+							<br>
+							<br>
+							<input type="checkbox" onclick="myFunction4()">Show Area
+							<input type="checkbox" onclick="myFunction5()">Show Area
+							<script>
+								function myFunction4() {
+									var x = document.getElementById("myInput4");
+									if (x.type === "password") {
+										x.type = "text";
+									} else {
+										x.type = "password";
+									}
+								}
+							</script>
+														<script>
+								function myFunction5() {
+									var y = document.getElementById("myInput5");
+									if (y.type === "password") {
+										y.type = "text";
+									} else {
+										y.type = "password";
+									}
+								}
+							</script>
+						</div>
+					</div>
+					<div>
+						<div class="pink_square" >
+							<input class="button"type="password" id="myInput6">
+							<br>
+							<input class="button"type="password" id="myInput7">
+							<br>
+							<input id="submitId" type="submit" onclick="countScore(tes)">
+							<input class="button1" id="myInput">
+							<br>
+							<br>
+							<input type="checkbox" onclick="myFunction6()">Show Area
+							<input type="checkbox" onclick="myFunction7()">Show Area
+							<script>
+								function myFunction6() {
+									var x = document.getElementById("myInput6");
+									if (x.type === "password") {
+										x.type = "text";
+									} else {
+										x.type = "password";
+									}
+								}
+							</script>
+														<script>
+								function myFunction7() {
+									var y = document.getElementById("myInput7");
+									if (y.type === "password") {
+										y.type = "text";
+									} else {
+										y.type = "password";
+									}
+								}
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="main.js"> </script>
+	</body>
+	</html>
