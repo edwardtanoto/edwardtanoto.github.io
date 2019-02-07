@@ -54,14 +54,16 @@
 				<div id="gameboard">
 					<div>
 						<div class="green_square">
+							<form id="myform">
 							<input class="button"type="password" id="myInput">
 							<br>
 							<input class="button"type="password"id="myInput1">
 							<br>
-							<input id="submitId" type="submit" onclick="countScore(tes)">
+							<button id="submitId" type="submit" onclick="countScore(this)">Submit</button>
 							<input class="button1"id="myInput">
+						    </form>
 							<br>
-							<br>
+							
 							<input type="checkbox" onclick="myFunction()">Show Area
 							<input type="checkbox" onclick="myFunction1()">Show Area
 							<script>
@@ -87,17 +89,18 @@
 					</div>
 					<div>
 						<div class="blue_square">
+							<form id="myform">
 							<input class="button"type="password"id="myInput2">
 							<br>
 							<input class="button"type="password"id="myInput3">
 							<br>
-							<input id="submitId" type="submit" onclick="countScore(tes)">
+							<button id="submitId" type="submit" onclick="countScore(this)">Submit</button>
 							<input class="button1" id="myInput">
 							<br>
 							<br>
+						    </form>
 							<input type="checkbox" onclick="myFunction2()">Show Area
 	                     	<input type="checkbox" onclick="myFunction3()">Show Area
-
 							<script>
 								function myFunction2() {
 									var x = document.getElementById("myInput2");
@@ -124,14 +127,16 @@
 					<span>================================================</span>
 					<div>
 						<div class="yellow_square">
+							<form id="myform">
 							<input class="button"type="password"id="myInput4">
 							<br>
 							<input class="button"type="password"id="myInput5">
 							<br>
-							<input id="submitId" type="submit" onclick="countScore(tes)">
+							<button id="submitId" type="submit" onclick="countScore(this)">Submit</button>
 							<input class="button1"id="myInput">
 							<br>
 							<br>
+						    </form>
 							<input type="checkbox" onclick="myFunction4()">Show Area
 							<input type="checkbox" onclick="myFunction5()">Show Area
 							<script>
@@ -158,14 +163,16 @@
 					</div>
 					<div>
 						<div class="pink_square" >
-							<input class="button"type="password" id="myInput6">
+							<form class="myform">
+							<input class="button"type="password" id="myInput6" id="name" onclick="countScore(this)">
 							<br>
-							<input class="button"type="password" id="myInput7">
+							<input class="button"type="password" id="myInput7"  id="name" onclick="countScore(this)">
 							<br>
-							<input id="submitId" type="submit" onclick="countScore(tes)">
+							<button id="submitId" type="submit" onclick="countScore(this)">Submit</button>
 							<input class="button1" id="myInput">
+						    </form>
 							<br>
-							<br>
+						
 							<input type="checkbox" onclick="myFunction6()">Show Area
 							<input type="checkbox" onclick="myFunction7()">Show Area
 							<script>
@@ -178,7 +185,7 @@
 									}
 								}
 							</script>
-														<script>
+							<script>
 								function myFunction7() {
 									var y = document.getElementById("myInput7");
 									if (y.type === "password") {
@@ -193,7 +200,12 @@
 				</div>
 			</div>
 		</div>
-		
+		</div>
+		<form class="myform">
+			<input type="text" id="name" onclick="countScore(this)">
+			<input style="background-color:yellow" type="text" id="name2" onclick="countScore(this)">
+			<button type="button" onclick="countScore(this)">Submit</button>
+		</form>
 		<script src="main.js"> </script>
 	</body>
 	</html>
