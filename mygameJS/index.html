@@ -53,11 +53,11 @@
 					<div>
 						<div class="green_square">
 							<form id="myform">
-							<input class="button"type="password" id="myInput" id="name" onclick="countScore(this)">
+							<input class="button"type="password" id="myInput0">
 							<br>
-							<input class="button"type="password"id="myInput1" id="name2" onclick="countScore(this)">
+							<input class="button"type="password"id="myInput1">
 							<br>
-							<button id="submitId" type="button" onclick="countScore(this)">Submit</button>
+							<button id="submitId" type="button" onclick="countScore(this, 0)">Submit</button>
 							<input id="result">
 						    </form>
 							<br>
@@ -66,7 +66,7 @@
 							<input type="checkbox" onclick="myFunction1()">Show Area
 							<script>
 								function myFunction() {
-									var x = document.getElementById("myInput");
+									var x = document.getElementById("myInput0");
 									if (x.type === "password") {
 										x.type = "text";
 									} else {
@@ -88,11 +88,11 @@
 					<div>
 						<div class="blue_square">
 							<form id="myform">
-							<input class="button"type="password"id="myInput2" id="name" onclick="countScore(this)">
+							<input class="button"type="password"id="myInput2">
 							<br>
-							<input class="button"type="password"id="myInput3" id="name2" onclick="countScore(this)">
+							<input class="button"type="password"id="myInput3">
 							<br>
-							<button id="submitId" type="button" onclick="countScore(this)">Submit</button>
+							<button id="submitId" type="button" onclick="countScore(this, 2)">Submit</button>
 							<input id="result">
 							<br>
 							<br>
@@ -109,7 +109,7 @@
 									}
 								}
 							</script>
-														<script>
+							<script>
 								function myFunction3() {
 									var y = document.getElementById("myInput3");
 									if (y.type === "password") {
@@ -126,11 +126,11 @@
 					<div>
 						<div class="yellow_square">
 							<form id="myform">
-							<input class="button"type="password"id="myInput4" id="name" onclick="countScore(this)">
+							<input class="button"type="password"id="myInput4">
 							<br>
-							<input class="button"type="password"id="myInput5" id="name2" onclick="countScore(this)">
+							<input class="button"type="password"id="myInput5">
 							<br>
-							<button id="submitId" type="button" onclick="countScore(this)">Submit</button>
+							<button id="submitId" type="button" onclick="countScore(this, 4)">Submit</button>
 							<input id="result">
 							<br>
 							<br>
@@ -162,11 +162,11 @@
 					<div>
 						<div class="pink_square" >
 							<form class="myform">
-							<input class="button"type="password" id="myInput6" id="name" onclick="countScore(this)">
+							<input class="button"type="password" id="myInput6">
 							<br>
-							<input class="button"type="password" id="myInput7"  id="name2" onclick="countScore(this)">
+							<input class="button"type="password" id="myInput7">
 							<br>
-							<button type="button" onclick="countScore(this)">Submit</button>
+							<button type="button" onclick="countScore(this, 6)">Submit</button>
 							<input  id="result">
 						    </form>
 							<br>
@@ -200,9 +200,9 @@
 		</div>
 		</div>
 		<form class="myform">
-			<input type="text" id="name" onclick="countScore(this)">
-			<input style="background-color:yellow" type="text" id="name2" onclick="countScore(this)">
-			<button type="button" onclick="countScore(this)">Submit</button>
+			<input type="text" id="myInput8">
+			<input style="background-color:yellow" type="text" id="myInput9">
+			<button type="button" onclick="countScore(this, 8)">Submit</button>
 		</form>
 		<script src="main.js"> </script>
 	</body>
