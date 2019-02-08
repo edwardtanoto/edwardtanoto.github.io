@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	
+		<input id="reset" type="button" value="Reset" onclick="reset()">
 	<div class="row">
 		<div class="col-md-6">
 			<ul>
@@ -14,7 +14,8 @@
 				<br>
 				<div class="info">
 					<h3>Information</h3>
-					<li>Put input into the box(K,C,Q,etc)</li>
+					<li>Put input into the box(K,C,Q)</li>
+					<li>Use caps lock for the input</li>
 					<li>Remember, max 4 character per area</li>
 					<li>You can choose 10 of all character</li>
 					<li>Winner is the player who win more area</li>
@@ -49,8 +50,10 @@
 				</ul>
 			</div>
 			<div class="col-md-6">
+					
 				<div id="gameboard">
 					<div>
+						
 						<div class="green_square">
 							<form id="myform">
 							<input class="button"type="password" id="myInput0">
@@ -199,11 +202,7 @@
 			</div>
 		</div>
 		</div>
-		<form class="myform">
-			<input type="text" id="myInput8">
-			<input style="background-color:yellow" type="text" id="myInput9">
-			<button type="button" onclick="countScore(this, 8)">Submit</button>
-		</form>
+		
 		<script src="main.js"> </script>
 	</body>
 	</html>

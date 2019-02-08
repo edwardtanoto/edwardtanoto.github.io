@@ -132,11 +132,14 @@ function countScore(tes, index) {
 
 	}
     if(score1> score2){
-        document.getElementById("result").innerHTML = "P1 WIN"
+        document.getElementById("result").value = "P1 WIN"
     } else if(score2 > score1) {
-        document.getElementById("result").innerHTML = "P2 WIN"
+        document.getElementById("result").value = "P2 WIN"
     } else if(score1 == score1){
-        document.getElementById("result").innerHTML = "DRAW"
+        document.getElementById("result").value = "DRAW"
     }
+    
 }
-
+function reset(){
+    location.reload()
+}
