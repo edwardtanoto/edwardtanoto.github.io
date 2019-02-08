@@ -41,9 +41,12 @@ var Bomber = {
 }
 
 
-function countScore(this,) {
-	var nameInput = document.getElementsByClassName('name');
-	var nameInput2 = document.getElementsyClassName('name2');
+function countScore(tes, index) {
+	console.log(index);
+	var nameInput = document.getElementById('myInput'+index);
+	index++;
+	console.log(index);
+	var nameInput2 = document.getElementById('myInput'+index);
 	var countPawn = 0;
     var countPawn2 = 0;
     var score1 = 0;
@@ -135,5 +138,8 @@ function countScore(this,) {
     } else if(score1 == score1){
         document.getElementById("result").value = "DRAW"
     }
+    
 }
-
+function reset(){
+    location.reload()
+}
