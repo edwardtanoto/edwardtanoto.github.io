@@ -1,194 +1,139 @@
-var King = 
-{ 
-    classes : "King",
-    char: "K",
-    points : 5,
+var King = {
+	classes: "King",
+	char: "K",
+	points: 5,
 }
-var Queen = 
-{
-    classes : "Queen",
-    char: "Q",
-    points : 5,
+var Queen = {
+	classes: "Queen",
+	char: "Q",
+	points: 5,
 }
 
-var Cavalry =
-{
-    classes : "Cavalry",
-    char: "C",
-    points : 5,
+var Cavalry = {
+	classes: "Cavalry",
+	char: "C",
+	points: 5,
 }
-var Assassin =
-{
-    classes : "Assassin",
-    char: "A",
-    points : 5,
+var Assassin = {
+	classes: "Assassin",
+	char: "A",
+	points: 5,
 }
-var Sniper =
-{
-    classes : "Sniper",
-    char: "S",
-    points : 5,
+var Sniper = {
+	classes: "Sniper",
+	char: "S",
+	points: 20,
 }
-var Pawn =
-{
-    classes : "Pawn",
-    char: "P",
-    points : 1,
+var Pawn = {
+	classes: "Pawn",
+	char: "P",
+	points: 1,
 }
-var Rebel =
-{
-    classes : "Rebel",
-    char: "R",
-    points : 1,
+var Rebel = {
+	classes: "Rebel",
+	char: "R",
+	points: 1,
 }
-var Bomber =
-{
-    classes : "Bomber",
-    char: "B",
-    points : -5,
+var Bomber = {
+	classes: "Bomber",
+	char: "B",
+	points: -1000,
 }
 
-var playerOneScore = 0;
-var playerTwoScore = 0;
 
+function countScore(tes) {
+	var nameInput = document.getElementById('name');
+	var nameInput2 = document.getElementById('name2');
+	var countPawn = 0;
+    var countPawn2 = 0;
+    var score1 = 0;
+    var score2 = 0;
+	//if king or queen is together
+	for (var i = 0; i < nameInput.value.length; i++) {
+		if (nameInput.value[i] == "K" || nameInput.value[i] == "Q") {
+			King.points = 15
+			Queen.points = 15
+            var royaltyPoints = King.points + Queen.points
+            score1 += royaltyPoints
+			console.log(royaltyPoints)
+		} else if (nameInput.value == "PPPP") {
+            Pawn.points = 40
+            score1 += Pawn.points
+			console.log(Pawn.points)
+		} else if (nameInput.value[i] == "A" && nameInput.value[i] !== "K" && nameInput.value[i] !== "Q" && nameInput.value[i] !== "C" && nameInput.value[i] !== "B" && nameInput.value[i] !== "R" && nameInput.value[i] !== "P" && nameInput.value[i] !== "S") {
+            Assassin.points = 1000
+            score1 += Assassin.points
+			console.log(Assassin.points)
+		}
 
-
-
-function countScore(tes)
-{
-    var nameInput = document.getElementById('name');
-    var nameInput2 = document.getElementById('name2');
-    var countPawn = 0
-    var countPawn2 = 0
-    //if king or queen is together
-    for(var i=0; i< nameInput.value.length;i++)
-    {
-        if(nameInput.value[i] == "K" && nameInput.value[i] == "Q")
-        {
-         King.points = 15
-         Queen.points = 15
-         var royaltyPoints = King.points + Queen.points
-         console.log(royaltyPoints)
-        }
-        else if(nameInput.value == "PPPP")
-        {
-         Pawn.points = 40
-         console.log(Pawn.points)
-        }
-        else if(nameInput.value[i] !== "K" &&nameInput.value[i] !==  "Q" && nameInput.value[i] !=="C" && nameInput.value[i] !=="B" && nameInput.value[i] !=="R" && nameInput.value[i] !=="P" && nameInput.value[i] !=="S")
-        {
-         Assassin.points = 1000
-         console.log(Assassin.points)
-        }
-        if(nameInput2.value[i] == "K" && nameInput2.value[i] =="Q")
-        {
-         King.points = 15
-         Queen.points = 15
-         var royaltyPoints = King.points + Queen.points
-         console.log(royaltyPoints)
-        }
-        else if(nameInput2.value == "PPPP")
-        {
-         Pawn.points = 40
-         console.log(Pawn.points)
-        }
-        else if(nameInput2.value[i] !== "K" &&nameInput2.value[i] !==  "Q" && nameInput2.value[i] !=="C" && nameInput2.value[i] !=="B" && nameInput2.value[i] !=="R" && nameInput2.value[i] !=="P" && nameInput2.value[i] !=="S")
-        {
-         Assassin.points = 1000
-         console.log(Assassin.points)
-        }
-        for(var i =0; i<nameInput.value.length;i++){
-            if(nameInput.value[i] == "P")
-            {
-                countPawn++;
-            }
-            if(nameInput2.value[i] == "P")
-            {
-                countPawn2++;
-            }
-            if(nameInput.value[i] == "C"){
+		for (var a = 0; a < nameInput.value.length; a++) {
+			if (nameInput.value[a] == "P") {
+				countPawn++;
+			}
+			if (nameInput2.value[a] == "P") {
+				countPawn2++;
+			}
+			if (nameInput.value[a] == "C") {
                 Cavalry.points = 10 * countPawn2
-                console.log(Cavalry.points)
-            }
-            if(nameInput2.value[i] == "C"){
+                score1 += Cavalry.points
+				console.log(Cavalry.points)
+			}
+			 else if (countPawn == 2 && nameInput.value[a] == "R") {
+				if (nameInput2.value[a] == "K" || nameInput2.value[a] == "Q") {
+                    Rebel.points = 1000
+                    score1 += Rebel.points
+					console.log(Rebel.points)
+				}
+
+			}
+
+		}
+
+	}
+	for (var j = 0; j < nameInput2.value.length; j++) {
+		if (nameInput2.value[j] == "K" || nameInput2.value[j] == "Q") {
+			King.points = 15
+			Queen.points = 15
+            var royaltyPoints = King.points + Queen.points
+            score2 += royaltyPoints
+			console.log(royaltyPoints)
+		}else if (nameInput2.value == "PPPP") {
+            Pawn.points = 40
+            score2 += Pawn.points
+			console.log(Pawn.points)
+		} else if (nameInput2.value[j] == "A" && nameInput2.value[j] !== "K" && nameInput2.value[j] !== "Q" && nameInput2.value[j] !== "C" && nameInput2.value[j] !== "B" && nameInput2.value[j] !== "R" && nameInput2.value[j] !== "P" && nameInput2.value[j] !== "S") {
+            Assassin.points = 1000
+            score2 += Assassin.points
+			console.log(Assassin.points)
+		}
+		for (var b = 0; b < nameInput2.value.length; b++) {
+			if (nameInput.value[b] == "P") {
+				countPawn++;
+			} else if (nameInput2.value[b] == "P") {
+				countPawn2++;
+			}
+			if (nameInput2.value[b] == "C") {
                 Cavalry.points = 10 * countPawn
-                console.log(Cavalry.points)
-            }
-            
-        }
+                score2 += Cavalry.points
+				console.log(Cavalry.points)
+			} else if (countPawn2 == 2 && nameInput2.value[b] == "R") {
+				if (nameInput.value[b] == "K" || nameInput.value[b] == "Q") {
+                    Rebel.points = 1000
+                    score2 += Rebel.points
+					console.log(Rebel.points)
+				}
 
-        }
-        for(var i=0; i< nameInput2.value.length;i++)
-        {
-            if(nameInput.value[i] == "K" && nameInput.value[i] == "Q")
-            {
-             King.points = 15
-             Queen.points = 15
-             var royaltyPoints = King.points + Queen.points
-             console.log(royaltyPoints)
-            }
-            else if(nameInput.value == "PPPP")
-            {
-             Pawn.points = 40
-             console.log(Pawn.points)
-            }
-            else if(nameInput.value[i] !== "K" &&nameInput.value[i] !==  "Q" && nameInput.value[i] !=="C" && nameInput.value[i] !=="B" && nameInput.value[i] !=="R" && nameInput.value[i] !=="P" && nameInput.value[i] !=="S")
-            {
-             Assassin.points = 1000
-             console.log(Assassin.points)
-            }
-            if(nameInput2.value[i] == "K" && nameInput2.value[i] =="Q")
-            {
-             King.points = 15
-             Queen.points = 15
-             var royaltyPoints = King.points + Queen.points
-             console.log(royaltyPoints)
-            }
-            else if(nameInput2.value == "PPPP")
-            {
-             Pawn.points = 40
-             console.log(Pawn.points)
-            }
-            else if(nameInput2.value[i] !== "K" &&nameInput2.value[i] !==  "Q" && nameInput2.value[i] !=="C" && nameInput2.value[i] !=="B" && nameInput2.value[i] !=="R" && nameInput2.value[i] !=="P" && nameInput2.value[i] !=="S")
-            {
-             Assassin.points = 1000
-             console.log(Assassin.points)
-            }
-            for(var i =0; i<nameInput.value.length;i++){
-                if(nameInput.value[i] == "P")
-                {
-                    countPawn++;
-                }
-                if(nameInput2.value[i] == "P")
-                {
-                    countPawn2++;
-                }
-                if(nameInput.value[i] == "C"){
-                    Cavalry.points = 10 * countPawn2
-                    console.log(Cavalry.points)
-                }
-                if(nameInput2.value[i] == "C"){
-                    Cavalry.points = 10 * countPawn
-                    console.log(Cavalry.points)
-                }
-                
-            }
-    
-            }
-        console.log(nameInput.value[i])
-        console.log(nameInput2.value[i])
+			}
+
+		}
+
+	}
+    if(score1> score2){
+        document.getElementById("result").innerHTML = "P1 WIN"
+    } else if(score2 > score1) {
+        document.getElementById("result").innerHTML = "P2 WIN"
+    } else if(score1 == score1){
+        document.getElementById("result").innerHTML = "DRAW"
     }
-
-
-
-
-
-   
-
-
-
-
-
-function areaPoints(){
-    //sum all the points within each area
 }
+

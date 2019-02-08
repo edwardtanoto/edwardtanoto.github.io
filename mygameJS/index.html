@@ -26,23 +26,21 @@
 					<h3>Scores</h3>
 					<li>(K)ing= 5 (1)</li>
 					<li>(Q)ueen= 5 (1)</li>
-					<li>(C)avalry= 10 times enemy pawns quantity (1)</li>
+					<li>(C)avalry= 20 times enemy pawns (1)</li>
 					<li>(A)ssassin=5;(autowin when 1 vs 1) (1)</li>
-					<li>(S)niper=Kill highest point enemy(1)</li>
+					<li>(S)niper=20(1)</li>
 					<li>(P)awns=@1;(4 Pawns in an area will raise the points into 30 (4)</li>
-					<li>(R)ebel=1;(autowin vs royalty if teamed up with pawn) (1)</li>
-					<li>(B)omber= -5 or (win area when enemy has 3 or more warriors) (1)</li>
+					<li>(R)ebel=1;(autowin vs royalty if teamed up with 2 pawns) (1)</li>
+					<li>(B)omber= Win area when enemy has 3 or more <br/>chars but lose if enemy has less than 3 (1)</li>
 					<br>
 					<br>
 					<h3>Skills</h3>
 					<li>King in presence with Queen make total points of 30</li>
 					<li>4 Pawn gathers in 1 area make total point of 40</li>
 					<li>Assassin will perform instant kill when 1 vs 1 in an area</li>
-					<li>Sniper kill the highest point character in area</li>
 					<li>Bomber will win the area if opponent has 3 or more quantities</li>
-					<li>Rebel wins the area if there is royalty such as King or Queen and teamed up with pawns</li>
-					<h3>Additional Info</h3>
-					<li>If for example King dies from Sniper and put in same area with Queen,<br/> the 30 points skills wont activate</li>
+					<li>Rebel wins the area if there is royalty such as King or Queen and teamed up with 2 pawns</li>
+					<h3>Game Rules</h3>
 					<li>Game system by round plays.
 					<li>P1 moves first than P2 for first area.</li>
 					<li>P2 moves first than P1 for second area, and goes on.</li>
@@ -55,12 +53,12 @@
 					<div>
 						<div class="green_square">
 							<form id="myform">
-							<input class="button"type="password" id="myInput">
+							<input class="button"type="password" id="myInput" id="name" onclick="countScore(this)">
 							<br>
-							<input class="button"type="password"id="myInput1">
+							<input class="button"type="password"id="myInput1" id="name2" onclick="countScore(this)">
 							<br>
-							<button id="submitId" type="submit" onclick="countScore(this)">Submit</button>
-							<input class="button1"id="myInput">
+							<button id="submitId" type="button" onclick="countScore(this)">Submit</button>
+							<input id="result">
 						    </form>
 							<br>
 							
@@ -90,12 +88,12 @@
 					<div>
 						<div class="blue_square">
 							<form id="myform">
-							<input class="button"type="password"id="myInput2">
+							<input class="button"type="password"id="myInput2" id="name" onclick="countScore(this)">
 							<br>
-							<input class="button"type="password"id="myInput3">
+							<input class="button"type="password"id="myInput3" id="name2" onclick="countScore(this)">
 							<br>
-							<button id="submitId" type="submit" onclick="countScore(this)">Submit</button>
-							<input class="button1" id="myInput">
+							<button id="submitId" type="button" onclick="countScore(this)">Submit</button>
+							<input id="result">
 							<br>
 							<br>
 						    </form>
@@ -128,12 +126,12 @@
 					<div>
 						<div class="yellow_square">
 							<form id="myform">
-							<input class="button"type="password"id="myInput4">
+							<input class="button"type="password"id="myInput4" id="name" onclick="countScore(this)">
 							<br>
-							<input class="button"type="password"id="myInput5">
+							<input class="button"type="password"id="myInput5" id="name2" onclick="countScore(this)">
 							<br>
-							<button id="submitId" type="submit" onclick="countScore(this)">Submit</button>
-							<input class="button1"id="myInput">
+							<button id="submitId" type="button" onclick="countScore(this)">Submit</button>
+							<input id="result">
 							<br>
 							<br>
 						    </form>
@@ -166,10 +164,10 @@
 							<form class="myform">
 							<input class="button"type="password" id="myInput6" id="name" onclick="countScore(this)">
 							<br>
-							<input class="button"type="password" id="myInput7"  id="name" onclick="countScore(this)">
+							<input class="button"type="password" id="myInput7"  id="name2" onclick="countScore(this)">
 							<br>
-							<button id="submitId" type="submit" onclick="countScore(this)">Submit</button>
-							<input class="button1" id="myInput">
+							<button type="button" onclick="countScore(this)">Submit</button>
+							<input  id="result">
 						    </form>
 							<br>
 						
