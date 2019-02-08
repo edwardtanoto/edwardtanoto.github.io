@@ -122,11 +122,8 @@ h3, h2{
             align-items: center;
             z-index: 1;
             }
-           
-
-            .pdf {
-                width: 90%;
-                height: 180%;
-            }
+        
             
-       
+            a {
+                text-decoration: none !important;
+            }
