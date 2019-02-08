@@ -41,9 +41,9 @@ var Bomber = {
 }
 
 
-function countScore(tes) {
+function countScore(this,) {
 	var nameInput = document.getElementsByClassName('name');
-	var nameInput2 = document.getElementsByClassName('name2');
+	var nameInput2 = document.getElementsyClassName('name2');
 	var countPawn = 0;
     var countPawn2 = 0;
     var score1 = 0;
