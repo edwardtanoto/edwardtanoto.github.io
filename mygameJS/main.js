@@ -42,8 +42,8 @@ var Bomber = {
 
 
 function countScore(tes) {
-	var nameInput = document.getElementById('name');
-	var nameInput2 = document.getElementById('name2');
+	var nameInput = document.getElementsByClassName('name');
+	var nameInput2 = document.getElementsByClassName('name2');
 	var countPawn = 0;
     var countPawn2 = 0;
     var score1 = 0;
@@ -129,11 +129,11 @@ function countScore(tes) {
 
 	}
     if(score1> score2){
-        document.getElementById("result").innerHTML = "P1 WIN"
+        document.getElementById("result").value = "P1 WIN"
     } else if(score2 > score1) {
-        document.getElementById("result").innerHTML = "P2 WIN"
+        document.getElementById("result").value = "P2 WIN"
     } else if(score1 == score1){
-        document.getElementById("result").innerHTML = "DRAW"
+        document.getElementById("result").value = "DRAW"
     }
 }
 
