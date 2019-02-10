@@ -51,13 +51,15 @@ function countScore(tes, index) {
     var countPawn2 = 0;
     var score1 = 0;
 	var score2 = 0;
-	var chars = ["K","Q","C","P","R","B","A","S"];
+	var chars = ["K","Q","C","P","S","C","B","A"]
+	var x = chars.indexOf(chars)
 	for (var i = 0; i < nameInput.value.length; i++) {
-		for(var x=0; x< chars.length;x++){
-			if(chars.length>= 3){
+		if(nameInput.value[i] == "B" ){
+			if(nameInput2.length >= 3&& x>0){
 				Bomber.points = 100
 				score1 += Bomber.points
-			} else if (chars.lenth <3){
+			} else {
+				Bomber.points = -100
 				score1 += Bomber.points
 			}
 		}
@@ -92,10 +94,6 @@ function countScore(tes, index) {
 			if (nameInput2.value[a] == "P") {
 				countPawn2++;
 			}
-			if(nameInput.value[a] =="P"){
-				Pawn.points == 1 * countPawn
-				score1 += Pawn.points
-			}
 			if (nameInput.value[a] == "C") {
                 Cavalry.points = 10 * countPawn2
 				score1 += Cavalry.points
@@ -114,14 +112,13 @@ function countScore(tes, index) {
 
 	}
 	for (var j = 0; j < nameInput2.value.length; j++) {
-		for(var y=0; y< chars.length;y++){
-			if(chars.length>= 3){
+		if(nameInput.value[i] == "B" ){
+			if(nameInput2.length >= 3&& x>0){
 				Bomber.points = 100
-				score2 += Bomber.points
-				console.log(Bomber.points)
-			} else if (chars.lenth <3){
-				score2 += Bomber.points
-				console.log(Bomber.points)
+				score1 += Bomber.points
+			} else {
+				Bomber.points = -100
+				score1 += Bomber.points
 			}
 		}
 		if (nameInput2.value[j] == "K" || nameInput2.value[j] == "Q") {
@@ -170,7 +167,8 @@ function countScore(tes, index) {
     } else if(score1 == score2){
         document.getElementById("result"+index).value = "DRAW"
     }
-	
+	console.log(score1)
+	console.log(score2)
 }
 function reset(){
     location.reload()
