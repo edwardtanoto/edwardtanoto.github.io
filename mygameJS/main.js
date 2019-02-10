@@ -137,6 +137,8 @@ function countScore(tes, index) {
             Assassin.points = 39
             score2 += Assassin.points
 			console.log(Assassin.points)
+		}else if(nameInput2.value[j] == "P"){
+			score2 += Pawn.points
 		}
 		for (var b = 0; b < nameInput2.value.length; b++) {
 			if (nameInput.value[b] == "P") {
