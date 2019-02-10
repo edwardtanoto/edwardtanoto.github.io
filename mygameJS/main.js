@@ -22,7 +22,7 @@ var Assassin = {
 var Sniper = {
 	classes: "Sniper",
 	char: "S",
-	points: 35,
+	points: 20,
 }
 var Pawn = {
 	classes: "Pawn",
@@ -54,12 +54,6 @@ function countScore(tes, index) {
 	var chars = ["K","Q","C","P","S","C","B","A"]
 	var x = chars.indexOf(chars)
 	for (var i = 0; i < nameInput.value.length; i++) {
-		if(nameInput.value[i] == "K"){
-			score1 += King.points
-		}
-		if(nameInput.value[i] == "Q"){
-			score1 += Queen.points
-		}
 		if(nameInput.value[i] == "B" ){
 			if(nameInput2.length >= 3&& x>0){
 				Bomber.points = 100
@@ -118,12 +112,6 @@ function countScore(tes, index) {
 
 	}
 	for (var j = 0; j < nameInput2.value.length; j++) {
-		if(nameInput2.value[j] == "K"){
-			score2 += King.points
-		}
-		if(nameInput2.value[j] == "Q"){
-			score2 += Queen.points
-		}
 		if(nameInput.value[i] == "B" ){
 			if(nameInput2.length >= 3&& x>0){
 				Bomber.points = 100
