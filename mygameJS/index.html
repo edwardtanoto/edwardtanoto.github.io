@@ -1,208 +1,274 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Project 1</title>	
-	
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+	<title>myGameJS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+	<script src="main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </head>
 <body>
-		<input id="reset" type="button" value="Reset" onclick="reset()">
-	<div class="row">
-		<div class="col-md-6">
-			<ul>
-				<br>
-				<br>
-				<div class="info">
-					<h3>Information</h3>
-					<li>Put input into the box(K,C,Q)</li>
-					<li>Use caps lock for the input</li>
-					<li>Remember, max 4 character per area</li>
-					<li>You can choose 10 of all character</li>
-					<li>Winner is the player who win more area</li>
-					<li>You can add unrelated letter to input to confuse your opponent with max 4 chars</li>
-					<li>The letter must not be the symbol of classes to make the game fair</li>
-					<li>Good luck have fun</li>
-					<br>
-					<br>
-					<h3>Scores</h3>
-					<li>(K)ing= 5 (1)</li>
-					<li>(Q)ueen= 5 (1)</li>
-					<li>(C)avalry= 20 times enemy pawns (1)</li>
-					<li>(A)ssassin=5;(autowin when 1 vs 1) (1)</li>
-					<li>(S)niper=35(1)</li>
-					<li>(P)awns=@1;(4 Pawns in an area will raise the points into 30 (4)</li>
-					<li>(R)ebel=1;(autowin vs royalty if teamed up with 2 pawns) (1)</li>
-					<li>(B)omber= Win area when enemy has 3 or more <br/>chars but lose if enemy has less than 3 (1)</li>
-					<br>
-					<br>
-					<h3>Skills</h3>
-					<li>King in presence with Queen make total points of 30</li>
-					<li>4 Pawn gathers in 1 area make total point of 40</li>
-					<li>Assassin will perform instant kill when 1 vs 1 in an area</li>
-					<li>Bomber will win the area if opponent has 3 or more quantities</li>
-					<li>Rebel wins the area if there is royalty such as King or Queen and teamed up with 2 pawns</li>
-					<h3>Game Rules</h3>
-					<li>Game system by round plays.
-					<li>P1 moves first than P2 for first area.</li>
-					<li>P2 moves first than P1 for second area, and goes on.</li>
-					<li>After each player submit their moves, reveal the area to declare the winner.</li>
-					<li>You can predict what chars havent been used and outplay the enemy.</li>
-				</ul>
-			</div>
-			<div class="col-md-6">
-					
-				<div id="gameboard">
-					<div>
-						
-						<div class="green_square">
-							<form id="myform">
-							<input class="button"type="password" id="myInput0" maxlength="4">
-							<br>
-							<input class="button"type="password"id="myInput1" maxlength="4">
-							<br>
-							<button id="submitId" type="button" onclick="countScore(this, 0)">Submit</button>
-							<input id="result1">
-						    </form>
-							<br>
-							
-							<input type="checkbox" onclick="myFunction()">Show Area
-							<input type="checkbox" onclick="myFunction1()">Show Area
-							<script>
-								function myFunction() {
-									var x = document.getElementById("myInput0");
-									if (x.type === "password") {
-										x.type = "text";
-									} else {
-										x.type = "password";
-									}
-								}
-							</script>
-							<script>
-								function myFunction1() {
-									var y = document.getElementById("myInput1");
-									if (y.type === "password") {
-										y.type = "text";
-									} else {
-										y.type = "password";
-									}
-								}
-							</script>
-					</div>
-					<div>
-						<div class="blue_square">
-							<form id="myform">
-							<input class="button"type="password"id="myInput2" maxlength="4">
-							<br>
-							<input class="button"type="password"id="myInput3" maxlength="4">
-							<br>
-							<button id="submitId" type="button" onclick="countScore(this, 2)">Submit</button>
-							<input id="result3">
-							<br>
-							<br>
-						    </form>
-							<input type="checkbox" onclick="myFunction2()">Show Area
-	                     	<input type="checkbox" onclick="myFunction3()">Show Area
-							<script>
-								function myFunction2() {
-									var x = document.getElementById("myInput2");
-									if (x.type === "password") {
-										x.type = "text";
-									} else {
-										x.type = "password";
-									}
-								}
-							</script>
-							<script>
-								function myFunction3() {
-									var y = document.getElementById("myInput3");
-									if (y.type === "password") {
-										y.type = "text";
-									} else {
-										y.type = "password";
-									}
-								}
-							</script>
-						</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-					</div>
-					<span>================================================</span>
-					<div>
-						<div class="yellow_square">
-							<form id="myform">
-							<input class="button"type="password"id="myInput4" maxlength="4">
-							<br>
-							<input class="button"type="password"id="myInput5" maxlength="4">
-							<br>
-							<button id="submitId" type="button" onclick="countScore(this, 4)">Submit</button>
-							<input id="result5">
-							<br>
-							<br>
-						    </form>
-							<input type="checkbox" onclick="myFunction4()">Show Area
-							<input type="checkbox" onclick="myFunction5()">Show Area
-							<script>
-								function myFunction4() {
-									var x = document.getElementById("myInput4");
-									if (x.type === "password") {
-										x.type = "text";
-									} else {
-										x.type = "password";
-									}
-								}
-							</script>
-														<script>
-								function myFunction5() {
-									var y = document.getElementById("myInput5");
-									if (y.type === "password") {
-										y.type = "text";
-									} else {
-										y.type = "password";
-									}
-								}
-							</script>
-						</div>
-					</div>
-					<div>
-						<div class="pink_square" >
-							<form class="myform">
-							<input class="button"type="password" id="myInput6" maxlength="4">
-							<br>
-							<input class="button"type="password" id="myInput7" maxlength="4">
-							<br>
-							<button type="button" onclick="countScore(this, 6)">Submit</button>
-							<input  id="result7">
-						    </form>
-							<br>
-						
-							<input type="checkbox" onclick="myFunction6()">Show Area
-							<input type="checkbox" onclick="myFunction7()">Show Area
-							<script>
-								function myFunction6() {
-									var x = document.getElementById("myInput6");
-									if (x.type === "password") {
-										x.type = "text";
-									} else {
-										x.type = "password";
-									}
-								}
-							</script>
-							<script>
-								function myFunction7() {
-									var y = document.getElementById("myInput7");
-									if (y.type === "password") {
-										y.type = "text";
-									} else {
-										y.type = "password";
-									}
-								}
-							</script>
-						</div>
-					</div>
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" target="_blank" href="https://github.com/edwardtanoto/edwardtanoto.github.io/tree/master/mygameJS"><i class="fa fa-github" aria-hidden="true" style="font-size:32px;"></i></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+				  <ul class="navbar-nav">
+					<li class="nav-item">
+							<a class="nav-link header" href="#info" style="color:white">Info</a>	  
+					</li>
+					<li class="nav-item">
+							<a class="nav-link header" href="" onclick="reset()" style="color:white">Reset</a>
+				  </ul>
 				</div>
-			</div>
-		</div>
-		</div>
-		
-		<script src="main.js"> </script>
-	</body>
-	</html>
+			  </nav>
+		<div class="xop-section"style="margin-top:0;">
+				<h1>myGameJS</h1> <h5 style="color:#D4D4D3  ">Original Board Game</h5>
+	 <ul class="xop-grid">
+	   <li>
+		 <div class="xop-box xop-img-1">
+		   
+		   <div class="xop-info">
+				<form id="myform">
+						<br>
+						<br>
+						<input type="password" id="myInput0" maxlength="4" placeholder="P1 here...">
+						<br><br>
+						<input type="password"id="myInput1" maxlength="4"placeholder="P2 here...">
+						<br>
+						<button id="submitId" type="button" onclick="countScore(this, 0)">Submit</button> &nbsp; &nbsp;
+						<input id="result1">
+						</form>
+						<br>
+						
+						<input type="checkbox" onclick="myFunction()"> Show Area  &nbsp; &nbsp;
+						<input type="checkbox" onclick="myFunction1()"> Show Area
+						<script>
+							function myFunction() {
+								var x = document.getElementById("myInput0");
+								if (x.type === "password") {
+									x.type = "text";
+								} else {
+									x.type = "password";
+								}
+							}
+						</script>
+						<script>
+							function myFunction1() {
+								var y = document.getElementById("myInput1");
+								if (y.type === "password") {
+									y.type = "text";
+								} else {
+									y.type = "password";
+								}
+							}
+						</script>   </div>
+		 </div>
+	   </li>
+	   <li>
+		 <div class="xop-box xop-img-2">
+		  
+		   <div class="xop-info">
+				<form id="myform">
+					<br>
+					<br>
+						<input type="password" id="myInput2" maxlength="4" placeholder="P1 here...">
+						<br><br>
+						<input type="password"id="myInput3" maxlength="4" placeholder="P2 here...">
+						<br>
+						<button id="submitId" type="button" onclick="countScore(this, 2)">Submit</button> &nbsp;
+						&nbsp;
+						<input id="result3">
+						</form>
+						<br>
+						
+						<input type="checkbox" onclick="myFunction2()"> Show Area  &nbsp; &nbsp;
+						<input type="checkbox" onclick="myFunction3()"> Show Area
+						<script>
+							function myFunction2() {
+								var x = document.getElementById("myInput2");
+								if (x.type === "password") {
+									x.type = "text";
+								} else {
+									x.type = "password";
+								}
+							}
+						</script>
+						<script>
+							function myFunction3() {
+								var y = document.getElementById("myInput3");
+								if (y.type === "password") {
+									y.type = "text";
+								} else {
+									y.type = "password";
+								}
+							}
+						</script> </div>
+		 </div>
+	   </li>
+	   <li>
+		 <div class="xop-box xop-img-3">
+		  
+		   <div class="xop-info">
+				<form id="myform">
+						<br>
+						<br>
+						<input type="password" id="myInput4" maxlength="4" placeholder="P1 here...">
+						<br><br>
+						<input type="password"id="myInput5" maxlength="4" placeholder="P2 here...">
+						<br>
+						<button id="submitId" type="button" onclick="countScore(this, 4)">Submit</button>  &nbsp; &nbsp;
+						<input id="result5">
+						</form>
+						<br>
+						
+						<input type="checkbox" onclick="myFunction4()"> Show Area  &nbsp; &nbsp;
+						<input type="checkbox" onclick="myFunction5()"> Show Area
+						<script>
+							function myFunction4() {
+								var x = document.getElementById("myInput4");
+								if (x.type === "password") {
+									x.type = "text";
+								} else {
+									x.type = "password";
+								}
+							}
+						</script>
+						<script>
+							function myFunction5() {
+								var y = document.getElementById("myInput5");
+								if (y.type === "password") {
+									y.type = "text";
+								} else {
+									y.type = "password";
+								}
+							}
+						</script> </div>
+		 </div>
+	   </li>
+	   <li>
+		 <div class="xop-box xop-img-4">
+		   
+		   <div class="xop-info">
+			 <form id="myform">
+					<br>
+					<br>
+					<input type="password" id="myInput6" maxlength="4" placeholder="P1 here...">
+					<br><br>
+					<input type="password"id="myInput7" maxlength="4" placeholder="P2 here...">
+					<br>
+					<button id="submitId" type="button" onclick="countScore(this, 6)">Submit</button>  &nbsp; &nbsp;
+					<input id="result7">
+					</form>
+					<br>
+					
+					<input type="checkbox" onclick="myFunction6()"> Show Area  &nbsp; &nbsp;
+					<input type="checkbox" onclick="myFunction7()"> Show Area
+					<script>
+						function myFunction6() {
+							var x = document.getElementById("myInput6");
+							if (x.type === "password") {
+								x.type = "text";
+							} else {
+								x.type = "password";
+							}
+						}
+					</script>
+					<script>
+						function myFunction7() {
+							var y = document.getElementById("myInput7");
+							if (y.type === "password") {
+								y.type = "text";
+							} else {
+								y.type = "password";
+							}
+						}
+					</script></div>
+		 </div>
+	   </li>
+	   
+	 </ul>
+	
+</div>
+<div id="info">
+		<div class="row">
+<div class="col-md-3">
+
+	<h3 style="margin-top:4%">Information</h3>
+	<li>Put input into the box(K,C,Q)</li>
+	<li>Use caps lock for the input</li>
+	<li>Remember, max 4 character per area</li>
+	<li>You can choose 10 of all character</li>
+	<li>Winner is the player who win more area</li>
+	<li>You can add unrelated letter to input to confuse your opponent with max 4 chars</li>
+	<li>The letter must not be the symbol of classes to make the game fair</li>
+	<li>Good luck have fun</li>
+</div>
+<div class="col-md-3">
+	<h3>Scores</h3>
+	<li>(K)ing= 5 (1)</li>
+	<li>(Q)ueen= 5 (1)</li>
+	<li>(C)avalry= 20 times enemy pawns (1)</li>
+	<li>(A)ssassin=5;(autowin when 1 vs 1) (1)</li>
+	<li>(S)niper=35(1)</li>
+	<li>(P)awns=@1;(4 Pawns in an area will raise the points into 30 (4)</li>
+	<li>(R)ebel=1;(autowin vs royalty if teamed up with 2 pawns) (1)</li>
+	<li>(B)omber= Win area when enemy has 3 or more <br/>chars but lose if enemy has less than 3 (1)</li>
+</div>
+<div class="col-md-3">
+	<h3>Skills</h3>
+	<li>King in presence with Queen make total points of 30</li>
+	<li>4 Pawn gathers in 1 area make total point of 40</li>
+	<li>Assassin will perform instant kill when 1 vs 1 in an area</li>
+	<li>Bomber will win the area if opponent has 3 or more quantities</li>
+	<li>Rebel wins the area if there is royalty such as King or Queen and teamed up with 2 pawns</li>
+</div>
+	<div class="col-md-3"><h3>Rules</h3>
+	<li>Game system by round plays.
+	<li>P1 moves first than P2 for first area.</li>
+	<li>P2 moves first than P1 for second area, and goes on.</li>
+	<li>After each player submit their moves, reveal the area to declare the winner.</li>
+	<li>You can predict what chars havent been used and outplay the enemy.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
