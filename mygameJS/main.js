@@ -37,7 +37,7 @@ var Rebel = {
 var Bomber = {
 	classes: "Bomber",
 	char: "B",
-	points: 100,
+	points: 0,
 }
 
 
@@ -54,21 +54,13 @@ function countScore(tes, index) {
 	var chars = ["K","Q","C","P","S","C","B","A"]
 	var x = chars.indexOf(chars)
 	for (var i = 0; i < nameInput.value.length; i++) {
-		if(nameInput.value[i] == "K"){
-			score1 += King.points
-			console.log(King.points)
-		}
-		if(nameInput.value[i] == "Q"){
-			score1 += Queen.points
-			console.log(Queen.points)
-		}
 		if(nameInput.value[i] == "B" ){
 			if(nameInput2.length >= 3&& x>=0){
 				Bomber.points = 200
 				score1 += Bomber.points
 			} else {
-				Bomber.points = -100
-				score1 += Bomber.points
+				Bomber.points = -1000
+				score2 += Bomber.points
 			}
 		}
 		if (nameInput.value[i] == "K" || nameInput.value[i] == "Q" ) {
@@ -108,7 +100,7 @@ function countScore(tes, index) {
 				score1 += Cavalry.points
 				console.log(Cavalry.points)
 			}
-			 else if (countPawn == 2 && nameInput.value[a] == "R") {
+			 else if (countPawn >= 2 && nameInput.value[a] == "R") {
 				if (nameInput2.value[a] == "K" || nameInput2.value[a] == "Q") {
 					if(x<0){
                     Rebel.points = 1000
@@ -123,12 +115,12 @@ function countScore(tes, index) {
 
 	}
 	for (var j = 0; j < nameInput2.value.length; j++) {
-		if(nameInput.value[i] == "B" ){
-			if(nameInput2.length >= 3&& x>0){
+		if(nameInput2.value[j] == "B" ){
+			if(nameInput.length >= 3&& x>0){
 				Bomber.points = 200
-				score1 += Bomber.points
+				score2 += Bomber.points
 			} else {
-				Bomber.points = -100
+				Bomber.points = -1000
 				score1 += Bomber.points
 			}
 		}
@@ -161,13 +153,13 @@ function countScore(tes, index) {
                 Cavalry.points = 10 * countPawn
                 score2 += Cavalry.points
 				console.log(Cavalry.points)
-			} else if (countPawn2 == 2 && nameInput2.value[b] == "R") {
+			} else if (countPawn2 >= 2 && nameInput2.value[b] == "R") {
 				if (nameInput.value[b] == "K" || nameInput.value[b] == "Q") {
-					if(x<0){
+				if(x<0){
                     Rebel.points = 1000
                     score2 += Rebel.points
 					console.log(Rebel.points)
-					}
+				 }
 				}
 
 			}
