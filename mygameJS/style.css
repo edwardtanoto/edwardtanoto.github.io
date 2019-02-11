@@ -10,13 +10,15 @@ body{
         margin-top: 60px;
     }
     #info{
-        margin-left: 0;
-        margin-right:0;
+        margin-left: 20px;
+        margin-right:20px;
         color:#989A96  ;
         
     } 
    
-
+nav{
+    width: 100%
+}
      #reset{
          float:right;
          margin-right: 29%;
@@ -40,12 +42,7 @@ body{
     
   
     
-    .xop-grid li {
-        width: 400px;
-        height: 460px;
-        display: inline-block;
-        margin: 20px;
-    }
+    
 
 .xop-grid li {
 width: 380px;

@@ -22,7 +22,7 @@ var Assassin = {
 var Sniper = {
 	classes: "Sniper",
 	char: "S",
-	points: 20,
+	points: 35,
 }
 var Pawn = {
 	classes: "Pawn",
@@ -37,7 +37,7 @@ var Rebel = {
 var Bomber = {
 	classes: "Bomber",
 	char: "B",
-	points: -1000,
+	points: 100,
 }
 
 
@@ -54,22 +54,31 @@ function countScore(tes, index) {
 	var chars = ["K","Q","C","P","S","C","B","A"]
 	var x = chars.indexOf(chars)
 	for (var i = 0; i < nameInput.value.length; i++) {
+		if(nameInput.value[i] == "K"){
+			score1 += King.points
+			console.log(King.points)
+		}
+		if(nameInput.value[i] == "Q"){
+			score1 += Queen.points
+			console.log(Queen.points)
+		}
 		if(nameInput.value[i] == "B" ){
-			if(nameInput2.length >= 3&& x>0){
-				Bomber.points = 100
+			if(nameInput2.length >= 3&& x>=0){
+				Bomber.points = 200
 				score1 += Bomber.points
 			} else {
 				Bomber.points = -100
 				score1 += Bomber.points
 			}
 		}
-		if (nameInput.value[i] == "K" || nameInput.value[i] == "Q") {
+		if (nameInput.value[i] == "K" || nameInput.value[i] == "Q" ) {
 			King.points = 15
 			Queen.points = 15
             var royaltyPoints = King.points + Queen.points
 			score1 += royaltyPoints
 			console.log(royaltyPoints)
-		} else if(nameInput.value[i] == "S"){
+		} 
+		else if(nameInput.value[i] == "S"){
 			score1 += Sniper.points
 			console.log(Sniper.points)
 		} 
@@ -80,7 +89,7 @@ function countScore(tes, index) {
 		} else if (nameInput.value[i] == "A" && nameInput.value[i] !== "K" && nameInput.value[i] !== "Q" && 
 		nameInput.value[i] !== "C" && nameInput.value[i] !== "B" && nameInput.value[i] !== "R" && nameInput.value[i] !== "P" 
 		&&nameInput.value[i] !== "S") {
-            Assassin.points = 39
+            Assassin.points = 37
             score1 += Assassin.points
 			console.log(Assassin.points)
 		} else if(nameInput.value[i] == "P"){
@@ -101,9 +110,11 @@ function countScore(tes, index) {
 			}
 			 else if (countPawn == 2 && nameInput.value[a] == "R") {
 				if (nameInput2.value[a] == "K" || nameInput2.value[a] == "Q") {
+					if(x<0){
                     Rebel.points = 1000
                     score1 += Rebel.points
 					console.log(Rebel.points)
+					}
 				}
 
 			}
@@ -114,7 +125,7 @@ function countScore(tes, index) {
 	for (var j = 0; j < nameInput2.value.length; j++) {
 		if(nameInput.value[i] == "B" ){
 			if(nameInput2.length >= 3&& x>0){
-				Bomber.points = 100
+				Bomber.points = 200
 				score1 += Bomber.points
 			} else {
 				Bomber.points = -100
@@ -134,7 +145,7 @@ function countScore(tes, index) {
             score2 += Pawn.points
 			console.log(Pawn.points)
 		} else if (nameInput2.value[j] == "A" && nameInput2.value[j] !== "K" && nameInput2.value[j] !== "Q" && nameInput2.value[j] !== "C" &&nameInput2.value[j] !== "B"&& nameInput2.value[j] !== "R" &&nameInput2.value[j] !== "P" &&nameInput2.value[j] !== "S") {
-            Assassin.points = 39
+            Assassin.points = 37
             score2 += Assassin.points
 			console.log(Assassin.points)
 		}else if(nameInput2.value[j] == "P"){
@@ -152,9 +163,11 @@ function countScore(tes, index) {
 				console.log(Cavalry.points)
 			} else if (countPawn2 == 2 && nameInput2.value[b] == "R") {
 				if (nameInput.value[b] == "K" || nameInput.value[b] == "Q") {
+					if(x<0){
                     Rebel.points = 1000
                     score2 += Rebel.points
 					console.log(Rebel.points)
+					}
 				}
 
 			}
