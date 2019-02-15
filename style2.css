@@ -27,38 +27,22 @@ h3, h2{
 }
 
 
-@media(max-width: 800px) {
+@media only screen and (max-width: 768px) {
     .container {
         padding: 0 1 rem;
     }
     h1{
-        font-size: 3rem;
+        font-size:2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+   
+    .jumbotronFour{
+        margin-bottom:100vh;
     }
 }
-@media(max-width: 500px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
 
-}
-@media(max-width: 400px) {
-    h1 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    
-}
  
      
    
@@ -67,21 +51,23 @@ h3, h2{
 
     .jumbotronOne{
         margin-top:8%;
-        margin-bottom: 600px;
+        margin-bottom: 50vh;
         background-color: white  ;
         height: 100%;
         color: black;
         margin-left: 40px;
         margin-right :40px;
+        
     }
 
     .jumbotronTwo{
      margin-left: 40px;
         margin-right :40px;
-        margin-bottom: 200px;
+        margin-bottom:50vh;
         background-color: white ;
         height: 100%;
         color: black;
+        display: block;
     }
    
 
@@ -90,24 +76,28 @@ h3, h2{
         background-color: white ;
         height: 100%;
         color: black;
-        margin-bottom: 550px;
         margin-right :40px;
+        display: block;
+        margin-bottom: 125em;
     }
    
     .jumbotronFour{
-        margin-bottom: 300px;
+        display: relative;
+        margin-bottom: 50vh;
         background-color: white ;
         height:100%;
         color: black;
         margin-left: 40px;
         margin-right :40px;
+        margin-top: 50%;
+      
     }
    
         .center {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 30%;
+            width: 100%
         }
         footer {
             position: fixed;

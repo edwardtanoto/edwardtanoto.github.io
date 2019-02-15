@@ -24,17 +24,20 @@ body {
         width: 100%;
     }
 
-h1, h2 {
+h2 {
     font-weight: 200;
     margin: 0.4rem;
     text-align: center;
     
 }
+
 h1{
-    color:#FFF8F3     ;
+    color:#FFF8F3 ;   
+    font-size:3rem; 
+    ;
 }
 h2{
-    font-size:2rem;
+    font-size:1.5rem;
 
 }
 
