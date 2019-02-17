@@ -204,7 +204,7 @@ $(window).on("scroll", function() {
  <h2 >How do I create a Project</h2>
  <br>
  <br>
- <video class="center" width="620px" height="400px" controls>
+ <video class="center" width="620px" height="400px" controls autoplay>
    <source src="mygame.mov" type="video/mp4">
    </video>
 
@@ -214,16 +214,16 @@ This is the original project I have remade after I learnt javascript.
 <ul>
   <li>First on every project, I always create a txt file to summarize how the game will work and how I will make it work.</li>
   <li>The nature of this game is a mind game, which means I have to hide what chars I will play, so I change the input type to password to hide the chars. Then, I create javascript code so I can reveal the hidden chars in a click.</li>
-  <li>I've found that its very important to know what to do code before do the code, my game has a lot of characters which have each unique skills, it is important to think realistically on how each char works.</li>
-  <li>If I want to make the game works, I have to create data structures for each char. Data strucutres are very important part for the score system</li>
+  <li>I've also found that its very important to know what to do code before do the code, my game has a lot of characters which have each unique skills, it is important to think realistically on how each char works.</li>
+  <li>I have to create data structures for each char to make the score system works. </li>
   <li>Each char has their own array which holds property to hold the char value, such as "K", "Q", etc, and points of each chars, for example Pawn has 1 point if alone</li>
   <li>The game would be very boring if there is no interesting skills or combos, so I wrote the function that loops for the input, and create if elses condition for the combos to work, and manipulate the points inside the data structures if certain conditions are true.</li>
   <li>Some skills are based upon the opponent's input, which makes it more challenging to code.</li>
-  <li>Now that the combo has worked, but I found a bug after this</li>
+  <li>After couple hours of coding and testing the function, it finally works and then I am working on the input.</li>
   <li>I have P1 and P2, but my function only loop the input of P1 input, and thus the function cant declare a winner.</li>
   <li>So I create the same loop but for P2, and I created variables to hold the score1 and score2 data for each players</li>
   <li>After I done testing by doing console.log everything I input and check the score, all that left is how to declare the winner. </li>
-  <li>Declaring the winner only took some if elses statement, then change the value of the input with document.getElementbyId("name").value=={state}</li>
+  <li>Declaring the winner only took some if elses statement, then change the value of the input with document.getElementbyId("name").value==win/lose/draw</li>
   <li>Now it looks like everything is done, the score system and declaring winner system for each round is done, there is something missing, the most important part of this board game</li>
   <li>At this point I only develop the game itself, and not the code.</li>
   <li>I added maxlength="4" to each input, but I didnt add minlength="4", Why ?</li>
