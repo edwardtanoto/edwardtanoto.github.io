@@ -81,7 +81,7 @@ function countScore(tes, index) {
 		} else if (nameInput.value[i] == "A" && nameInput.value[i] !== "K" && nameInput.value[i] !== "Q" && 
 		nameInput.value[i] !== "C" && nameInput.value[i] !== "B" && nameInput.value[i] !== "R" && nameInput.value[i] !== "P" 
 		&&nameInput.value[i] !== "S") {
-            Assassin.points = 37
+            Assassin.points = 35.5
             score1 += Assassin.points
 			console.log(Assassin.points)
 		} else if(nameInput.value[i] == "P"){
@@ -137,7 +137,7 @@ function countScore(tes, index) {
             score2 += Pawn.points
 			console.log(Pawn.points)
 		} else if (nameInput2.value[j] == "A" && nameInput2.value[j] !== "K" && nameInput2.value[j] !== "Q" && nameInput2.value[j] !== "C" &&nameInput2.value[j] !== "B"&& nameInput2.value[j] !== "R" &&nameInput2.value[j] !== "P" &&nameInput2.value[j] !== "S") {
-            Assassin.points = 37
+            Assassin.points = 35.5
             score2 += Assassin.points
 			console.log(Assassin.points)
 		}else if(nameInput2.value[j] == "P"){
