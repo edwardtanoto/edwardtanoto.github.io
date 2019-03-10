@@ -4,7 +4,6 @@
 body {
     font-family: 'Assistant', sans-serif;
     height: 100vh;
-    background:url(a.jpg)       no-repeat center center / cover; 
     background-color: rgb(18, 28, 59);
     width: 100%;
 }
@@ -126,7 +125,7 @@ h2{
           }
           
           nav.black ul {
-                background:#E2F4FF;
+                background:#838383;
           }
           
           nav ul li {
