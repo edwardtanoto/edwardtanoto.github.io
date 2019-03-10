@@ -15,7 +15,6 @@ body {
 
 h1, h3, h2 {
     font-weight: 100;
-    margin: 0.4rem;
     text-align: center;
     font-family: 'Assistant', sans-serif;
 }
@@ -28,16 +27,15 @@ h3{
 
 
 @media only screen and (max-width: 768px) {
-    .container {
-        padding: 0 1 rem;
-    }
-    h1{
-        font-size:2rem;
-    }
-    p{
-        font-size: 1rem;
-    }
-   
+   h1{
+       font-size: 2.5rem;
+   }
+   h2{
+       font-size: 2rem;
+   }
+   p{
+       font-size:1rem
+   }
     .jumbotronFour{
         margin-bottom:100vh;
     }
@@ -83,7 +81,6 @@ h3{
    
     .jumbotronFour{
         display: relative;
-        margin-bottom: 50vh;
         background-color:#3C3A3D    ;
         height:100%;
         color: white;
