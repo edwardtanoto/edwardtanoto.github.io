@@ -28,7 +28,7 @@ h2 {
     font-weight: 200;
     margin: 0.4rem;
     text-align: center;
-    
+    color:white;
 }
 
 h1{
@@ -38,7 +38,7 @@ h1{
 }
 h2{
     font-size:1.5rem;
-
+    
 }
 
 .owl-carousel .owl-item{

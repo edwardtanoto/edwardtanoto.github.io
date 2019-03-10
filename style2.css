@@ -3,7 +3,7 @@
 body {
     font-family: 'Assistant', sans-serif;
 
-    background-color:white;
+    background-color:#3C3A3D    ;
     width: 100%;
 }
 .icons {
@@ -20,7 +20,7 @@ h1, h3, h2 {
     font-family: 'Assistant', sans-serif;
 }
 
-h3, h2{
+h3{
   
     color: black;
 
@@ -52,9 +52,9 @@ h3, h2{
     .jumbotronOne{
         margin-top:8%;
         margin-bottom: 50vh;
-        background-color: white  ;
+        background-color: #3C3A3D      ;
         height: 100%;
-        color: black;
+        color: white;
         margin-left: 40px;
         margin-right :40px;
         
@@ -64,18 +64,18 @@ h3, h2{
      margin-left: 40px;
         margin-right :40px;
         margin-bottom:50vh;
-        background-color: white ;
+        background-color: #3C3A3D     ;
         height: 100%;
-        color: black;
+        color: white;
         display: block;
     }
    
 
     .jumbotronThree{
         margin-left: 40px;
-        background-color: white ;
+        background-color: #3C3A3D     ;
         height: 100%;
-        color: black;
+        color: white;
         margin-right :40px;
         display: block;
         margin-bottom: 126em;
@@ -84,9 +84,9 @@ h3, h2{
     .jumbotronFour{
         display: relative;
         margin-bottom: 50vh;
-        background-color: white ;
+        background-color:#3C3A3D    ;
         height:100%;
-        color: black;
+        color: white;
         margin-left: 40px;
         margin-right :40px;
         margin-top: 50%;
