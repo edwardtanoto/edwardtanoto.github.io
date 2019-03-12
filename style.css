@@ -103,7 +103,7 @@ h2{
           
           
           nav {
-                position: fixed;
+                position: absolute;
                 width: 100%;
                 line-height: 60px;
           }
@@ -117,7 +117,6 @@ h2{
                 padding: 0;
                 text-align: center;
                 margin:0;
-                
                 transition: 1s;
           }
           
@@ -131,21 +130,24 @@ h2{
           }
           
           nav ul li a {
-                text-decoration: none;
+                text-decoration:none;
                 color: #FF5454   ;
                 font-size: 16px;
+          }
+          a:hover{
+              color: pink;
           }
           
           .menu-icon {
                 line-height: 26px;
                 width: 100%;
                 background: #838383 ;
-                text-align: center;
                 box-sizing: border-box;
                 padding: 15px 24px;
                 cursor: pointer;
                 color:white;
                 display: none; 
+                text-align: left;
           }
           
           @media(max-width: 786px) {
@@ -166,14 +168,15 @@ h2{
                 }
           
                 .showing {
-                      max-height: 26em;
+                      max-height: 12em;
                 }
           
                 nav ul li {
                       box-sizing: border-box;
                       width: 100%;
-                      padding: 24px;
-                      text-align: center;
+                      padding: 1px;
+                      margin-left: 30px;
+                      text-align: left;
                 }
           
                 .menu-icon {
@@ -184,7 +187,7 @@ h2{
           
           nav{
               top: 0;
-              position: absolute;
+              position: block;
           }
 
           .menu{
