@@ -180,3 +180,8 @@ function countScore(tes, index) {
 function reset(){
     location.reload()
 }
+
+$(document).ready(function() {
+	jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 1000  
+  });
+  
