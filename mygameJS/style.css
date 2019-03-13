@@ -46,7 +46,13 @@ nav{
     }
     
   
-    
+    .carousel {
+      width: 30% ;
+      margin-right: auto;
+      margin-left: auto;
+      position: block;
+      height: 100%;
+      }
     
 
 .xop-grid li {
