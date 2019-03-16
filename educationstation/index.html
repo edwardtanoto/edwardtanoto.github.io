@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Education Station</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>    
+<script src="main.js"></script>
+</head>
+<body>  
+        <script src="main.js"></script>
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                      </button>
+                                <a class="navbar-brand" href="https://edwardtanoto.github.io/educationstation/index.html">CodeZone</a>
+                                
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                  <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                            <a class="nav-link header" href="#tes">Introduction</a>	  
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="#algorithm">Algorithm Station</a>	  
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="#tips">Sources</a>
+                                    </li>
+                                </div>
+                                  </ul>
+                               
+                               
+                              </nav>
+                  <br>
+                  <div class="container">
+                        <div class="text-editor">
+                            <h1><span class="txt-type" data-wait="2000" data-words='["Where to start?"]'></span></h1>
+                             <div id="home">
+                                    <h2>The first step before start coding.</h2>
+                                    <h3>Download your text editor, yes there is no motivation quote here.</h3>
+                                    <ul class="ul">
+                                        <li class="li1"><a href="https://code.visualstudio.com">Visual Studio Code</a></li>
+                                        <li class="li1"><a href="https://atom.io">Atom</a></li>
+                                        <li class="li1"><a href="https://www.sublimetext.com">Sublime Text</a></li>
+                                        <li class="li1"><a href="http://brackets.io">Bracket</a></li>
+                                    </ul>
+                                    <br>
+                                    <h4>Personally, I recommend VSCode. You can choose whatever you prefer.</h4>
+                                    <br>
+                                    <h4>Why Visual Code Studio?</h4>
+                                    <p>Its fast, it has source control tool to use github faster, it has a lot of feature to make you type code faster, you can also create your own extension here, or use extentions.</p>
+                                    <br>
+                                    <video controls autoplay class="center">
+                                        <source src="vids/demo.mov">
+                                    </video>
+                                </div>
+                                    
+                          </div>
+                          <div class="html" id="tes">
+                                <h2>I've downloaded a text editor now.<br> When can I create something that better than Instagram?</h2>
+                        <h4>Not yet, there are a lot of code language in the world of computer, and most people learn Javascript or Python to start coding, but before touching programming language like Javascript, I suggest you learn HTML to start coding in Javascript.</h4>
+                        <br>
+                        <h4>What is HTML? What can I create with it?</h4>
+                        <br>
+                        <p>We use HyperTextMarkupLanguage to create the structure of our web, HTML is like the foundation of the house, to design the house, we use CSS, and to make the house a functional home, we use Javascript.</p>
+                     
+                        <xmp>
+   <html> <!--You can copy paste this code to text editor, save it with index.html and run it in your browser.-->
+          <head> <!-- This is a comment, everything written here wont be executed by the compiler. -->
+    <!-- We use <head> to mainly put our metadata, metadata typically define the document title, character set, styles, links, scripts, and etc -->
+                <title>Hello World!</title>
+            </head>
+            <body>
+                   <!-- Inside the body tag the to content of the document -->
+                   <h1>This is header</h1>
+                   <p>This is paragraph </p>
+                   <a href="www.google.com">This is anchor <!-- It opens google after you click it--> </a>
+                   <img src="banana.jpg" > <!--It doesn't insert banana image because there is no banana.jpg in your pc. Try put URL here. -->
+                   <iframe src="https://www.youtube.com/embed/FTQbiNvZqaY?"> </iframe> <!-- It plays Africa by Toto  -->
+                <form> <!--We use form to take the data from the input, you will use it in your javascript code later-->
+                   <button type="submit">Click me </button><!--It creates submit button-->
+                   <input type="password" placeholder="Type password here"> <!--The type tag can also be textarea, text, email, adress, and etc -->
+                   <div class="hi" id="hello"> </div> <!--We use div to separate the structure of our HTML, and class and id to identify the div-->
+                </form>
+                   
+            </body>
+       </html>
+                         </xmp>
+                          </div>
+                    <div class="css">
+                        <h4>That is the example of HTML,and the best source to learn HTML is <a href="www.freecodecamp.org">freecodecamp</a>, you will be taught to create your own project there and earn certificate.</h4>
+                        <br>
+                        <h4>Now what? Well now we paint the house with CSS, CSS is short of Cascade Style Sheet, and we use it to design the web, we can also make animation with CSS, cool right? But CSS isnt a programming language, it's a style sheet language, we will get to the programming section after CSS.</h4>
+                        <br>
+                        <h4>There are 3 ways to use CSS in your HTML file</h4> 
+                        <ol>
+                            <li>Use style inside the HTML tag</li>
+                            <li>Put style in head tag</li>
+                            <li>With an external file, create other file name style.css or whatever you prefer</li>
+                        </ol>
+                        <h3>The cleanest way to use it to by use external file, but if you use CSS inside your HTML tag, it will overwrite the external file CSS code and style tag in head HTML tag, the priority is same as the number list.</h3>
+                                <xmp>
+    <html> <!--You can copy paste this code to text editor, save it with index.html, and run it in your browser.-->
+            <head> 
+             <link rel="stylesheet" type="text/css" href="style.css"> <!--External file of css-->
+             <title>Hello World!</title>
+             <style>
+                 body{
+                     /* This is how you comment in CSS
+                        background-color : white;
+                     */
+                        background-color : black;
+                        font-size: 10px;
+                        margin-right: auto;
+                        position: fixed;
+                        display:block;  
+                 }
+                 .answer{
+                     /* We use . before the class name */
+                     font-size: 60px;
+                     margin-top: 40%;
+                 }
+                 #color{
+                     /* We use # before the id name */
+                     color:aqua 
+                 }
+             </style>
+            </head>
+             <body style="background-color:blue"> <!--Check the background color of your web-->
+            <ol>
+             <li>White</li>
+             <li>Black</li>
+             <li>Blue </li>
+            </ol>
+             <p class="answer">The correct answer is 3</p>
+             <p id="color">which is blue.</p>
+            </body>
+    </html>
+                                </xmp>  
+                    </div>
+                                <div class="javascript">
+                                    <h3>Well I wont go to detail of course, you should copy paste the whole code into your text editor and run it to your browser, and next part is the fun part. Javascript is the programming language that works in web, and its different than Java, and how do we include Javascript works in our HTML?</h3>
+                                    <br>
+                                    <ol>
+                                        <li>By using script tag in body or head.</li>
+                                        <li>By using external file</li>
+                                    </ol>
+                                    <xmp>
+    <html> <!--You can copy paste this code to text editor, save it with index.html, and run it in your browser.-->
+            <head> 
+             <link rel="stylesheet" type="text/css" href="style.css">
+             <title>Hello World!</title>
+             <script src="main.js"></script> <!--External file of js-->
+            </head>
+             <body>
+            <script>
+                function myFirstFunction(){
+                    alert("Hello World!")
+                }   
+            </script>
+            <input type="text" id="demo">
+            <button onclick="myFirstFunction()">Click here</button>
+            </body>
+    </html>
+                                    </xmp> 
+                                    <h4>That code will alert your browser everytime you click the button. You can learn javascript in <a href="www.freecodecamp.org">freecodecamp</a>, and <a href="www.codewars.com">codewars</a>, I also recommend you to watch <a href="https://www.youtube.com/watch?v=hdI2bqOjy3c&t=4542s">Brad Traversy's</a> Javascript crash course, since it will be very boring to study programming from this website, and programming shouldnt be boring. Algorithm and data structures is very important in every programming language.</h4>
+                                    <h4>Create a variable in Javascript</h4>
+                                    <xmp>
+           var age = 17; // Number
+           var name = "Edward"; // string, starts with " " or ' '
+           var likemango = true; // Boolean
+           var char = "A" //Character, starts with " " or ' '
+           var nothing = null //represents nothing or unknown
+                                    </xmp>
+                                    <h4><a href="https://codeburst.io/const-let-and-var-which-and-when-541a2721c18">Check out this article to understand var, let, and const.</a></h4>
+                                    <h4>Math operator</h4>
+                                    <xmp>
+            age % 7 returns 3  & (modulus) returns the remainder 
+            21 / 3 returns 7
+            10 + 10 returns 20
+            10 - 10 returns 0
+            10 * 10 returns 100
+            10 ** 2 returns 100
+            var nextYear = age++ // return 18
+            var age = age + 1 // 18
+            or 
+            var age += 1 // returns 18 , try -=, *= , /= , you get the idea.
+                                    </xmp>
+                                    <h4>Comparison operator</h4>
+                                    <xmp>
+             == is for equality
+             console.log(1 == 1);
+             // expected output: true
+
+             console.log("1" == 1);
+             // expected output: true
+             
+             === is for strict equality
+             console.log(1 === 1);
+             // expected output: true 
+             
+             console.log("1" === 1);
+             // expected output: false
+
+             != is for unequality
+             console.log(1 != 1);
+             // expected output: false  
+             
+             console.log(1 != 2);
+             // expected output: true
+
+             others are like < , > , <= ,>= which you already know.
+                                    </xmp>
+                                    <h4>Array</h4>
+                                    <xmp>
+             var fruits = ["Apple","Banana","Mango"]
+                              0        1       2
+             console.log(fruits[0]) //expected output: Apple
+             console.log(fruits[1]) //expected output: Banana
+             console.log(fruits[2]) //expected output: Mango
+                                    </xmp>
+                                    <h4>Iterate through array</h4>
+                                    <xmp>
+             for(var i=0;i<fruits.length;i++){
+                 console.log(fruits[i]);
+                 //expected output: Apple
+                                    Banana
+                                    Mango
+             }
+                                    </xmp>
+                                    <h5>Well, there are a lot of array's method that we use in code, check out this <a href="https://www.w3schools.com/js/js_array_methods.asp">source</a>.</h5>
+                                    <h4>Object</h4><p>In real life, a car is an object. A car has properties like weight and color, and methods like start and stop. All cars have the same properties, but the property values differ from car to car.
+
+                                            All cars have the same methods, but the methods are performed at different times.</p>
+                                    <xmp>
+             var human = {
+                 "name" : "Edward",
+                 "age" : 17,
+                 "hobby" : "playing games";
+             }
+             //Accessing Object Properties with Dot notation
+             console.log(human.name) // expected output : "Edward"
+             console.log(human.age) // expected output : 17
+             console.log(human.hobby) // expected output : "playing games"
+
+             //Accessing Object Properties with Bracket notation
+             console.log(human["name"]) // expected output : "Edward"
+             console.log(human["age"]) // expected output : 17
+             console.log(human["hobby"]) // expected output : "playing games"
+                                    </xmp>
+                                    <h4>That is for the data structure, we use variables, arrays, and objects to store our data, and we can manipulate the data the way we want it.</h4>
+                                    <h4>Conditions</h4>
+                                    <xmp>
+             if (condition) {
+                 //  block of code to be executed if the condition is true
+               } else if (condition){
+                 //  block of code to be executed if the condition is true
+               } else {
+                 //  block of code to be executed if the condition is false
+               }
+                                    </xmp>
+                                    <h4>Loop</h4>
+                                    <xmp>
+             for (statement 1; statement 2; statement 3) {
+                 // code block to be executed
+               }
+               for (var i = 0; i < 5; i++) {
+                 text += "The number is " + i + "<br>";
+               }
+               //first statement is we declare a variable to start the iteration from.
+               //second statement is the condition until the code stops running
+               //third condition is executed (every time) after the code block has been executed.
+
+               //The while loop loops through a block of code as long as a specified condition is true.
+               while (condition) {
+                // code block to be executed
+              }
+
+               while (i < 10) {
+                text += "The number is " + i;
+                i++;
+              }
+                                    </xmp>
+                                    <h5>Check this <a href="https://www.w3schools.com/js/js_loop_for.asp">source</a> as well.</h5>
+                                    <h4>Now you can use if else and for loop, what now?</h4>
+                                 
+                                </div>
+                                <div class="algorithm-station" id="algorithm">
+                                        <h2>Algorithm Practice Station</h2>
+                                        <h4>I mainly use <a href="www.codewars.com">codewars</a> and <a href="www.freecodecamp.org">freecodecamp</a>as my source to practice algorithm, there are several other choices like <a href="https://www.codechef.com">codechef</a>, <a href="https://leetcode.com">leetcode</a>, <a href="https://www.tutorialspoint.com/data_structures_algorithms/">tutorialspoint</a>.</h4>
+                                        <p>The less, the faster, the better</p>
+                                        <br><br>
+                                        <video controls width="80%"class="algorithm">
+                                            <source src="vids/euler.mov">
+                                        </video>
+                                        <br><br>
+                                        <div>
+                                            <h4>This kind of function usually is connected with loops, you iterate to certain number with some couple conditions have to be met to return the total.</h4>
+                                            <p>You can also do it with for loops and then use an if else statement inside the loop </p>
+                                            <p>You can manage the condition inside if else statement by using || which is OR, or && which is AND </p>
+                                            <p>OR returns true when one of the condition is met, and AND returns true when both condition met</p>
+                                            <p>In this case when you iterate from i to number, 1, 2 , 3 ,... number, you want the codes to execute when it's divided by 3 or divided by 5, so we use ||</p>
+                                            <p>We cant use && because the && only makes your code condition works when i is both divisible by 3 and 5, and we want the code to run when i is divided by either 3 or 5.</p>
+                                        </div>
+                                        <br><br>
+                                        <video controls width="80%" class="algorithm">
+                                                <source src="vids/yes or no.mov">
+                                            </video>
+                                            <br><br>
+                                            <div>
+                                                <h4>Wait so I dont have to write if elses block here?</h4>
+                                                <h5>Yes, and this is called ternary conditional operator, you only need to take 1 line of code instead writing if elses statement</h5>
+                                                <code>function findGreater(a, b) {<br>
+                                                    &nbsp; if(a > b) {<br>
+                                                       &nbsp;  &nbsp; &nbsp;  return "a is greater";<br>
+                                                       &nbsp;  }<br>
+                                                        &nbsp; else {<br>
+                                                            &nbsp; &nbsp; &nbsp;  return "b is greater";<br>
+                                                            &nbsp;  }<br>
+                                                      }</code>
+                                                <h5>and compared it with</h5>
+                                                <code>function findGreater(a, b) {
+                                                        return a > b ? "a is greater" : "b is greater";
+                                                      }</code>
+
+                                                      <h5>Here is the syntax</h5>
+                                                      <code>condition ? statement-if-true : statement-if-false;</code>
+                                                </div><br><br>
+                                            <video controls width="80%"class="algorithm">
+                                                    <source src="vids/mathmin.mov">
+                                                </video><br><br>
+                                                <div>
+                                                    <p>Well, first is you read <a href="https://www.w3schools.com/jsref/jsref_obj_math.asp"> this</a>, its about Math in javascript</p>
+                                                    <p>What is the ...args? It's ES6 spread operator syntax which help you iterate through something, you can read it <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">here</a>.</p>
+                                                    </div><br><br>
+                                                <video controls width="80%"class="algorithm">
+                                                        <source src="vids/Untitled.mov">
+                                                    </video><br><br>
+                                                    <div>
+                                                        <h4>Well, this is the most common written code here. You iterate, you create condition, you store it in some variable, then you return it.</h4>
+                                                        </div><br><br>
+                                                    <video controls width="80%"class="algorithm">
+                                                            <source src="vids/fcc.mov">
+                                                        </video><br><br>
+                                                        <div>
+                                                            <h5>This one is probably don't need explanation, you will eventually remember all the methods like split(""), join(" "), reverse(), sort() after some practices. <a href="w3schools.com">w3schools</a> is a great source to learn this. </h5>
+                                                       <br><br> <h4>Functional Programming</h4>
+                                                            <p>Functional programming is an approach to software development based around the evaluation of functions. Like mathematics, functions in programming map input to output to produce a result. You can combine basic functions in many ways to build more and more complex programs.</p>    
+                                                            <p><a href="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d">Source</a> to learn what functional programming is. <a href="www.freecodecamp.org">freeCodeCamp</a> also has a functional programming curriculum that you should learn from.</p>
+                                                        </div><br><br>
+                                </div>
+                                
+                                <div class="tips" id="tips">
+                                        <h3>Well that was it? What to do now? </h3><br><h5>You don't have to master 5 languages from the start, most programming language have same foundation, the only thing that is different is the syntax and you will be fine learning other languages after you master 1 language.</h5> <br><h4>Create a project. I recommend finishing all freecodecamp's project on responsive web and javascript's algorithm and data structure first since you will learn something like functional programming and regular expression, which needs a lot of practice to master, but has a very high reward after you understand and implement it.</h4>
+                                    <br><br>
+                                    <h2>Great source to learn</h2>
+                                    <br><br>
+                                    <h5><a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ">freeCodeCamp</a> youtube for a community.</h5>
+                                    <h5><a href="https://www.youtube.com/user/cs50tv/featured">cs50</a> youtube, cs50 also has <a href="https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x">edX</a> courses for computer science content.</h5>
+                                    <h5><a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA">Traversy Media</a> youtube. He makes web development content.</h5>
+                                    <h5><a href="https://www.youtube.com/channel/UC2D6eRvCeMtcF5OGHf1-trw">CodeWithChris</a> youtube for iOS development content</h5>
+                                    <br><br>
+                                    <h3>Tips to create a project.</h2><br><br>
+                                    <p>HTML, CSS, Javascript are tools that we use to create something, everytime you want to create something, start with why, since it will become your motivation to not stressed out and have fun programming.</h3>
+                                    <p>Done thinking? Now imagine you want to make a game, how will the system work? How do you want the system to work? And what needs to be done to make everything work? You write everything in a docs or a note.</p>
+                                    <p>Great, now you know how the game works. Next step is to break everything down to little part, for example the characters, the place where the game is played, the scoring system, the skills of the characters, how the players will send an input, and every single thing. </p>
+                                    <p>Things now starting to get clearer. Characters are variables, scoring system and skills are function, inputs are part of HTML.</p>
+                                    <p>You also want to think logically on how it works, since you don't want to get stuck a year trying to make something that isnt well planned.</p>
+                                    <br><br>
+                                </div>
+                                <footer class="row-footer" style="color:#FF5D4A">
+
+                                        <a href="mailto:edwardt.dev@gmail.com?subject=Hi There!"><i class="fa fa-envelope-o"style="font-size:32px; text-align:center;color:#FF5D4A" aria-hidden="true"></i></a>
+                                           &nbsp;&nbsp;&nbsp; <a href="https://github.com/edwardtanoto"><i class="fa fa-github" aria-hidden="true" style="font-size:32px;color:#FF5D4A"></i></a>&nbsp;&nbsp;<a href="#home" style="color:#FF5D4A"> edwardtanoto</a>
+                                     </footer>  
+                            </div>
+                           
+                                       
+</body>
+</html>

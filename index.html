@@ -20,46 +20,6 @@
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="style3.css">
   <script src="main.js"></script>
-  <script>
-        $(function(){
-            $('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
-        })
- 
-  </script>
   <title>Edward Tanoto</title>
 </head>
 <body>
@@ -284,8 +244,8 @@ This is the original project I have remade after I learnt javascript.
      <div class="xop-box xop-img-1">
        <a href="https://edwardtanoto.github.io/weatherapp/">
        <div class="xop-info">
-         <h3>React</h3>
-         <p>A weather app to know the temperature and condition after getting location as input and has API of Openweather implemented. </p>
+         <h3>Weather App</h3>
+         <p>Outworld Station<br>Plan to go out or not after checking the temperature and condition outside. PS: Just stay home. </p>
        </div></a>
      </div>
    </li>
@@ -294,7 +254,7 @@ This is the original project I have remade after I learnt javascript.
        <a href="budgetAppJS/index.html">
        <div class="xop-info">
          <h3>Budget App</h3>
-         <p>This budget app was created with vanilla javascript. It calculate your budget and expenses and allow user to make a list of their expenses. </p>
+         <p>Budget Management Station<br>It calculate your budget and expenses and allow user to make a list of their expenses. </p>
        </div></a>
      </div>
    </li>
@@ -303,7 +263,7 @@ This is the original project I have remade after I learnt javascript.
        <a href="tictactoeJS/index.html">
        <div class="xop-info">
          <h3>TicTacToe</h3>
-         <p>Single player game against an AI that implemented with minimax algorithm, created with vanilla javascript.</p>
+         <p>Procrastionation Station<br>Tictactoe against an AI that has been implemented with minimax algorithm. No one will win and you still play it.</p>
        </div></a>
      </div>
    </li>
@@ -312,16 +272,25 @@ This is the original project I have remade after I learnt javascript.
        <a href="https://edwardtanoto.github.io/pomodoro/">
        <div class="xop-info">
          <h3>Pomodoro</h3>
-         <p>Pomodoro Timer that helps us manage time better, created with React.</p>
+         <p>Productivity Station<br>Pomodoro Timer that helps us manage time better, created with React.</p>
        </div></a>
      </div>
    </li>
    <li>
     <div class="xop-box xop-img-5">
+      <a href="educationstation/index.html">
+      <div class="xop-info">
+        <h3>Code Zone</h3>
+        <p>Education Station<br>I am a self taught learner so I have some resources that I can share that might help you.</p>
+      </div></a>
+    </div>
+  </li>
+   <li>
+    <div class="xop-box xop-img-5">
       <a href="mygameJS/index.html">
       <div class="xop-info">
         <h3>Eight Armies</h3>
-        <p>My first local multiplayer game, created with JS. Original game with fun rules to play with friends.</p><a target="_blank" href="https://github.com/edwardtanoto/edwardtanoto.github.io/tree/master/mygameJS"><i class="fa fa-github" aria-hidden="true" style="font-size:32px;color:#FF8A4B"></i></a>
+        <p>Game Station<br>Original game with fun rules to play with friends.</p><a target="_blank" href="https://github.com/edwardtanoto/edwardtanoto.github.io/tree/master/mygameJS"><i class="fa fa-github" aria-hidden="true" style="font-size:32px;color:#FF8A4B"></i></a>
       </div></a>
     </div>
   </li>
