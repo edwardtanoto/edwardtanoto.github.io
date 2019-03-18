@@ -351,11 +351,157 @@
                                                             <source src="vids/fcc.mov">
                                                         </video><br><br>
                                                         <div>
-                                                            <h5>This one is probably don't need explanation, you will eventually remember all the methods like split(""), join(" "), reverse(), sort() after some practices. <a href="https://www.w3schools.com/jsref/jsref_split.asp">w3schools</a> is a great source to learn this. </h5>
+                                                            <h5>The factorialize part was totally intentional, it exceeded the limit because I didn't set the stopping point for the loop, the program needs to know if the number is positive or not, if not then the code will return 1, which is 1! and stop the program execution.</h5>
+                                                            <h5>You will eventually remember all the methods like split(""), join(" "), reverse(), sort() after some practices. <a href="https://www.w3schools.com/jsref/jsref_split.asp">w3schools</a> is a great source to learn this. </h5>
                                                        <br><br> <h4>Functional Programming</h4>
                                                             <p>Functional programming is an approach to software development based around the evaluation of functions. Like mathematics, functions in programming map input to output to produce a result. You can combine basic functions in many ways to build more and more complex programs.</p>    
-                                                            <p><a href="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d">Source</a> to learn what functional programming is. <a href="www.freecodecamp.org">freeCodeCamp</a> also has a functional programming curriculum that you should learn from.</p>
+                                                            <p>Example (Source from <a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming/use-the-reduce-method-to-analyze-data">freeCodeCamp</a>): </p>
+                                                            <p>The variable watchList holds an array of objects with information on several movies. Use reduce to find the average IMDB rating of the movies directed by Christopher Nolan. Recall from prior challenges how to filter data and map over it to pull what you need. You may need to create other variables, but save the final average into the variable averageRating. Note that the rating values are saved as strings in the object and need to be converted into numbers before they are used in any mathematical operations.</p>
+                                                
+                                                            <code>
+                                                                    var watchList = [
+                                                               <br>    {  
+                                                               <br>    &nbsp;&nbsp;  "Title": "Inception",
+                                                               <br>    &nbsp;&nbsp;  "Year": "2010",
+                                                               <br>    &nbsp;&nbsp;  "Rated": "PG-13",
+                                                               <br>    &nbsp;&nbsp;  "Released": "16 Jul 2010",
+                                                               <br>    &nbsp;&nbsp;  "Runtime": "148 min",
+                                                               <br>    &nbsp;&nbsp;  "Genre": "Action, Adventure, Crime",
+                                                               <br>    &nbsp;&nbsp;  "Director": "Christopher Nolan",
+                                                               <br>    &nbsp;&nbsp;  "imdbRating": "8.8",
+                                                             
+                                                               <br>   },
+                                                               <br>   {  
+                                                               <br>     &nbsp;&nbsp; "Title": "Interstellar",
+                                                               <br>     &nbsp;&nbsp; "Year": "2014",
+                                                               <br>     &nbsp;&nbsp; "Rated": "PG-13",
+                                                               <br>     &nbsp;&nbsp; "Released": "07 Nov 2014",
+                                                               <br>     &nbsp;&nbsp; "Runtime": "169 min",
+                                                               <br>     &nbsp;&nbsp; "Genre": "Adventure, Drama, Sci-Fi",
+                                                               <br>     &nbsp;&nbsp; "Director": "Christopher Nolan",
+                                                               <br>     &nbsp;&nbsp; "imdbRating": "8.6",
+                                                              
+                                                               <br>   },
+                                                               <br>   {
+                                                               <br>     &nbsp;&nbsp; "Title": "The Dark Knight",
+                                                               <br>     &nbsp;&nbsp; "Year": "2008",
+                                                               <br>     &nbsp;&nbsp; "Rated": "PG-13",
+                                                               <br>     &nbsp;&nbsp; "Released": "18 Jul 2008",
+                                                               <br>     &nbsp;&nbsp; "Runtime": "152 min",
+                                                               <br>     &nbsp;&nbsp; "Genre": "Action, Adventure, Crime",
+                                                               <br>     &nbsp;&nbsp; "Director": "Christopher Nolan",
+                                                               <br>     &nbsp;&nbsp; "imdbRating": "9.0",
+                                                             
+                                                               <br>   },
+                                                               <br>   {  
+                                                               <br>     &nbsp;&nbsp; "Title": "Batman Begins",
+                                                               <br>     &nbsp;&nbsp; "Year": "2005",
+                                                               <br>     &nbsp;&nbsp; "Rated": "PG-13",
+                                                               <br>     &nbsp;&nbsp; "Released": "15 Jun 2005",
+                                                               <br>     &nbsp;&nbsp; "Runtime": "140 min",
+                                                               <br>     &nbsp;&nbsp; "Genre": "Action, Adventure",
+                                                               <br>     &nbsp;&nbsp; "Director": "Christopher Nolan",
+                                                               <br>     &nbsp;&nbsp; "imdbRating": "8.3",
+                                                              
+                                                               <br>   },
+                                                               <br>   {
+                                                               <br>     &nbsp;&nbsp; "Title": "Avatar",
+                                                               <br>     &nbsp;&nbsp; "Year": "2009",
+                                                               <br>     &nbsp;&nbsp; "Rated": "PG-13",
+                                                               <br>     &nbsp;&nbsp; "Released": "18 Dec 2009",
+                                                               <br>     &nbsp;&nbsp; "Runtime": "162 min",
+                                                               <br>     &nbsp;&nbsp; "Genre": "Action, Adventure, Fantasy",
+                                                               <br>     &nbsp;&nbsp; "Director": "James Cameron",
+                                                               <br>     &nbsp;&nbsp; "imdbRating": "7.9",
+                                                                 
+                                                                  
+                                                                 
+                                                                  
+                                                               <br>   }
+                                                   ];
+                                                   
+                                                   <br><br>
+                                                   //Put your code here <br>
+                                                   var averageRating = watchList.filter(x => e.Director === "Christopher Nolan").<br>map(x => Number(e.imdbRating)).<br>reduce((x1, x2) => x1 + x2) / watchList.filter(x => x.Director === "Christopher Nolan").length;
+                                                   
+                                                   <br> <br>
+                                                   
+                                                   console.log(averageRating); // 8.675
+                                                            </code> <br><br><br>
+                                                            <h3>What is going on here?</h3>
+                                                            <br>
+                                                            <h5>So first, you store your code inside a variable <code>averageRating</code>, then you use higher order filter, it's called <a href="https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99">higher order function</a>, because you takes function as an argument inside your filter function, <code>x => x.Director === "Christopher Nolan"</code>.(=>) is an ES6 arrow function, it's basically the same as <code>function(x){ // }</code> , and in the inside it wants to access the director that equals with Christopher Nolan, remember " " for the string. </h5>
+                                                            <br>
+                                                            <h5>Did that line of code just filtered all films that was directed by Chrisopher Nolan?</h5>
+                                                            <br>
+                                                            <p><code>var averageRating = watchList.filter(x => x.Director === "Christopher Nolan");</code></p>
+                                                            <br>
+                                                            <br>
+                                                            <p>Let's test it by <code>console.log(averageRating)</code>. you can do copy paste the code and run it in developer tool in Chrome too.</p>
+                                                            <p>It returns <code>[object Object],[object Object],[object Object],[object Object]</code></p>
+                                                            <p>If you use the Chrome developer tools, the object can be expanded to the title until imdbRating.</p>
+                                                            <p>But what if you dont need all those data and you only want the title?</p>
+                                                            <p>You can use map, and change the code like this</p>
+                                                            <p>
+                                                            <code>var filteredList = watchList.map(e=>{ 
+                                                                   <br> return {title: e["Title"],director:e["Director"]} 
+                                                                    <br> }).filter((e) => e.director === "Christopher Nolan")</code> </p>
+                                                                   <br>  <p>I changed the var name into filteredList so you don't get confused</p>
+                                                                   <h5>What happened inside filteredList?<br> First, Array.prototype.filter is used to filter the array so it’s left with elements that have Director === "Chistopher Nolan". After that, Array.prototype.map can be used to shape the output to the desired format.</h5>
+                    
+                                                                   <h5>You don't read it wrong,<a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0">functional programming works this way</a>.</h5>
+                                                                <p>Now the output is :</p>
+                                                            <p><code>
+                                                                 <br> 0: {title: "Inception", director: "Christopher Nolan"}
+                                                                 <br> 1: {title: "Interstellar", director: "Christopher Nolan"}
+                                                                 <br> 2: {title: "The Dark Knight", director: "Christopher Nolan"}
+                                                                 <br> 3: {title: "Batman Begins", director: "Christopher Nolan"}
+                                                            </code></p>
+                                                            <p>The 0, 1, 2, 3 are the index of the watchList array that is directed by Christopher Nolan.</p>
+                                                            <h5>Now lets go to <code>.map(x => Number(e.imdbRating))</code> part.</h5>
+                                                            <p><a href="https://www.w3schools.com/jsref/jsref_number.asp">Number()</a> is a Javascript method to convert variables to numbers. So if you see carefully, imdbRating has data typeof string, indicated by " ". To calculate the average, you have to change it to number. Map helped you to convert all the imdbRating property inside the array to number with that single line of code.</p>
+                                                            <h5>What about <br> <code>reduce((x1, x2) => x1 + x2) / watchList.filter(x => x.Director === "Christopher Nolan").length;</code>?</h5>
+                                            
+                                                            <p>Well, we can see the division math operator, so this is the part where the code calculate the average by using <a href="https://www.w3schools.com/jsref/jsref_reduce.asp">reduce</a>.</p>
+                                                            <p>In the first part, they simply sum all the imdbRating that we just mapped before, and then we divide it with the length of an array that was directed by Christopher Nolan, which is 4, from 0 , 1 , 2, 3 indexes.</p>
+                                                            <p>Yep, just that. It saves both time and space.</p>
+                                                           <br><br>
+                                                            <p><a href="https://medium.com/@joomiguelcunha/learn-map-filter-and-reduce-in-javascript-ea59009593c4">Map, filter, and reduce article</a> to help you code in functional way. <a href="www.freecodecamp.org">freeCodeCamp</a> also has a functional programming curriculum that you should learn from.</p>
                                                         </div><br><br>
+                                                        <br><br> <h4>Regular Expression</h4>
+                                                        <p>Regular expressions are special strings that represent a search pattern. Also known as "regex" or "regexp", they help programmers match, search, and replace text</p>
+                                                        <p>Regex starts with / and end with / too.</p>
+                                                        <p>Example (Source from <a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/palindrome-checker">freeCodeCamp</a>)</p>
+                                                        <p>Return true if the given string is a palindrome. Otherwise, return false.
+
+                                                          <br>  A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+                                                            
+                                                          <br>  Note
+                                                          <br> <br>   You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.
+                                                            
+                                                          <br>  We'll pass strings with varying formats, such as "racecar", "RaceCar", and "race CAR" among others.
+                                                            
+                                                          <br>  We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".
+                                                            
+                                                          <p>Solution:</p>
+                                                          <br>
+                                                         <p> <code>
+                                                          function palindrome(str) {
+                                                         <br>&nbsp;&nbsp;   return str.replace(/[\W_]/g, '').toLowerCase() ===
+                                                         <br> &nbsp;&nbsp;        str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');
+                                                          }
+                                                        </code></p><br><br>
+                                                        <p>Imagine writing 2 line of code that check if race cAr(ignore case) is palindrome or not, <a href="https://dev.to/catherinecodes/a-regex-cheatsheet-for-all-those-regex-haters-and-lovers--2cj1">regex</a> is worth to master.</p>
+                                                        <h5>What is <code>str.replace(/[\W_]/g, '').toLowerCase()</code></h5>
+                                                        <p>First, we want the argument (str) to replace everything that matches with /[\W_]/g with ''.</p>
+                                                        <p>/[\W_]/g</p>
+                                                        <p>\W Matches any character that is not a word character (alphanumeric & underscore)</p>
+                                                        <p>_ matches with "_" character</p>
+                                                        <p>g after the regex is a flag, there are many types of flags, and g is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">flag</a> for global which  find all matches rather than stopping after the first match</p>
+                                                        <h5>Now for <code>str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');</code>, its the same thing.</h5>
+                                                        <p>The code will ignore the cases by using toLowerCase(), and then it will return true if its ===.</p>
+                                                        <p>Best <a href="https://regexr.com/">regex source</a>.</p>
+                                                        
                                 </div>
                                 
                                 <div class="tips" id="tips">
@@ -379,6 +525,7 @@
                                     <p>Things now starting to get clearer. Characters are variables, scoring system and skills are function, inputs are part of HTML.</p>
                                     <p>You also want to think logically on how it works, since you don't want to get stuck a year trying to make something that isnt well planned.</p>
                                     <br><br>
+                                    <h3>Disclaimer : This web is to share my experience until now, so it's not really much to give since I'm still learning.</h3>
                                 </div>
                                 <footer class="row-footer" style="color:#FF5D4A">
 
