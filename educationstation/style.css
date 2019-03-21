@@ -6,7 +6,7 @@ body {
     color:black;
     margin-right:100px;
     margin-left:100px;
-
+    
 }
 .txt-type{
     font-size:4rem;
@@ -49,6 +49,7 @@ p{
 .text-editor{
     height: 100vh;
     margin-bottom:300px;
+   
 }
 .html{
     height: 100vh;
@@ -71,11 +72,13 @@ footer {
 .algorithm-station{
     height: 100%;
     margin-bottom: 300px;
+    
 }
 .algorithm{
     margin-left: auto;
    margin-right: auto;
    display:block; 
+   
 }
 
 .center{
