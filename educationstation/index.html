@@ -43,8 +43,8 @@
                         <div class="text-editor">
                             <h1><span class="txt-type" data-wait="2000" data-words='["Where to start?"]'></span></h1>
                              <div id="home">
-                                    <h2>The first step before start coding.</h2>
-                                    <h3>Download your text editor, yes there is no <a href="https://medium.com/swlh/7-ways-to-stay-motivated-while-learning-to-code-536c81a0e390">motivation</a> quote here.</h3>
+                                    <h2>Choose your text editor.</h2>
+                                    <h3>There are alot of text editors you can choose, here are some commonly used editor.</h3>
                                     <ul class="ul">
                                         <li class="li1"><a target="_blank" href="https://code.visualstudio.com">Visual Studio Code</a></li>
                                         <li class="li1"><a target="_blank" href="https://atom.io">Atom</a></li>
@@ -55,7 +55,7 @@
                                     <h4>Personally, I recommend VSCode. You can choose whatever you prefer.</h4>
                                     <br>
                                     <h4>Why Visual Code Studio?</h4>
-                                    <p>Its fast, it has source control tool to use github faster, it has a lot of feature to make you type code faster, you can also create your own extension here, or use extentions.</p>
+                                    <p>Its fast, it has a lot of feature to make you type code faster, you can also create your own extension here, or use extentions, and it has source control tool to use github faster.</p>
                                     <br>
                                     <video controls autoplay class="center">
                                         <source src="vids/demo.mov">
@@ -63,8 +63,8 @@
                                 </div>
                         </div>
                           <div class="html" id="tes">
-                                <h2>I've downloaded a text editor now.<br> When can I create something that better than Instagram?</h2>
-                        <h4>Not yet, there are a lot of code language in the world of computer, and most people learn Javascript or Python to start coding, but before touching programming language like Javascript, I suggest you learn HTML to start coding in Javascript.</h4>
+                                <h2>I've downloaded a text editor now.<br> What should I start with?</h2>
+                        <h4>Not yet, there are a lot of code language in the world of computer, and most people learn Javascript or Python to start coding, but before learning Javascript, I suggest you learn HTML to start implement Javascript code.</h4>
                         <br>
                         <h4>What is HTML? What can I create with it?</h4>
                         <br>
@@ -303,7 +303,7 @@
                                         </video>
                                         <br><br>
                                         <div>
-                                            <h4>This kind of function usually is connected with loops, you iterate to certain number with some couple conditions have to be met to return the total.</h4>
+                                            <h4>This kind of function is usually connected with loops, you iterate to certain number with some couple conditions have to be met to return the total.</h4>
                                             <p>You can also do it with for loops and then use an if else statement inside the loop </p>
                                             <p>You can manage the condition inside if else statement by using || which is OR, or && which is AND </p>
                                             <p>OR returns true when one of the condition is met, and AND returns true when both condition met</p>
@@ -361,7 +361,7 @@
                                                             <h5>There is a faster way to solve this problem than using for loop to iterate all the string and make the target returns true if the ending is the same with the iterated string, which is more unefficient.</h5>
                                                             <br><p>Try using <a href="https://www.w3schools.com/jsref/jsref_slice_string.asp">slice</a> to extracts parts of a string and returns the extracted parts in a new string. </p>
                                                             <p>Here is the solution:</p>
-                                                            <br> <br><br> <code>
+                                                           <code>
                                                                     function confirmEnding(str, target) {
                                                                   <br> &nbsp;&nbsp; &nbsp;    // "Never give up and good luck will find you."
                                                                   <br>   &nbsp;&nbsp;&nbsp;&nbsp; // -- Falcor
@@ -371,7 +371,7 @@
                                                                   <br>   
                                                                   <br>   confirmEnding("He has to give me a new name", "name");
                                                             </code>
-                                                       <br><br><br>
+                                                       <br> <br> <br>
                                                        <h4><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-numbers-in-a-range">Intermediate Algorithm Scripting: Sum All Numbers in a Range</a></h4>
                                                        <br>
                                                        <img src="img/sumrange.png" width="80%">
@@ -434,9 +434,76 @@
         <br>     }
         
   </code>
+<br><br><br><h4><a href="https://www.codewars.com/kata/523a86aa4230ebb5420001e1">Where my anagrams at?</a> 5 kyu codewars challenge</h4>
+<br><h5>Write a function that will find all the anagrams of a word from a list. You will be given two inputs a word and an array with words. You should return an array of all the anagrams or an empty array if there are none. For example:</h5>
+<br>
+<h5>anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
+    <br>
+   <br> anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
+   <br>  
+  <br>  anagrams('laser', ['lazing', 'lazy',  'lacer']) => []</h5><br><br>
+  <p>First, we want to filter the array words to find if the array words have same letter with the word.</p><br>
+<code>
+    function anagrams(word, words) {
+    <br>&nbsp;    return words.filter(e=>{
+        <br>  &nbsp;&nbsp;&nbsp; var anagrams = e.split("").sort().join("")
+        <br>  &nbsp;&nbsp;&nbsp; var testWords = word.split("").sort().join("")
+        <br>     
+        <br>   &nbsp;&nbsp;&nbsp;  return anagrams === testWords
+        <br>   &nbsp;&nbsp;    })
+        <br>  }
+</code><br><br>
+<code>return words.filter(e=>{
+    <br>
+    <br>
+}
+</code><br><p>e is the current element being processed in the array, which is everything inside words array.</p><br>
+<code>var anagrams = e.split("").sort().join("")</code><br><p>So we store every element inside words array after we <a href="https://www.w3schools.com/jsref/jsref_sort.asp">split()</a> the string inside words, <a href="https://www.w3schools.com/js/js_array_sort.asp">sort()</a> it, and <a href="https://www.w3schools.com/jsref/jsref_join.asp">join()</a> it into anagrams variable</p>
+<br><p>We also need to split the string of word, sort it, join it, and store it to testWords var, after that we check if both variables have same value or not, it will return either true or false. </p><br><br><br>
+<h4><a href="https://www.codewars.com/kata/52597aa56021e91c93000cb0">Moving zeros to the end</a> 5 kyu codewars challenge</h4>
+<br><h5>Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+
+</h5><br><code>moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]</code><br><br>
+<p>
+        <a href="https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2"> Read this article on declarative and imperative programming</a><br>
+     There are 2 ways to solve this challenge, an imperative way or declarative way, I'll start with the imperative way.
+</p><br><br><p>First, notice the result. <code>returns[false,1,1,2,1,3,"a",0,0]</code><br> We can separate two arrays, for example array that has zero and array with no zero, then we add the 2 arrays together.</p><br>
+<p>We will iterate through the array to check if the value is zero or not, if its zero, we want to store it in array with other zeroes, and if it isnt zero, we want to store it in array with no zeroes, then we can just unite the 2 array together.</p>
+<br><p>We add the array with <a href="https://www.w3schools.com/jsref/jsref_concat_array.asp">concat</a> method</p>
+<p>Here is the imperative solution:</p>
+<code>
+        var moveZeros = function (arr) {
+      <br>  var result = [];<br>    
+            var zeroes = [];
+            <br>     &nbsp;&nbsp;    for(var i = 0;i<arr.length;i++){
+                <br> <br>       &nbsp;&nbsp;&nbsp;&nbsp;   if(arr[i] !== 0){ 
+                    <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        result.push(arr[i]) 
+                    <br>   &nbsp;&nbsp;&nbsp;&nbsp;       }
+                    <br>     &nbsp;&nbsp;&nbsp;&nbsp;     else{ 
+                        <br>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      zeros.push(arr[i]) 
+              <br>      &nbsp;&nbsp;&nbsp;&nbsp;    }
+              <br>  &nbsp;&nbsp;      }
+              <br>     &nbsp;&nbsp;   return result.concat(zeros)
+              <br>      }
+</code><br><br><br>
+<p>In the declarative solution, you write code that describes what you want, but not necessarily how to get it (declare your desired results, but not the step-by-step), what we want here is to put an array that has zeroes after array that has no zeroes.</p>
+<p>Here is the declarative solution:</p>
+<code>
+     var moveZeros = function (arr) {
+    <br>&nbsp;&nbsp;  &nbsp;      return arr.filter(x=>x !== 0).concat(arr.filter(x=>x===0 ))
+    <br>      }
+</code><br><p>What this code does is simply find the element inside array, which is x, that isnt zero, and concat it to another array which is an array with zeroes.</p>
+<br><br><br>
+
+
+
+
+
+
 <br><br><br>
                                                        <h4>Functional Programming</h4><br>
-                                                            <p>Functional programming is an approach to software development based around the evaluation of functions. Like mathematics, functions in programming map input to output to produce a result. You can combine basic functions in many ways to build more and more complex programs.</p>    
+                                                            <p>Functional programming is an approach to software development based around the evaluation of functions. Like mathematics, functions in programming map input to output to produce a result. You can combine basic functions in many ways to build more and more complex programs.</p>  
+
                                                             <p>Example (Source from <a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming/use-the-reduce-method-to-analyze-data">freeCodeCamp</a>): </p>
                                                             <p>The variable watchList holds an array of objects with information on several movies. Use reduce to find the average IMDB rating of the movies directed by Christopher Nolan. Recall from prior challenges how to filter data and map over it to pull what you need. You may need to create other variables, but save the final average into the variable averageRating. Note that the rating values are saved as strings in the object and need to be converted into numbers before they are used in any mathematical operations.</p>
                                                             <br><br>
@@ -444,55 +511,37 @@
                                                                     var watchList = [
                                                                <br>    {  
                                                                <br>    &nbsp;&nbsp;  "Title": "Inception",
-                                                               <br>    &nbsp;&nbsp;  "Year": "2010",
-                                                               <br>    &nbsp;&nbsp;  "Rated": "PG-13",
-                                                               <br>    &nbsp;&nbsp;  "Released": "16 Jul 2010",
-                                                               <br>    &nbsp;&nbsp;  "Runtime": "148 min",
-                                                               <br>    &nbsp;&nbsp;  "Genre": "Action, Adventure, Crime",
+                                                              
                                                                <br>    &nbsp;&nbsp;  "Director": "Christopher Nolan",
                                                                <br>    &nbsp;&nbsp;  "imdbRating": "8.8",
                                                              
                                                                <br>   },
                                                                <br>   {  
                                                                <br>     &nbsp;&nbsp; "Title": "Interstellar",
-                                                               <br>     &nbsp;&nbsp; "Year": "2014",
-                                                               <br>     &nbsp;&nbsp; "Rated": "PG-13",
-                                                               <br>     &nbsp;&nbsp; "Released": "07 Nov 2014",
-                                                               <br>     &nbsp;&nbsp; "Runtime": "169 min",
-                                                               <br>     &nbsp;&nbsp; "Genre": "Adventure, Drama, Sci-Fi",
+                                                             
+                                                            
+                                                             
                                                                <br>     &nbsp;&nbsp; "Director": "Christopher Nolan",
                                                                <br>     &nbsp;&nbsp; "imdbRating": "8.6",
                                                               
                                                                <br>   },
                                                                <br>   {
                                                                <br>     &nbsp;&nbsp; "Title": "The Dark Knight",
-                                                               <br>     &nbsp;&nbsp; "Year": "2008",
-                                                               <br>     &nbsp;&nbsp; "Rated": "PG-13",
-                                                               <br>     &nbsp;&nbsp; "Released": "18 Jul 2008",
-                                                               <br>     &nbsp;&nbsp; "Runtime": "152 min",
-                                                               <br>     &nbsp;&nbsp; "Genre": "Action, Adventure, Crime",
+                                                             
                                                                <br>     &nbsp;&nbsp; "Director": "Christopher Nolan",
                                                                <br>     &nbsp;&nbsp; "imdbRating": "9.0",
                                                              
                                                                <br>   },
                                                                <br>   {  
                                                                <br>     &nbsp;&nbsp; "Title": "Batman Begins",
-                                                               <br>     &nbsp;&nbsp; "Year": "2005",
-                                                               <br>     &nbsp;&nbsp; "Rated": "PG-13",
-                                                               <br>     &nbsp;&nbsp; "Released": "15 Jun 2005",
-                                                               <br>     &nbsp;&nbsp; "Runtime": "140 min",
-                                                               <br>     &nbsp;&nbsp; "Genre": "Action, Adventure",
+                                                            
                                                                <br>     &nbsp;&nbsp; "Director": "Christopher Nolan",
                                                                <br>     &nbsp;&nbsp; "imdbRating": "8.3",
                                                               
                                                                <br>   },
                                                                <br>   {
                                                                <br>     &nbsp;&nbsp; "Title": "Avatar",
-                                                               <br>     &nbsp;&nbsp; "Year": "2009",
-                                                               <br>     &nbsp;&nbsp; "Rated": "PG-13",
-                                                               <br>     &nbsp;&nbsp; "Released": "18 Dec 2009",
-                                                               <br>     &nbsp;&nbsp; "Runtime": "162 min",
-                                                               <br>     &nbsp;&nbsp; "Genre": "Action, Adventure, Fantasy",
+                                                             
                                                                <br>     &nbsp;&nbsp; "Director": "James Cameron",
                                                                <br>     &nbsp;&nbsp; "imdbRating": "7.9",
                                                                  
