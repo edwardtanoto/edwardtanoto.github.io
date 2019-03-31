@@ -47,12 +47,14 @@ p{
     font-size:1.2rem;
 }
 .text-editor{
-    height: 100vh;
+    height: 100%;
     margin-bottom:300px;
+    width: 100%
    
 }
 .html{
-    height: 100vh;
+    height: 100%;
+    width: 100%
 }
 
 footer {
@@ -72,12 +74,14 @@ footer {
 .algorithm-station{
     height: 100%;
     margin-bottom: 300px;
+    width: 100%
     
 }
 .algorithm{
     margin-left: auto;
    margin-right: auto;
    display:block; 
+   width: 100%
    
 }
 
@@ -85,11 +89,13 @@ footer {
    margin-left: auto;
    margin-right: auto;
    display:block; 
+   width: 100%;
    width: 80%;
 }
 
 .tips{
     height: 100vh;
     margin-bottom: 550px;
+    width: 100%
 }
 
