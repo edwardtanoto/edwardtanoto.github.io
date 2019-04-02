@@ -311,6 +311,23 @@
                                             <p>We cant use && because the && only makes your code condition works when i is both divisible by 3 and 5, and we want the code to run when i is divided by either 3 or 5.</p>
                                         </div>
                                         <br><br>
+                                        <h4><a href="https://www.codewars.com/kata/string-repeat/train/javascript">String repeat</a></h4>
+                                        <br><br>
+                                       <p> Write a function called repeatStr which repeats the given string string exactly n times.</p>
+                                       <code>
+                                        repeatStr(6, "I") // "IIIIII"
+                                      <br>  repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
+                                       </code><br><br>
+                                       <p>Here is the solution</p>
+                                       
+                                       <code>function repeatStr (n, s) {
+                                       <br>&nbsp;&nbsp;&nbsp; return s.repeat(n);
+                                       &nbsp;&nbsp;<br> }</code><br><br><br>
+                                       <p>If you prefer python</p>
+                                       <code>def repeat_str (repeat, string) {
+                                        <br>&nbsp;&nbsp;&nbsp; return string*repeat;
+                                        &nbsp;&nbsp;<br> }</code>
+                                        <br><br> <br><br>
                                         <video controls width="80%" class="algorithm">
                                                 <source src="vids/yes or no.mov">
                                             </video>
@@ -334,6 +351,39 @@
                                                       <h5>Here is the syntax</h5>
                                                       <code>condition ? statement-if-true : statement-if-false;</code>
                                                 </div><br><br>
+                                                <h4><a href="https://www.codewars.com/kata/return-negative/train/javascript">Return Negative</a></h4><br><br>
+                                                <p>In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?</p>
+                                                <p>You already know ternary conditional operator, here is some problem that can be solved with it.</p>
+                                                <p>Here is the solution:</p>
+                                                <code>function makeNegative(num) {
+                                                   <br>&nbsp;&nbsp;&nbsp; return num>0? -num:num
+                                                   <br> }</code><br><br><p>If the number is positive, add a (-) sign, else it doesn't change the value</p>
+                                                   <p>Or if you don't want to use the ternary conditonal operator, you can use:</p>
+                                                   <code>function makeNegative(num) {
+                                                    <br>&nbsp;&nbsp;&nbsp; return -Math.abs(num);
+                                                    <br> }</code><br><br><p>What this code does is basically make the num absolute, and if the num is negative we add (-) sign before the Math.abs(num) </p>
+                                               <br><br><br>
+                                               <h4><a href="https://www.codewars.com/kata/find-the-next-perfect-square/train/javascript">Find the next perfect square!</a></h4>
+                                               <p>Instruction</p>
+                                               <p>You might know some pretty large perfect squares. But what about the NEXT one?
+                                                    <br>
+                                                            <br>   Complete the findNextSquare method that finds the next integral perfect square after the one passed as a parameter. Recall that an integral perfect square is an integer n such that sqrt(n) is also an integer.
+                                                        <br>  
+                                                    <br>  If the parameter is itself not a perfect square, than -1 should be returned. You may assume the parameter is positive.</p>
+                                                   <p>Here is my past solution:</p>
+                                                   <code>function findNextSquare(sq) {
+                                                    <br>// Return the next square if sq if a perfect square, -1 otherwise
+                                                    <br>&nbsp;&nbsp;&nbsp;if(sq % Math.sqrt(sq)===0){
+                                                        <br> // Create variable called n to store square root of sq
+                                                        <br>&nbsp;&nbsp;&nbsp; let n =Math.sqrt(sq);
+                                                        <br> // Sum n with 1 and store it in x
+                                                        <br> &nbsp;&nbsp;&nbsp; let x = n + 1;
+                                                        <br>  //Use Math.pow(x,2) to square the value of x 
+                                                        <br> &nbsp;&nbsp;&nbsp;return Math.pow(x,2);
+                                                        <br>  } else{
+                                                        <br> &nbsp;&nbsp; &nbsp;return -1;<br> &nbsp; &nbsp;}
+                                                 <br> }</code>
+                                                    <br><br><br><br>
                                             <video controls width="80%"class="algorithm">
                                                     <source src="vids/mathmin.mov">
                                                 </video><br><br>
@@ -637,9 +687,13 @@
                                 
                                 <div class="tips" id="tips">
                                         <h3>Well that was it? What to do now? </h3><br><h5>You don't have to master 5 languages from the start, most programming language have same foundation, the only thing that is different is the syntax and you will be fine learning other languages after you master 1 language.</h5> <br><h4>Create a project. I recommend finishing all freecodecamp's project on responsive web and javascript's algorithm and data structure first since you will learn the basic and something like functional programming and regular expression, which needs a lot of practice to master, but has a very high reward after you understand and implement it.</h4>
-                                    <br><br>
+                                    <br><br>  <h4 style="float:right"><a href="https://discord.gg/ZEvEnEj">Join Code Zone community here</a></h4><br><br>
+                                    <iframe src="https://discordapp.com/widget?id=562608841003630612&theme=dark" width="340" height="470" style="float:right;" allowtransparency="true" frameborder="0" ></iframe>
+                                   
                                     <h2>Great source to learn</h2>
+                                  
                                     <br><br>
+                                    
                                     <h5><a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ">freeCodeCamp</a> youtube for a <a href="https://www.freecodecamp.org/forum/">community</a>.</h5>
                                     <h5><a href="https://www.youtube.com/user/cs50tv/featured">cs50</a> youtube, cs50 also has <a href="https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x">edX</a> courses for computer science content.</h5>
                                     <h5><a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA">Traversy Media</a> youtube. He makes web development content.</h5>
@@ -658,7 +712,9 @@
                                     <p>Things now starting to get clearer. Characters are variables, scoring system and skills are function, inputs are part of HTML.</p>
                                     <p>You also want to think logically on how it works, since you don't want to get stuck a year trying to make something that isnt well planned.</p>
                                     <br><br>
+                                    <br><br><br><br><br><br>
                                     <h3>Last updated 24 March 2019 </h3>
+                                    <br><br>
                                 </div>
                                 <footer class="row-footer" style="color:#FF5D4A">
 
