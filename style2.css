@@ -41,8 +41,10 @@ h3{
     }
    
 }
-
- 
+video::-webkit-media-controls-panel {
+    background-image: linear-gradient(transparent, transparent); 
+}
+video{outline: none}
      .container{
          height: 100vh
      }
