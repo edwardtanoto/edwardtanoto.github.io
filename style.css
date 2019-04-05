@@ -38,13 +38,12 @@ h2{
 }
 
 .owl-carousel .owl-item{
-    height:500px;
     width:100%;
 }
 
 .owl-nav{
     text-align: center;
-    font-size: 40px;
+    font-size: 3rem;
 }
 
 @media(min-width: 1200px) {
@@ -94,7 +93,9 @@ h2{
             font-size: 4em;
         }
         p {
-            font-size: 1.2em;}
+            font-size: 1.2em;
+            color:white
+        }
             .btn {
                 padding: 0.5em;
             }
