@@ -611,7 +611,7 @@
                                                             </code> <br><br><br>
                                                             <h3>What is going on here?</h3>
                                                             <br>
-                                                            <h5>So first, you store your code inside a variable <code>averageRating</code>, then you filter, which is a <a href="https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99">higher order function</a>, its called higher order function because you take function as an argument inside your filter function, <code>x => x.Director === "Christopher Nolan"</code>.(=>) is an ES6 arrow function, it's basically the same as <code>function(x){ // }</code> , and in the inside it wants to access the director that equals with Christopher Nolan, remember " " for the string. </h5>
+                                                            <h5>So first, you store your code inside a variable <code>averageRating</code>, then you filter, filter can do (x=>{}) because its a <a href="https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99">higher order function</a>, its called higher order function because you take function as an argument inside your filter function, <code>x => x.Director === "Christopher Nolan"</code>.(=>) is an ES6 arrow function, it's basically the same as <code>function(x){ // }</code> , and in the inside it wants to access the director that equals with Christopher Nolan, remember " " for the string. </h5>
                                                             <br>
                                                             <h5>Did that line of code just filtered all films that was directed by Chrisopher Nolan?</h5>
                                                             <br>
@@ -619,27 +619,31 @@
                                                             <br>
                                                             <br>
                                                             <p>Let's test it by <code>console.log(averageRating)</code>. you can do copy paste the code and run it in developer tool in Chrome too.</p>
+                                                            <br><br>
+                                                            <img src="./img/averageRating.png" width="90%">
+                                                            <br><br>
                                                             <p>It returns <code>[object Object],[object Object],[object Object],[object Object]</code></p>
-                                                            <p>If you use the Chrome developer tools, the object can be expanded to the title until imdbRating.</p>
+                                                            <p>The 0, 1, 2, 3 are the index of the watchList array that is directed by Christopher Nolan.</p>
+                                                            <p>The object can be expanded to show the title until imdbRating.</p>
                                                             <p>But what if you dont need all those data and you only want the title?</p>
                                                             <p>You can use map, and change the code like this</p>
                                                             <p>
-                                                            <code>var filteredList = watchList.map(e=>{ 
-                                                                   <br> return {title: e["Title"],director:e["Director"]} 
-                                                                    <br> }).filter((e) => e.director === "Christopher Nolan")</code> </p>
+                                                            <code>var filteredList = watchList.filter((e) => e["Director"] === "Christopher Nolan")<br>.map(e=>{ 
+                                                                  return {title: e["Title"]} 
+                                                                    <br> })</code> </p>
                                                                    <br>  <p>I changed the var name into filteredList so you don't get confused</p>
-                                                                   <h5>What happened inside filteredList?<br> First, Array.prototype.filter is used to filter the array so it’s left with elements that have Director === "Chistopher Nolan". After that, Array.prototype.map can be used to shape the output to the desired format.</h5>
+                                                                   <h5>What happened inside filteredList?<br> First, Array.prototype.filter is used to creates new array that passes e["Director"] === "Chistopher Nolan". After that, Array.prototype.map creates new array with the results of calling a provided function on every element in the calling array.</h5>
                     
-                                                                   <h5>You don't read it wrong,<a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0">functional programming works this way</a>.</h5>
-                                                                <p>Now the output is :</p>
+                                                                   <h5><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0">Check how functional programming works</a>.</h5>
+                                                                <p>Now see the output of the code.</p>
+                                                                <img src="./img/filteredList.png" width="90%">
                                                             <p><code>
-                                                                 <br> 0: {title: "Inception", director: "Christopher Nolan"}
-                                                                 <br> 1: {title: "Interstellar", director: "Christopher Nolan"}
-                                                                 <br> 2: {title: "The Dark Knight", director: "Christopher Nolan"}
-                                                                 <br> 3: {title: "Batman Begins", director: "Christopher Nolan"}
+                                                                 <br> 0: {title: "Inception"}
+                                                                 <br> 1: {title: "Interstellar"}
+                                                                 <br> 2: {title: "The Dark Knight"}
+                                                                 <br> 3: {title: "Batman Begins"}
                                                             </code></p>
-                                                            <p>The 0, 1, 2, 3 are the index of the watchList array that is directed by Christopher Nolan.</p>
-                                                            <h5>Now lets go to <code>.map(x => Number(e.imdbRating))</code> part.</h5>
+                                                            <h5>Now lets go to <code>.map(x => Number(e.imdbRating))</code> part, the averageRating in the challenge hasn't been explained.</h5>
                                                             <p><a href="https://www.w3schools.com/jsref/jsref_number.asp">Number()</a> is a Javascript method to convert variables to numbers. So if you see carefully, imdbRating has data typeof string, indicated by " ". To calculate the average, you have to change it to number. Map helped you to convert all the imdbRating property inside the array to number with that single line of code.</p>
                                                             <h5>What about <br> <code>reduce((x1, x2) => x1 + x2) / watchList.filter(x => x.Director === "Christopher Nolan").length;</code>?</h5>
                                             
