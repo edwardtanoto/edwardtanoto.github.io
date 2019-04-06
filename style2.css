@@ -85,7 +85,7 @@ video{outline: none}
     }
    
     .jumbotronFour{
-        display: relative;
+        position: relative;
         background-color:#3C3A3D    ;
         height:100%;
         color: white;
@@ -101,6 +101,24 @@ video{outline: none}
             margin-right: auto;
             width: 70%;
         }
+        .owl-prev {
+            width: 15px;
+            position: absolute;
+            top: 30%;
+            margin-left: -20px;
+            display: block !important;
+            border:0px solid black;
+        }
+        
+        .owl-next {
+            width: 15px;
+            position: absolute;
+            top: 30%;
+            right: -25px;
+            display: block !important;
+            border:0px solid black;
+        }
+        .owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
         footer {
             position: fixed;
             right: 0;
