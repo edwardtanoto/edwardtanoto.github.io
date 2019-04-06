@@ -32,12 +32,20 @@ h3{
    h2{
        font-size: 1.2rem;
    }
-   p{
-       font-size:1rem
+   .phone{
+       font-size:1rem;
+      padding-right: -100px;
+      margin-left: -40px;
+       width: 300px;
    }
     .jumbotronFour{
         margin-bottom:100vh;
     }
+   .ph {
+       margin-left: -80px;
+       padding-right: 80px;
+       width: 400px;
+   }
    
 }
 video::-webkit-media-controls-panel {
@@ -105,7 +113,7 @@ video{outline: none}
         .owl-prev {
             width: 15px;
             position: absolute;
-            top: 30%;
+            top: 18%;
             margin-left: -20px;
             display: block !important;
             border:0px solid black;
@@ -114,7 +122,7 @@ video{outline: none}
         .owl-next {
             width: 15px;
             position: absolute;
-            top: 30%;
+            top: 18%;
             right: -25px;
             display: block !important;
             border:0px solid black;
