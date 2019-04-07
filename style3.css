@@ -1,7 +1,4 @@
-.myText{
-    font-size: 20px;
-} 
-          .xop-section {
+ .xop-section {
             max-width: 100%;
             margin: 0 auto;
             padding: 6% 2%;
@@ -27,9 +24,9 @@
        
   @media only screen and (max-width: 768px) {
 iframe{
-    padding-left: 80px;
+    width: 100%;
 }
-
+    
   .me{
       margin-left: -80px;
       width:200%;
@@ -38,6 +35,9 @@ iframe{
     margin-right: -10px;
     width: 260px    !important;
     height: auto   !important;
+  }
+  .phone{
+      font-size:1rem;
   }
 }  
 video {
