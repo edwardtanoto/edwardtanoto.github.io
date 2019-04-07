@@ -56,6 +56,14 @@ p{
     height: 100%;
     width: 100%
 }
+.a{
+    color:inherit;
+   color:#FF5D4A;
+   border-radius: 30px;
+}
+.a:hover{
+    color: coral;
+}
 
 footer {
     position: fixed;
