@@ -289,29 +289,38 @@
            <br>  &nbsp;&nbsp; text += "The number is " + i;
            <br>   &nbsp;&nbsp; i++;
            <br>  }
-            </code></p><br><br>
+            </code></p>
+            <br><br>
                                     <h5>Check this <a href="https://www.w3schools.com/js/js_loop_for.asp">source</a> as well.</h5>
-                                    <br><br>    <h4>Now you can use if else and for loop, what now?</h4>
+                                    <br><br>
+                                    <h4>Function</h4> <br><p><code>
+                                        function hiThere(){
+                                            <br>    &nbsp;&nbsp;&nbsp;   console.log("Hello world!")
+                                            <br>   }
+                                            <br>   hiThere() //"Hello world!"
+                                            <br>
+                                            <br>   function helloThere(name){
+                                                <br>      &nbsp;&nbsp;&nbsp; console.log("Hello "+name+"!");
+                                                <br>   }
+                                                <br>   helloThere("Edward")//"Hello Edward!"
+                                    </code></p>
+                                    <br><br>
+                                   
+                                    <br><br>    <h4>I've learnt every syntax, now what?</h4>
                                  
                                 </div><br><br><br>
                                 <div class="algorithm-station" id="algorithm">
                                         <h2>Algorithm Practice Station</h2><br><br>
                                         <h4>I mainly use <a href="https://www.codewars.com/">codewars</a> and <a href="https://www.freecodecamp.org/">freecodecamp</a> as my source to practice algorithm, there are several other choices like <a href="https://www.codechef.com">codechef</a>, <a href="https://leetcode.com">leetcode</a>, <a href="https://www.tutorialspoint.com/data_structures_algorithms/">tutorialspoint</a>, and <a href="https://www.codecademy.com/learn">codecademy</a>.</h4>
-                                        <br><br> <p><a href="https://www.codewars.com/kata/523b4ff7adca849afe000035/solutions/javascript">Here is a perfect example of algorithm that is entertaining.</a></p>
+                                        <br><br> <h4>How to code productively in Algorithm Practice Station</h4>
                                         <br><br>
-                                        <video controls width="80%"class="algorithm">
-                                            <source src="vids/euler.mov">
+                                        <video controls width="80%" class="center">
+                                            <source src="vids/demo1.mov">
                                         </video>
-                                        <br><br>
-                                        <div>
-                                            <h4>This kind of function is usually connected with loops, you iterate to certain number with some couple conditions have to be met to return the total.</h4>
-                                            <p>You can also do it with for loops and then use an if else statement inside the loop </p>
-                                            <p>You can manage the condition inside if else statement by using || which is OR, or && which is AND </p>
-                                            <p>OR returns true when one of the condition is met, and AND returns true when both condition met</p>
-                                            <p>In this case when you iterate from i to number, 1, 2 , 3 ,... number, you want the codes to execute when it's divided by 3 or divided by 5, so we use ||</p>
-                                            <p>We cant use && because the && only makes your code condition works when i is both divisible by 3 and 5, and we want the code to run when i is divided by either 3 or 5.</p>
-                                        </div>
-                                        <br><br>
+                                        <br><br><br>
+                                        <p style="text-align:center;">You can code your function to do some challenge there, the console will tell you the result and the bug. </p>
+                                        <p>Some code solutions will have white font, highlight it after you finish your solution.</p>
+                                        <br><br><br>
                                         <h4><a href="https://www.codewars.com/kata/string-repeat/train/javascript">String repeat</a></h4>
                                         <br><br>
                                        <p> Write a function called repeatStr which repeats the given string string exactly n times.</p>
@@ -319,11 +328,39 @@
                                         repeatStr(6, "I") // "IIIIII"
                                       <br>  repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
                                        </code></p><br><br>
-                                       <p>Here is the solution</p>
+                                       <p>There are a lot of ways to solve this, first is by looping and second is using <a href="https://www.w3schools.com/jsref/jsref_repeat.asp"> repeat</a></p>
+                                       <p>We want to concatenate the string n times and contain it in a variable.</p>
+                                       <p>I will explain using for loop, you can do while loop yourself later </p>
+                                      <p> <code>
+                                            var result = "";
+                                         <br>   for(var i = n; i>0;i--){
+                                            <br>   &nbsp;&nbsp;&nbsp; result += string;
+                                            <br>   }
+                                            <br>   return result;
+                                       </code></p><br>
+                                       <p style="color:#3CA1FF">First statement <code> var i = n; </code> we declare a variable to start the iteration</p>
+                                       <p style="color:#3CA1FF">Second statement <code> i > 0; </code> is the condition until the code stops running. </p>
+                                       <p style="color:#3CA1FF">Third statement <code> i-- </code> runs after the loop has been executed</p>
+                                       <p style="color:#3CA1FF">We want to start our iteration from n, <code> result += string </code> will tell the code to store the value of <code> result+string </code>inside <code>result</code> variable, then we return it later. </p>
+                                       <p style="color:#3CA1FF">If the string is<code> "I"</code> , and<code> var result = ""</code> , then result+ string is now "I"</p>
+                                       <p style="color:#FF7777">result + string is stored in variable result</p>
+                                       <p style="color:#FF7777">var result is now "I"</p>
+                                       <p style="color:#FF7777">result + string will be executed again and again until the second statement (i > 0) is false.</p>
+                                       <p>Well, that was for loop, try doing it with while loop. Remember to <code>i--</code> or <code>n--</code> so the program doesn't run forever.<br>The solution is below, highlight it after you finish it.</p>
+                                       <br><br>
+                                       <p><code style="color:white;"> var result= "";
+                                          <br>  while(n>0){
+                                            <br>   &nbsp;&nbsp;&nbsp;  result += string;
+                                            <br>   &nbsp;&nbsp;&nbsp; n--
+                                            <br>  }
+                                            <br>  return result;</code></p><br><br>
+                                            <p style="color:#FF7777">Basically its the same with for loop, but remember to include <code>n--</code> </p>
+                                            <p style="color:#3CA1FF">If n isn't decremented everytime the code executes, the program won't stop because n will always be higher than 0</p>
+                                       <p style="color:#3CA1FF">The other way beside looping is to use repeat() , here is the solution: </p>
                                        
-                                     <p>  <code>function repeatStr (n, s) {
+                                     <p>  <code style="color:white">function repeatStr (n, s) {
                                        <br>&nbsp;&nbsp;&nbsp; return s.repeat(n);
-                                       &nbsp;&nbsp;<br> }</code></p><br><br><br>
+                                       &nbsp;&nbsp;<br> }</code></p><br>
                                        <p>If you prefer python</p>
                                       <p> <code>def repeat_str (repeat, string) {
                                         <br>&nbsp;&nbsp;&nbsp; return string*repeat;
@@ -345,12 +382,12 @@
                                             <br>  }
                                         </code></p>
                                         <br><br>
-                                        <p>That code is not wrong, however there is a faster solution that you can use in Javascript, or even Python has it too</p>
-                                       <p> <code>return bool ? 'Yes':'No';</code></p>
+                                        <p style="color:#3CA1FF">That code is not wrong, however there is a faster solution that you can use in Javascript, or even Python has it with different syntax too.<br><br>Code hidden below</p>
+                                       <p> <code style="color:white;">return bool ? 'Yes':'No';</code></p>
                                             <br><br><br>
                                             <div>
                                                 <h4>Wait so I dont have to write if elses block here?</h4><br>
-                                                <h5>Yes, and this is called ternary conditional operator, you only need to take 1 line of code instead writing if elses statement</h5>
+                                                <h5 >Yes, and this is called ternary conditional operator, you only need to take 1 line of code instead writing if elses statement</h5>
                                               <p>  <code>function findGreater(a, b) {<br>
                                                     &nbsp; if(a > b) {<br>
                                                        &nbsp;  &nbsp; &nbsp;  return "a is greater";<br>
@@ -364,20 +401,20 @@
                                                         return a > b ? "a is greater" : "b is greater";
                                                       }</code></p>
                                                       <br><br>
-                                                      <h5>Here is the syntax</h5><br>
+                                                      <h5 style="color:#3CA1FF">Here is the syntax</h5><br>
                                                       <p><code>condition ? statement-if-true : statement-if-false;</code></p>
                                                 </div><br><br>
                                                 <h4><a href="https://www.codewars.com/kata/return-negative/train/javascript">Return Negative</a></h4><br><br>
                                                 <p>In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?</p>
                                                 <p>You already know ternary conditional operator, here is some problem that can be solved with it.</p>
                                                 <p>Here is the solution:</p>
-                                                <p><code>function makeNegative(num) {
+                                                <p><code style="color:white;">function makeNegative(num) {
                                                    <br>&nbsp;&nbsp;&nbsp; return num>0? -num:num
-                                                   <br> }</code></p><br><br><p>If the number is positive, add a (-) sign, else it doesn't change the value</p>
-                                                   <p>Or if you don't want to use the ternary conditonal operator, you can use:</p>
-                                                  <p> <code>function makeNegative(num) {
+                                                   <br> }</code></p><br><br><p style="color:#3CA1FF">If the number is positive, add a (-) sign, else it doesn't change the value</p>
+                                                   <p style="color:#3CA1FF">Or if you don't want to use the ternary conditonal operator, you can use:</p>
+                                                  <p> <code style="color:white;">function makeNegative(num) {
                                                     <br>&nbsp;&nbsp;&nbsp; return -Math.abs(num);
-                                                    <br> }</code></p><br><br><p>What this code does is basically make the num absolute, and if the num is negative we add (-) sign before the Math.abs(num) </p>
+                                                    <br> }</code></p><br><br><p style="color:#3CA1FF">What this code does is basically make the num absolute, and if the num is negative we add (-) sign before the Math.abs(num) </p>
                                                <br><br><br>
                                                <h4><a href="https://www.codewars.com/kata/find-the-next-perfect-square/train/javascript">Find the next perfect square!</a></h4><br><br>
                                                <p>Instruction</p>
@@ -387,7 +424,7 @@
                                                         <br>  
                                                     <br>  If the parameter is itself not a perfect square, than -1 should be returned. You may assume the parameter is positive.</p>
                                                    <p>Here is my past solution:</p>
-                                                  <p> <code>function findNextSquare(sq) {
+                                                  <p> <code style="color:white;">function findNextSquare(sq) {
                                                     <br>// Return the next square if sq if a perfect square, -1 otherwise
                                                     <br>&nbsp;&nbsp;&nbsp;if(sq % Math.sqrt(sq)===0){
                                                         <br> // Create variable called n to store square root of sq
@@ -402,15 +439,15 @@
                                                     <br><br><br><br>
                                             <h4><a href="https://www.codewars.com/kata/55a2d7ebe362935a210000b2">Find the smallest integer in the array</a></h4><br><br>
                                                 <div>
-                                                    <p>Well, first is you read <a href="https://www.w3schools.com/jsref/jsref_obj_math.asp"> this</a>, its about Math in javascript</p>
+                                                    <p style="color:#3CA1FF">Well, first is you read <a href="https://www.w3schools.com/jsref/jsref_obj_math.asp"> this</a>, its about Math in javascript</p>
                                                     <p>Great! Now you know how to find the smallest integer in the array.</p>
-                                                    <p>Read <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">... spread operator here</a> while you're at it</p>
+                                                    <p style="color:#3CA1FF">Read <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">... spread operator here</a> while you're at it</p>
                                                     <p>ES6 introduces the spread operator, which allows us to expand arrays and other expressions in places where multiple parameters or elements are expected.</p>
                                                  <p>   <code>
                                                             var test = [1,2,3,4];
                                                            <br> console.log(...test) //Output: 1 2 3 4
                                                     </code></p><br>
-                                                    <p>Now, to solve the problem you simply wants to return the lowest one in the array, try it out</p>
+                                                    <p style="color:#3CA1FF">Now, to solve the problem you simply wants to return the lowest one in the array, try it out</p>
                                                     <p>Here is the solution</p>
                                                    <p> <code>
                                                             return Math.min(...args);
@@ -440,10 +477,10 @@
                                                             <p>Return the factorial of the provided integer.
 <br>
 <br>  If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n</p>
-                                                            <h5>There is two ways to solve it. First one in the loop and second one is in<a href="https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea"> recursive function</a>.</h5>
-                                                            <p>We want to decrement num and keep multiplying it until it reach one or zero. Let's try with loop</p>
-                                                           <p> <code>for(var answer=1;num>0;num--){
-                                                                <br>  &nbsp;&nbsp; &nbsp; answer*=num;
+                                                            <h5 style="color:#3CA1FF">There is two ways to solve it. First one in the loop and second one is in<a href="https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea"> recursive function</a>.</h5>
+                                                            <p style="color:#FF7777">We want to decrement num and keep multiplying it until it reach one or zero. Try it with loop, the solution is below.<br> Check the explanation if you stuck</p>
+                                                           <p> <code style="color:white;">for(var answer = 1; num > 0; num--){
+                                                                <br>  &nbsp;&nbsp; &nbsp; answer *= num;
                                                                 <br>  }
                                                                 <br>
                                                                 <br>  return answer;</code></p>
@@ -456,8 +493,8 @@
                                                                   <br>
                                                                   <br>  and it goes on until 1>0 , after that the program returns answer.
                                                                 </p><br><br>
-                                                                <h5>The other one is by recursive function</h5>
-                                                                <p>Recursion is simply when a function calls itself</p>
+                                                                <h5 style="color:#3CA1FF">The other one is by recursive function</h5>
+                                                                <p style="color:#FF7777"><a href="https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea">Recursive</a> is simply when a function calls itself</p>
                                                                 <p><code>return num > 1 ? num * factorialize(num-1);</code></p>
                                                                 <p>factorial(3) returns 3 * factorial(2)
                                                                    <br><br>     factorial(2) returns 2 * factorial(1)
@@ -468,27 +505,37 @@
                                                             <h4><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/confirm-the-ending">Basic Algorithm Scripting: Confirm the Ending</a></h4>
                                                             <br><img src="img/ending.png" width="90%">
                                                             <br><br>
-                                                            <h5>There is a faster way to solve this problem than using for loop to iterate all the string and make the target returns true if the ending is the same with the iterated string, which is more unefficient.</h5>
-                                                            <br><p>Try using <a href="https://www.w3schools.com/jsref/jsref_slice_string.asp">slice</a> to extracts parts of a string and returns the extracted parts in a new string. </p>
-                                                            <p>Here is the solution:</p>
-                                                         <p>  <code>
-                                                                    function confirmEnding(str, target) {
-                                                                  <br> &nbsp;&nbsp; &nbsp;    // "Never give up and good luck will find you."
-                                                                  <br>   &nbsp;&nbsp;&nbsp;&nbsp; // -- Falcor
-                                                                  <br>    
-                                                                  <br>  &nbsp;&nbsp;&nbsp;  return str.slice(str.length - target.length) === target;
-                                                                  <br>   }
-                                                                  <br>   
-                                                                  <br>   confirmEnding("He has to give me a new name", "name");
-                                                            </code></p>
+                                                             <br><h5>Try using <a href="https://www.w3schools.com/jsref/jsref_slice_string.asp">slice</a> to extracts parts of a string and returns the extracted parts in a new string. </h5>
+                                                             <p>The challenge wants you to return true or false</p>
+                                                            <p>After you try it yourself, you can see that slice can take arguments of <i>(start, end)</i></p>
+                                                             <p>So to confirm the ending, the ending value of the str must be the same with the target</p>
+                                                             <p>Does the slice have to take both <i>(start, end)</i>? Or 1 if enough? Go try it out</p>
+                                                             <p><code>
+                                                                    var str = "Hello world!"; 
+                                                                 <br>var res = str.slice(5); //Output : world!
+                                                                 //Remember the space
+                                                                 <br>var res = str.slice(6); //Output :world!
+                                                             </code></p>
+                                                             <p>So it doesn't have to take 2 argument, world! is the ending of the Hello world!</p>
+                                                             <p><code>str.slice(5)</code> It can takes one argument, which is the start.</p>
+                                                             <p>"Hello world!" has 12 length if you try <code>console.log("Hello world!".length)</code></p>
+                                                             <p>"world!" has 6 length if you try <code>console.log("world!".length)</code> </p>
+                                                             <p>So <code>str.slice(12-6) === world!</code> is true?</p>
+                                                             <p>Try it yourself , the solution is below.</p>
+                                                             <p><code style="color:white">
+                                                                 return str.slice(str.length - target.length) === target;
+                                                             </code></p>
+                                                           
                                                        <br> <br> <br>
                                                        <h4><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-numbers-in-a-range">Intermediate Algorithm Scripting: Sum All Numbers in a Range</a></h4>
                                                        <br>
                                                        <img src="img/sumrange.png" width="80%">
                                                        <br><br><br><h5>In this section, I will explain some Intermediate Algorithm from <a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-numbers-in-a-range">freeCodeCamp</a>.</h5>
-                                                       <br> <h5>First, we know we want to know the maximum and minimum of the array to start finding the range, then we sum it and return the value.</h5>
+                                                       <br> <h5 style="color:#3CA1FF">First, we know we want to know the maximum and minimum of the array to start finding the range, then we sum it and return the value.</h5>
+                                                       <p>Try it yourself, store the highest and lowest in some max or min variables, then go iterate it from min to max then do your best! </p>
+                                                       <p>If you done it, highlight the space below this, the solution has white color.</p>
                                                        <br><br>
-                                                       <p><code>
+                                                       <p><code style="color:white;">
                                                             function sumAll(arr) {
                                                          <br>  //Find max and min with Math.max() and Math.min()
                                                          <br>  //Put the index of the array as the argument
@@ -520,15 +567,15 @@
                                                    <br> <br>  //currNumber is now 2 + 1 = 3
                                                    <br> <br>  //prevNumber is 3 - 1 which is 2</p>
                                                    <br>
-  <h5>Setting the condition is the easier part, odd number can be seen as a number that has no 0 remain after divided by 2.</h5>
+  <h5 style="color:#3CA1FF">Setting the condition is the easier part, odd number can be seen as a number that has no 0 remain after divided by 2.</h5>
   <br><br><h4><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/missing-letters">Intermediate Algorithm Scripting: Missing letters</a></h4>
   <br><img src="img/misslater.png" width="90%">
-  <br><br><br><h5>You will need to convert from character to ASCII code using <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_fromcharcode">fromCharCode()</a> and <a href="https://www.w3schools.com/jsref/jsref_charcodeat.asp">charCodeAt()</a>.</h5>
+  <br><br><br><h5 style="color:#3CA1FF">You will need to convert from character to ASCII code using <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_fromcharcode">fromCharCode()</a> and <a href="https://www.w3schools.com/jsref/jsref_charcodeat.asp">charCodeAt()</a>.</h5>
   <br><p>Each alphabets have their own unicode, for example A is 65, and in binary 65 is 01000001, which is A</p>
   <p>To find a missing letter in ABCE, the unicode is 65 66 67 69, so the missing unicode is 68, which is D</p>
   <p>And that's what you want your code to return.</p>
   <p>Here is the solution:</p><br><br>
-  <p><code>
+  <p><code style="color:white">
         function fearNotLetter(str) {
     <br>    for(var i = 0; i < str.length; i++) {
     <br>    &nbsp;    /* code of current character */
@@ -546,16 +593,43 @@
         <br>     }
         
   </code></p>
+  <br><br><br>
+  <h4><a href="https://www.codewars.com/kata/514b92a657cdc65150000006">Multiples of 3 or 5</a></h4>
+  <br><br>
+    <div>
+        <p>This kind of function is usually connected with loops, you iterate to certain number with some couple conditions have to be met to return the total.</p>
+        <p>You can also do it with for loops and then use an if else statement inside the loop </p>
+        <p style="color:#3CA1FF">You can manage the condition inside if else statement by using || which is OR, or && which is AND </p>
+        <p style="color:#3CA1FF">OR returns true when one of the condition is met, and AND returns true when both condition met</p>
+        <p>In this case when you iterate from i to number, 1, 2 , 3 ,... number, you want the codes to execute when it's divided by 3 or divided by 5, so we use ||</p>
+        <p>We cant use && because the && only makes your code condition works when i is both divisible by 3 and 5, and we want the code to run when i is divided by either 3 or 5.</p>
+        <p>Here is one of the solution:</p>
+       <p> <code style="color:white">
+                function solution(number){
+              <br>   &nbsp;&nbsp;   var sum = 0;
+              <br>     
+              <br>  &nbsp;&nbsp;  for(var i = 1;i< number; i++){
+              <br>     &nbsp;&nbsp;&nbsp;&nbsp; if(i % 3 == 0 || i % 5 == 0){
+                <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     sum += i
+                <br>   &nbsp;&nbsp;&nbsp;&nbsp;   }
+                <br> &nbsp;&nbsp;    }
+                <br>     return sum;
+                <br>    }
+        </code></p>
+    </div>
 <br><br><br><h4><a href="https://www.codewars.com/kata/523a86aa4230ebb5420001e1">Where my anagrams at?</a> 5 kyu codewars challenge</h4><br>
-<br><h5>Write a function that will find all the anagrams of a word from a list. You will be given two inputs a word and an array with words. You should return an array of all the anagrams or an empty array if there are none. For example:</h5>
+<br><p>Write a function that will find all the anagrams of a word from a list. You will be given two inputs a word and an array with words. You should return an array of all the anagrams or an empty array if there are none. For example:</p>
 <br>
-<h5>anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
+<p>anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
     <br>
    <br> anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
    <br>  
-  <br>  anagrams('laser', ['lazing', 'lazy',  'lacer']) => []</h5><br><br>
-  <p>First, we want to filter the array words to find if the array words have same letter with the word.</p><br>
-<p><code>
+  <br>  anagrams('laser', ['lazing', 'lazy',  'lacer']) => []</p><br><br>
+  <p>First, we want to filter the array words to find if the array words have same letter with the word.</p>
+  <p>An anagram is a word or phrase formed by rearranging the letters of a different word or phrase</p>
+  <p>Here is the solution:</p>
+  <br>
+<p><code style="color:white">
     function anagrams(word, words) {
     <br>&nbsp;    return words.filter(e=>{
         <br>  &nbsp;&nbsp;&nbsp; var anagrams = e.split("").sort().join("")
@@ -565,12 +639,13 @@
         <br>   &nbsp;&nbsp;    })
         <br>  }
 </code></p><br><br>
+<p>Some explanation</p>
 <p>
 <code>return words.filter(e=>{
     <br>
     <br>
 }
-</code></p><br><p>e is the current element being processed in the array, which is everything inside words array.</p><br>
+</code></p><br><p style="color:#3CA1FF">e is the current element being processed in the array, which is everything inside words array.</p><br>
 <p><code>var anagrams = e.split("").sort().join("")</code></p><br><p>So we store every element inside words array after we <a href="https://www.w3schools.com/jsref/jsref_sort.asp">split()</a> the string inside words, <a href="https://www.w3schools.com/js/js_array_sort.asp">sort()</a> it, and <a href="https://www.w3schools.com/jsref/jsref_join.asp">join()</a> it into anagrams variable</p>
 <br><p>We also need to split the string of word, sort it, join it, and store it to testWords var, after that we check if both variables have same value or not, it will return either true or false. </p><br><br><br>
 <h4><a href="https://www.codewars.com/kata/52597aa56021e91c93000cb0">Moving zeros to the end</a> 5 kyu codewars challenge</h4><br>
@@ -581,10 +656,10 @@
         <a href="https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2"> Read this article on declarative and imperative programming</a><br>
      There are 2 ways to solve this challenge, an imperative way or declarative way, I'll start with the imperative way.
 </p><br><br><p>First, notice the result. <code>returns[false,1,1,2,1,3,"a",0,0]</code><br> We can separate two arrays, for example array that has zero and array with no zero, then we add the 2 arrays together.</p><br>
-<p>We will iterate through the array to check if the value is zero or not, if its zero, we want to store it in array with other zeroes, and if it isnt zero, we want to store it in array with no zeroes, then we can just unite the 2 array together.</p>
+<p style="color:#3CA1FF">We will iterate through the array to check if the value is zero or not, if its zero, we want to store it in array with other zeroes, and if it isnt zero, we want to store it in array with no zeroes, then we can just unite the 2 array together.</p>
 <br><p>We add the array with <a href="https://www.w3schools.com/jsref/jsref_concat_array.asp">concat</a> method</p>
 <p>Here is the imperative solution:</p>
-<p><code>
+<p><code style="color:white">
         var moveZeros = function (arr) {
       <br>  var result = [];<br>    
             var zeroes = [];
@@ -599,9 +674,9 @@
               <br>     &nbsp;&nbsp;   return result.concat(zeros)
               <br>      }
 </code></p><br><br><br>
-<p>In the declarative solution, you write code that describes what you want, but not necessarily how to get it (declare your desired results, but not the step-by-step), what we want here is to put an array that has zeroes after array that has no zeroes.</p>
+<p style="color:#3CA1FF">In the declarative solution, you write code that describes what you want, but not necessarily how to get it (declare your desired results, but not the step-by-step), what we want here is to put an array that has zeroes after array that has no zeroes.</p>
 <p>Here is the declarative solution:</p>
-<p><code>
+<p><code style="color:white">
      var moveZeros = function (arr) {
     <br>&nbsp;&nbsp;  &nbsp;      return arr.filter(x=>x !== 0).concat(arr.filter(x=>x===0 ))
     <br>      }
@@ -676,7 +751,7 @@
                                                             <br><br>
                                                             <h5>So first, you store your code inside a variable <code>averageRating</code>, then you filter, filter can do (x=>{}) because its a <a href="https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99">higher order function</a>, its called higher order function because you take function as an argument inside your filter function, <code>x => x.Director === "Christopher Nolan"</code>.(=>) is an ES6 arrow function, it's basically the same as <code>function(x){ // }</code> , and in the inside it wants to access the director that equals with Christopher Nolan, remember " " for the string. </h5>
                                                             <br>
-                                                            <h5>Did that line of code just filtered all films that was directed by Chrisopher Nolan?</h5>
+                                                            <h5 style="color:#3CA1FF">Did that line of code just filtered all films that was directed by Chrisopher Nolan?</h5>
                                                             <br>
                                                             <p><code>var averageRating = watchList.filter(x => x.Director === "Christopher Nolan");</code></p>
                                                             <br>
@@ -686,16 +761,17 @@
                                                             <img src="./img/averageRating.png" width="90%">
                                                             <br><br>
                                                             <p>It returns <code>[object Object],[object Object],[object Object],[object Object]</code></p>
-                                                            <p>The 0, 1, 2, 3 are the index of the watchList array that is directed by Christopher Nolan.</p>
-                                                            <p>The object can be expanded to show the title until imdbRating.</p>
-                                                            <p>But what if you dont need all those data and you only want the title?</p>
-                                                            <p>You can use map, and change the code like this</p>
+                                                            <p style="color:#FF7777">The 0, 1, 2, 3 are the index of the watchList array that is directed by Christopher Nolan.</p>
+                                                            <p style="color:#FF7777">The object can be expanded to show the title until imdbRating.</p>
+                                                            <p style="color:#3CA1FF">But what if you dont need all those data and you only want the title?</p>
+                                                            <p style="color:#3CA1FF">We have to filter the director first and creates new array that returns the title's of the director that has been filtered<br>
+                                                            Code hidden below</p>
                                                             <p>
-                                                            <code>var filteredList = watchList.filter((e) => e["Director"] === "Christopher Nolan")<br>.map(e=>{ 
+                                                            <code style="color:white">var filteredList = watchList.filter((e) => e["Director"] === "Christopher Nolan")<br>.map(e=>{ 
                                                                   return {title: e["Title"]} 
                                                                     <br> })</code> </p>
-                                                                   <br>  <p>I changed the var name into filteredList so you don't get confused</p><br>
-                                                                   <h5>What happened inside filteredList?<br><br> First, watchList.filter is used to creates new array that passes e["Director"] === "Chistopher Nolan". After that,<code> .map</code> creates new array with the results of calling a provided function on every element in the calling array.</h5>
+                                                                   <br>  <p style="color:#3CA1FF">I changed the var name into filteredList</p><br>
+                                                                   <h5>What happened inside filteredList?</h5><br><h5 style="color:#FF7777">First, watchList.filter is used to creates new array that passes e["Director"] === "Chistopher Nolan". After that,<code> .map</code> creates new array with the results of calling a provided function on every element in the calling array.</h5>
                                                                 
                                                                    <h5><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0">Check how functional programming works</a>.</h5>
                                                                 <p>Now see the output of the code.</p><br>
@@ -706,19 +782,19 @@
                                                                  <br> 2: {title: "The Dark Knight"}
                                                                  <br> 3: {title: "Batman Begins"}
                                                             </code></p><br><br>
-                                                            <h5>Now lets go to <code>.map(x => Number(e.imdbRating))</code> part, the averageRating in the challenge hasn't been explained.</h5><br><br>
+                                                            <h5 style="color:#3CA1FF">Now lets go to <code>.map(x => Number(e.imdbRating))</code> part, the averageRating in the challenge hasn't been explained.</h5><br><br>
                                                             <p><a href="https://www.w3schools.com/jsref/jsref_number.asp">Number()</a> is a Javascript method to convert variables to numbers. So if you see carefully, imdbRating has data typeof string, indicated by " ". To calculate the average, you have to change it to number. Map helped you to convert all the imdbRating property inside the array to number with that single line of code.</p><br>
-                                                            <h5>What about <br><br> <code>reduce((x1, x2) => x1 + x2) / watchList.filter(x => x.Director === "Christopher Nolan").length;</code>?</h5>
+                                                            <h5 style="color:#3CA1FF">What about <br><br> <code>reduce((x1, x2) => x1 + x2) / watchList.filter(x => x.Director === "Christopher Nolan").length;</code>?</h5>
                                             
-                                                            <p>Well, we can see the division math operator, so this is the part where the code calculate the average by using <a href="https://www.w3schools.com/jsref/jsref_reduce.asp">reduce</a>.</p>
-                                                            <p>In the first part, they simply sum all the imdbRating that we just mapped before, and then we divide it with the length of an array that was directed by Christopher Nolan, which is 4, from 0 , 1 , 2, 3 indexes.</p>
+                                                            <p style="color:#3CA1FF">Well, we can see the division math operator, so this is the part where the code calculate the average by using <a href="https://www.w3schools.com/jsref/jsref_reduce.asp">reduce</a>.</p>
+                                                            <p style="color:#FF7777">In the first part, they simply sum all the imdbRating that we just mapped before, and then we divide it with the length of an array that was directed by Christopher Nolan, which is 4, from 0 , 1 , 2, 3 indexes.</p>
                                                             <p>Yep, just that. It saves both time and space.</p>
                                                            <br><br>
                                                             <p><a href="https://medium.com/@joomiguelcunha/learn-map-filter-and-reduce-in-javascript-ea59009593c4">Map, filter, and reduce article</a> to help you code in functional way. <a href="www.freecodecamp.org">freeCodeCamp</a> also has a functional programming curriculum that you should learn from.</p>
-                                                        </div><br><br>
+                                                        </div><br><br> 
                                                         <br><br> <h4>Regular Expression</h4><br><br><br>
-                                                        <p>Regular expressions are special strings that represent a search pattern. Also known as "regex" or "regexp", they help programmers match, search, and replace text</p>
-                                                        <p>Regex starts with / and end with / too.</p>
+                                                        <p style="color:#3CA1FF">Regular expressions are special strings that represent a search pattern. Also known as "regex" or "regexp", they help programmers match, search, and replace text</p>
+                                                        <p style="color:#FF7777">Regex starts with / and end with / too.</p>
                                                         <p>Example (Source from <a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/palindrome-checker">freeCodeCamp</a>)</p>
                                                         <p>Return true if the given string is a palindrome. Otherwise, return false.
 
@@ -731,29 +807,32 @@
                                                             
                                                           <br>  We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".
                                                           <br><br>
-                                                          <p>Solution:</p>
+                                                          <p style="color:#FF7777">Solution:</p>
                                                           <br>
-                                                         <p> <code>
+                                                         <p> <code style="color:white">
                                                           function palindrome(str) {
                                                          <br>&nbsp;&nbsp;   return str.replace(/[\W_]/g, '').toLowerCase() ===
                                                          <br> &nbsp;&nbsp;        str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');
                                                           }
                                                         </code></p><br><br>
-                                                        <p>Imagine writing 2 line of code that check if race cAr(ignore case) is palindrome or not, <a href="https://dev.to/catherinecodes/a-regex-cheatsheet-for-all-those-regex-haters-and-lovers--2cj1">regex</a> is worth to master.</p>
+                                                        <p style="color:#3CA1FF">Imagine writing 2 line of code that check if race cAr(ignore case) is palindrome or not, <a href="https://dev.to/catherinecodes/a-regex-cheatsheet-for-all-those-regex-haters-and-lovers--2cj1">regex</a> is worth to master.</p>
                                                         <h5>What is <code>str.replace(/[\W_]/g, '').toLowerCase()</code></h5>
-                                                        <p>First, we want the argument (str) to replace everything that matches with /[\W_]/g with ''.</p>
-                                                        <p>/[\W_]/g</p>
-                                                        <p>\W Matches any character that is not a word character (alphanumeric & underscore)</p>
-                                                        <p>_ matches with "_" character</p>
-                                                        <p>g after the regex is a flag, there are many types of flags, and g is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">flag</a> for global which  find all matches rather than stopping after the first match</p>
+                                                        <p style="color:#3CA1FF">First, we want the argument (str) to replace everything that matches with /[\W_]/g with ''.</p>
+                                                        <p style="color:#FF7777">/[\W_]/g</p>
+                                                        <p style="color:#3CA1FF">\W Matches any character that is not a word character (alphanumeric & underscore)</p>
+                                                        <p style="color:#3CA1FF">_ matches with "_" character</p>
+                                                        <p style="color:#3CA1FF">g after the regex is a flag, there are many types of flags, and g is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">flag</a> for global which  find all matches rather than stopping after the first match</p>
                                                         <h5>Now for <code>str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');</code>, its the same thing.</h5>
-                                                        <p>The code will ignore the cases by using toLowerCase(), and then it will return true if its ===.</p>
-                                                        <p>Best <a href="https://regexr.com/">regex source</a> that explains the regex you wrote and give example of your regex.</p>
-                                                        
+                                                        <p style="color:#3CA1FF">The code will ignore the cases by using toLowerCase(), and then it will return true if its ===.</p>
+                                                        <p style="color:#FF7777">Best <a href="https://regexr.com/">regex source</a> that explains the regex you wrote and give example of your regex.</p>
+                                                        <br><br>
+                                                        <h4>Object oriented Programming</h4><br><p><a href="https://youtu.be/hdI2bqOjy3c?t=3565">Source</a> to learn Object oriented Programming, you can also use freeCodeCamp's curriculum</p>
+                                                        <p>This section will be updated in the future, for now check out the link for Javascript crash course.</p>
                                 </div>
                                 
                                 <div class="tips" id="tips">
-                                        <h3>Well that was it? What to do now? </h3><br><h5>You don't have to master 5 languages from the start, most programming language have same foundation, the only thing that is different is the syntax and you will be fine learning other languages after you master 1 language.</h5> <br><h4>Create a project. I recommend finishing all freecodecamp's project on responsive web and javascript's algorithm and data structure first since you will learn the basic and something like functional programming and regular expression, which needs a lot of practice to master, but has a very high reward after you understand and implement it.</h4>
+                                        <h3>Well that was a long way. What to do now? </h3><br><h5 style="color:#FF7777">You don't have to master 5 languages from the start, most programming language have same foundation, the only thing that is different is the syntax and you will be fine learning other languages after you master 1 language.</h5> <br><h4>Create a project. I recommend finishing all freecodecamp's project on responsive web and javascript's algorithm and data structure first since you will learn the basic and something like functional programming and regular expression, which needs a lot of practice to master, but has a very high reward after you understand and implement it.
+                                        </h4><h4 style="color:#3CA1FF">You can ask the community for help if you stuck doing something</h4>
                                     <br><br>  <h4 style="float:right"><a href="https://discord.gg/ZEvEnEj">Join Code Zone community here</a></h4><br><br>
                                     <iframe src="https://discordapp.com/widget?id=562608841003630612&theme=dark" width="340" height="470" style="float:right;" allowtransparency="true" frameborder="0" ></iframe>
                                    
@@ -772,7 +851,7 @@
                                     <h5><a href="https://www.w3schools.com/">w3schools</a> is very reliable when you don't know the method that is used.</h5>
                                     <br><br>
 
-                                    <h3>Developing a project.</h3><br><br>
+                                    <h3 style="color:#3CA1FF">Developing a project.</h3><br><br>
                                     <h4>Develop your website</h4>
                                     <h5>Start by creating HTML and CSS website first, get started with bootstrap as well.</h5>
                                     <h5>After that create github account and do your first commit, you can ask me or the community for help.</h5>
