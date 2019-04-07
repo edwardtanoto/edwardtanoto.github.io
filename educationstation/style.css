@@ -97,7 +97,6 @@ footer {
    margin-left: auto;
    margin-right: auto;
    display:block; 
-   width: 100%;
    width: 80%;
 }
 
@@ -107,3 +106,8 @@ footer {
     width: 100%
 }
 
+@media only screen and (max-width: 768px){
+    h1{
+        font-size:2.5rem
+    }
+}
