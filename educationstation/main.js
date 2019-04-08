@@ -74,3 +74,20 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
         } 
       });
     });
+
+
+    function buttonOne(){
+      
+      if(true){
+        document.getElementById('change_color').style.color = 'red'
+      }
+    }
+      
+    
+    function buttonTwo(){
+      if(document.getElementById('change_color').style.color === 'red'){
+        if(true){
+          document.getElementById('change_color').style.color = 'white'
+        }
+      }
+    }
