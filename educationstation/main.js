@@ -89,5 +89,26 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
         if(true){
           document.getElementById('change_color').style.color = 'white'
         }
+      } else{
+        alert("You can't lost something you haven't gained")
       }
+    }
+
+    function buttonThree(){
+      if(true){document.getElementById('light').style.color = 'red'}
+      
+      document.body.style.color="white";
+      setInterval(function(){ alert("Thy shalt return to time without chaos, restart this whole creation the developer made. Bring back the dark fonts. Only you are capable of saving this web."); }, 5000);
+    }
+
+    function buttonFour(){
+      if(document.getElementById('asd').value == 'I want to fly across the galaxy')
+      {
+        document.getElementById('asd').style.color = "red"
+        document.getElementById('asd').value = 'Let the dark magic flows through me one last time'
+
+      } else{
+        alert("No magic can be invoked")
+      }
+      
     }
