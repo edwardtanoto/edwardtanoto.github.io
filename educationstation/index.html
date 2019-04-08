@@ -694,6 +694,11 @@
   <br><br><br>
   <h4><a href="https://www.codewars.com/kata/514b92a657cdc65150000006">Multiples of 3 or 5</a></h4>
   <br><br>
+  <p>
+    If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+    <br>
+    <br> Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.
+  </p><br><br>
     <div>
         <p>This kind of function is usually connected with loops, you iterate to certain number with some couple conditions have to be met to return the total.</p>
         <p>You can also do it with for loops and then use an if else statement inside the loop </p>
@@ -839,7 +844,7 @@
                                                    
                                                    <br><br>
                                                    //Put your code here <br>
-                                                   var averageRating = watchList.filter(x => e.Director === "Christopher Nolan").<br>map(x => Number(e.imdbRating)).<br>reduce((x1, x2) => x1 + x2) / watchList.filter(x => x.Director === "Christopher Nolan").length;
+                                                   var averageRating = watchList.filter(e => e.Director === "Christopher Nolan").<br>map(e => Number(e.imdbRating)).<br>reduce((e1, e2) => e1 + e2) / watchList.filter(e => e.Director === "Christopher Nolan").length;
                                                    
                                                    <br> <br>
                                                    
@@ -847,11 +852,11 @@
                                                             </code></p> <br><br><br>
                                                             <h3>What is going on here?</h3>
                                                             <br><br>
-                                                            <h5>So first, you store your code inside a variable <code>averageRating</code>, then you filter, filter can do (x=>{}) because its a <a href="https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99">higher order function</a>, its called higher order function because you take function as an argument inside your filter function, <code>x => x.Director === "Christopher Nolan"</code>.(=>) is an ES6 arrow function, it's basically the same as <code>function(x){ // }</code> , and in the inside it wants to access the director that equals with Christopher Nolan, remember " " for the string. </h5>
+                                                            <h5>So first, you store your code inside a variable <code>averageRating</code>, then you filter, filter can do (e=>{}) because its a <a href="https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99">higher order function</a>, its called higher order function because you take function as an argument inside your filter function, <code>e => e.Director === "Christopher Nolan"</code>.(=>) is an ES6 arrow function, it's basically the same as <code>function(e){ // }</code> , and in the inside it wants to access the director that equals with Christopher Nolan, remember " " for the string. </h5>
                                                             <br>
-                                                            <h5 style="color:#3CA1FF">Did that line of code just filtered all films that was directed by Chrisopher Nolan?</h5>
+                                                            <h5 style="color:#3CA1FF">Did that line of code just filtered all films that was directed by Christopher Nolan?</h5>
                                                             <br>
-                                                            <p><code>var averageRating = watchList.filter(x => x.Director === "Christopher Nolan");</code></p>
+                                                            <p><code>var averageRating = watchList.filter(e => e.Director === "Christopher Nolan");</code></p>
                                                             <br>
                                                             <br>
                                                             <p>Let's test it by <code>console.log(averageRating)</code>. you can do copy paste the code and run it in developer tool in Chrome too.</p>
@@ -880,9 +885,9 @@
                                                                  <br> 2: {title: "The Dark Knight"}
                                                                  <br> 3: {title: "Batman Begins"}
                                                             </code></p><br><br>
-                                                            <h5 style="color:#3CA1FF">Now lets go to <code>.map(x => Number(e.imdbRating))</code> part, the averageRating in the challenge hasn't been explained.</h5><br><br>
+                                                            <h5 style="color:#3CA1FF">Now lets go to <code>.map(e => Number(e.imdbRating))</code> part, the averageRating in the challenge hasn't been explained.</h5><br><br>
                                                             <p><a href="https://www.w3schools.com/jsref/jsref_number.asp">Number()</a> is a Javascript method to convert variables to numbers. So if you see carefully, imdbRating has data typeof string, indicated by " ". To calculate the average, you have to change it to number. Map helped you to convert all the imdbRating property inside the array to number with that single line of code.</p><br>
-                                                            <h5 style="color:#3CA1FF">What about <br><br> <code>reduce((x1, x2) => x1 + x2) / watchList.filter(x => x.Director === "Christopher Nolan").length;</code>?</h5>
+                                                            <h5 style="color:#3CA1FF">What about <br><br> <code>reduce((e1, e2) => e1 + e2) / watchList.filter(e => e.Director === "Christopher Nolan").length;</code>?</h5>
                                             
                                                             <p style="color:#3CA1FF">Well, we can see the division math operator, so this is the part where the code calculate the average by using <a href="https://www.w3schools.com/jsref/jsref_reduce.asp">reduce</a>.</p>
                                                             <p style="color:#FF7777">In the first part, they simply sum all the imdbRating that we just mapped before, and then we divide it with the length of an array that was directed by Christopher Nolan, which is 4, from 0 , 1 , 2, 3 indexes.</p>
@@ -938,6 +943,7 @@
                                                     </form><br><br>
                                                     <h5>Wait I am waiting my respawn timer, the game is too broken</h5>
                                                     <p>This magic skills were one of the great Javascript power, it can manipulates everything I want.</p>
+                                                  
                                                     <p><a href="https://www.w3schools.com/js/js_htmldom.asp">Read some articles</a> to have ideas on DOM.</p>
                                 </div>
                                 
