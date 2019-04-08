@@ -74,7 +74,3 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
         } 
       });
     });
-
-   function change_color(this){
-    document.getElementById('change_color').style.color = 'red'
-   }
