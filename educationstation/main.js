@@ -98,15 +98,17 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
       if(true){document.getElementById('light').style.color = 'red'}
       
       document.body.style.color="white";
-      setInterval(function(){ alert("Thy shalt return to time without chaos, restart this whole creation the developer made. Bring back the dark fonts. Only you are capable of saving this web."); }, 5000);
+      setInterval(function(){ alert("Thy shalt return to time without chaos, restart this whole creation the developer made. Bring back the dark fonts, bring back the balance"); }, 8000);
     }
 
     function buttonFour(){
       if(document.getElementById('asd').value == 'I want to fly across the galaxy')
       {
         document.getElementById('asd').style.color = "red"
-        document.getElementById('asd').value = 'Let the dark magic flows through me one last time'
+        document.getElementById('asd').value = 'LET THE DARK MAGIC FLOWS THROUGH ME ONE LAST TIME'
 
+      } else if(document.getElementById('asd').value == 'Let the dark magic flows through me one last time'){
+        alert("No more Hulk smash")
       } else{
         alert("No magic can be invoked")
       }
