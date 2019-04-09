@@ -80,6 +80,10 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
       
       if(true){
         document.getElementById('change_color').style.color = 'red'
+       
+      } 
+      if(document.getElementById('change_color').style.color == 'red'){
+        alert("The magic inside you have grown")
       }
     }
       
@@ -107,8 +111,8 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
         document.getElementById('asd').style.color = "red"
         document.getElementById('asd').value = 'LET THE DARK MAGIC FLOWS THROUGH ME ONE LAST TIME'
 
-      } else if(document.getElementById('asd').value == 'Let the dark magic flows through me one last time'){
-        alert("No more Hulk smash")
+      } else if(document.getElementById('asd').value == 'LET THE DARK MAGIC FLOWS THROUGH ME ONE LAST TIME'){
+        alert("Tell Stark: Stay, you idiot! Tell him, Murph! Stay...Murph, tell him again! Don't let him leave!...Murph, don't let me leave...STAY!! Interstellar reference, anyone? This website has hidden solutions and hidden feels indeed")
       } else{
         alert("No magic can be invoked")
       }
