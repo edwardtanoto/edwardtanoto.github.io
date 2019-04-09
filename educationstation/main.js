@@ -112,7 +112,7 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
         document.getElementById('asd').value = 'LET THE DARK MAGIC FLOWS THROUGH ME ONE LAST TIME'
 
       } else if(document.getElementById('asd').value == 'LET THE DARK MAGIC FLOWS THROUGH ME ONE LAST TIME'){
-        alert("Tell Stark: Don't go, you idiot! Don't leave your kids. You goddamn fool!...S...T...A...Y...Stay, you idiot! Tell him, Murph! Stay...Murph, tell him again! Don't let him leave!...Murph, don't let me leave...STAY!!")
+        alert("Tell Stark: Don't go, you idiot! Don't leave your kids. You goddamn fool!...S...T...A...Y...Stay, you idiot! Tell him, Murph! Stay...Murph, tell him again! Don't let him leave!...Murph, don't let me leave...STAY!! Interstellar reference, anyone? You've seen hidden solutions, now it's hidden feels.")
       } else{
         alert("No magic can be invoked")
       }
