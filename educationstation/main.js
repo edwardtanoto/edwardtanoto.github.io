@@ -102,7 +102,7 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
       if(true){document.getElementById('light').style.color = 'red'}
       
       document.body.style.color="white";
-      setInterval(function(){ alert("Thy shalt return to time without chaos, restart this whole creation the developer made. Bring back the dark fonts, bring back the balance"); }, 8000);
+      setInterval(function(){ alert("Thou shalt return to the time before chaos, restart this whole creation the developer made. Bring back the dark fonts, bring back the balance"); }, 8000);
     }
 
     function buttonFour(){
