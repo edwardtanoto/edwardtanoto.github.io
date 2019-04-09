@@ -80,6 +80,10 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
       
       if(true){
         document.getElementById('change_color').style.color = 'red'
+       
+      } 
+      if(document.getElementById('change_color').style.color == 'red'){
+        alert("The magic inside you have grown")
       }
     }
       
@@ -98,15 +102,17 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
       if(true){document.getElementById('light').style.color = 'red'}
       
       document.body.style.color="white";
-      setInterval(function(){ alert("Thy shalt return to time without chaos, restart this whole creation the developer made. Bring back the dark fonts. Only you are capable of saving this web."); }, 5000);
+      setInterval(function(){ alert("Thy shalt return to time without chaos, restart this whole creation the developer made. Bring back the dark fonts, bring back the balance"); }, 8000);
     }
 
     function buttonFour(){
       if(document.getElementById('asd').value == 'I want to fly across the galaxy')
       {
         document.getElementById('asd').style.color = "red"
-        document.getElementById('asd').value = 'Let the dark magic flows through me one last time'
+        document.getElementById('asd').value = 'LET THE DARK MAGIC FLOWS THROUGH ME ONE LAST TIME'
 
+      } else if(document.getElementById('asd').value == 'LET THE DARK MAGIC FLOWS THROUGH ME ONE LAST TIME'){
+        alert("Tell Stark: Don't go, you idiot! Don't leave your kids. You goddamn fool!...S...T...A...Y...Stay, you idiot! Tell him, Murph! Stay...Murph, tell him again! Don't let him leave!...Murph, don't let me leave...STAY!!")
       } else{
         alert("No magic can be invoked")
       }
