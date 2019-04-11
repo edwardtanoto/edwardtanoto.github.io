@@ -83,7 +83,8 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
        
       } 
       if(document.getElementById('show').style.display == 'block'){
-        alert("The magic inside you have grown")
+        setTimeout(function(){  alert("DID YOU SEE THAT? I AM INVINCIBLE!!") }, 500);
+       
       }
     }
       
