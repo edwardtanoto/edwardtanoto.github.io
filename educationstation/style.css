@@ -23,7 +23,8 @@ nav {
     
   }
   #light{
-      color:white;
+      display: none;
+      color:#FF7777;
   }
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #B2FFBE   ;
@@ -39,9 +40,11 @@ nav {
       background-color: #FF7777;
       border-radius: 6px;
   }
-  .test{
-      color:white;
+#show{
+      display: none;
+      color: #FF7777;
       text-align: center;
+      font-size: 7rem;
   }
   .ul {
       list-style-type: none;

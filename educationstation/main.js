@@ -79,19 +79,20 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
     function buttonOne(){
       
       if(true){
-        document.getElementById('change_color').style.color = 'red'
+        document.getElementById('show').style.display = 'block'
        
       } 
-      if(document.getElementById('change_color').style.color == 'red'){
-        alert("The magic inside you have grown")
+      if(document.getElementById('show').style.display == 'block'){
+        setTimeout(function(){  alert("DID YOU SEE THAT? I AM INVINCIBLE!!") }, 500);
+       
       }
     }
       
     
     function buttonTwo(){
-      if(document.getElementById('change_color').style.color === 'red'){
+      if(document.getElementById('show').style.display === 'block'){
         if(true){
-          document.getElementById('change_color').style.color = 'white'
+          document.getElementById('show').style.display = "none";
         }
       } else{
         alert("You can't lost something you haven't gained")
@@ -99,10 +100,11 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
     }
 
     function buttonThree(){
-      if(true){document.getElementById('light').style.color = 'red'}
+      if(true){document.getElementById('light').style.display = "absolute"}
       
-      document.body.style.color="white";
-      setInterval(function(){ alert("Thou shalt return to the time before chaos, restart this whole creation the developer made. Bring back the dark fonts, bring back the balance"); }, 8000);
+      document.body.style.display="none";
+      setTimeout(function(){ alert("Finally! The light has return! No more hidden solutions, just nothingness, only the prophecy will show the return of the balance. 5500000 microseconds in the future, someone will make it come true") }, 500);
+      setTimeout(function(){ alert("5500000 microseconds have passed. Thou shalt return to the time before chaos, restart this whole creation the developer made. Bring back the balance, bring back the world"); }, 6000);
     }
 
     function buttonFour(){
