@@ -83,7 +83,7 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
        
       } 
       if(document.getElementById('show').style.display == 'block'){
-        setTimeout(function(){  alert("DID YOU SEE THAT? I WAS INVINCIBLE!!") }, 500);
+        setTimeout(function(){  alert("DID YOU SEE THAT? I WAS INVISIBLE!!") }, 500);
        
       }
     }
