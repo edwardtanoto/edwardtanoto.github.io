@@ -83,7 +83,7 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
        
       } 
       if(document.getElementById('show').style.display == 'block'){
-        setTimeout(function(){  alert("DID YOU SEE THAT? I AM INVINCIBLE!!") }, 500);
+        setTimeout(function(){  alert("DID YOU SEE THAT? I WAS INVINCIBLE!!") }, 500);
        
       }
     }
@@ -103,8 +103,18 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
       if(true){document.getElementById('light').style.display = "absolute"}
       
       document.body.style.display="none";
-      setTimeout(function(){ alert("Finally! The light has return! No more hidden solutions, just nothingness, only the prophecy will show the return of the balance. 5500000 microseconds in the future, someone will make it come true") }, 500);
-      setTimeout(function(){ alert("5500000 microseconds have passed. Thou shalt return to the time before chaos, restart this whole creation the developer made. Bring back the balance, bring back the world"); }, 6000);
+      setTimeout(function(){ alert("Finally! Everything is now gone. No more hidden solutions, just nothingness. 5500000 microseconds in the future, someone will make it come true") }, 500);
+      setTimeout(function(){ alert("5500000 microseconds have passed. Restart this whole creation the developer made. Bring back the balance, bring back the world. Or idk maybe wait a little more? Who knows it might get better"); }, 6000);
+      setTimeout(function(){ alert("You still there? Wait til the condition is true, then you will be rewarded for your patience."); }, 12000);
+      setTimeout(function(){
+        alert("All shall be revealed")
+        if(document.body.style.display="none"){
+          document.body.style.display="block";
+          document.body.style.background="#4D4747";
+          document.body.style.color="#F1DEDE";
+          
+        }
+      },13000)
     }
 
     function buttonFour(){

@@ -124,6 +124,13 @@ footer {
    width: 80%;
 }
 
+.m{
+    margin-left: auto;
+   margin-right: auto;
+   display:block; 
+   width: 100%;
+}
+
 .source{
     height: 100vh;
     margin-bottom: 550px;
