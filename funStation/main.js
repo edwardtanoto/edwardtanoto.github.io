@@ -440,7 +440,7 @@ function leaveEarthPath(e){
     leaveEarth.textContent = "Game Over, try different ending."
     const user = firstInput.value
     stayEarth.style.display = 'none'
-    firstWanderer.textContent = `You've arrived at the capital of Mars, the utopia which named Solis. You and Steve told the leader of the Martians, Zedd, of the current earth. They agree to help us, but they only serve parts to build our own spaceship, it would probably take 3 years to develop a full working spaceship alone. ${user} and Steve worked together, and finally take 2 years to return to Earth and bring the Builder's absolute control down, and finally reform Solitude. Solitude and Solis rebuild their relationships after.`
+    firstWanderer.textContent = `You've arrived at the capital of Mars, the utopia which named Solis. You and Steve told the leader of the Martians, Zedd, of the current earth situation. They agreed to help, but they only serve parts to build our own spaceship, it would probably take 3 years to develop a full working spaceship alone. ${user} and Steve worked together, and finally took 2 years to return to Earth and after 3 days of war, you finally bring the Builder's absolute control down, and finally reform Solitude. Solitude and Solis rebuild their relationships after, and bring people of Solitude to Solus, to explore the stars.`
   }
   e.preventDefault()
 }
