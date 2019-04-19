@@ -23,16 +23,16 @@
     margin-top: 50px;
     min-height: 65vh;
 }
-input[type=text] {
-    background-color: #FF914F   ;
-    color: white;
-}
-input[type=text]:hover{
-color:white;
+.inputOne{
+    background: #FF6666;
+    border: none;
+    border-radius : 8px;
+    height: 35px;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-color: #f4f4f4;
+color: #ccc;
 opacity: 1; /* Firefox */
+text-align: center;
 
 }</style>
 </head>
@@ -49,7 +49,7 @@ opacity: 1; /* Firefox */
          <label for="name" class="alert alert-info">Hey there, what's your name?</label>
          <br>
          <hr>
-         <input type="text" class="btn inputOne" minlength="4" id="name" placeholder="Type name..." required>
+         <input type="text" class="inputOne" minlength="4" id="name" placeholder="Type name..." required>
          <button class="btn btn-danger" type="submit" id="buttonOne">Submit</button>
          
          </form> <br>
@@ -72,7 +72,7 @@ opacity: 1; /* Firefox */
         </div>
        
     </div>
-    <label class="charBuilder alert alert-danger">The Builder</label>
+    <label for="darth-vader-example" class="charBuilder alert alert-danger">The Builder</label>
    
         <div class="example-item obiwan">
         <div class="lightsaber">
