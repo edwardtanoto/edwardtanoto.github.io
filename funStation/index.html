@@ -63,6 +63,7 @@ text-align: center;
 	<div class="mw-100">
             <br>
             <div style="text-align:center;" id="outputtwo"></div>
+            <div class="ph">
 		<div class="example-item darthvader">
 			<div class="lightsaber">
 				<label for="darth-vader-example"></label>
@@ -86,33 +87,34 @@ text-align: center;
            
         </div>  
     </div> 
-    <label class="charWanderer alert alert-primary">The Wanderer</label>
+    <label for="obi-wan-example" class="charWanderer alert alert-primary">The Wanderer</label>
+            </div>
     <div class="the-builder">
-        <form>
-            <button type="submit" id="build-tech" class="btn btn-danger">Build advanced security robot for more control</button>
-            <button type="submit" id="order-army" class="btn btn-danger">Find Stark, previous leader</button>
+        <form class="f1 form-group">
+            <button type="submit" id="build-tech" class="btn btn-danger">Build advanced security robot for more control</button> <br><br>
+            <button type="submit" id="order-army" class="btn btn-danger">Find Stark, previous leader</button><br><br>
             <button type="submit" id="change-system" class="btn btn-danger">Change the dystopian control system</button>
         </form>
         <br>
         <div class="first-choice-builder"></div> 
         <div class="second-choice-builder">
                 <br> <br>
-        <form id="if-build-tech">
+        <form id="if-build-tech" class="form-group">
             <button class="btn btn-danger" type="submit" id="destroy-rebel">Destroy the rebel</button>
             <button class="btn btn-danger" type="submit" id="negotiate-rebel">Negotiate with the rebel</button>
         </form>
-        <form id="if-order-army">
+        <form id="if-order-army" class="form-group">
             <button class="btn btn-danger" type="submit" id="stark-research">Ask him the detail</button>
             <button class="btn btn-danger" type="submit" id="leave-stark">Leave him alone</button>
         </form>
-        <form id="if-change-system">
+        <form id="if-change-system" class="form-group">
             <button class="btn btn-danger" type="submit" id="democracy">Democracy, no more oppression</button>
             <button class="btn btn-danger" type="submit" id="absolute-monarchy">Absolute Monarchy, no one but you.</button>
         </form>
        
     </div> 
     <div class="third-choice-builder">
-    <form id="stark">
+    <form id="stark" class="form-group">
             <button class="btn btn-danger" type="submit" id="join-stark">Join Stark reform Solitude</button>
             <button class="btn btn-danger" type="submit" id="punish-stark">Punish Stark for treason</button>
         </form>
@@ -121,19 +123,19 @@ text-align: center;
         
     </div>
     <div class="the-wanderer">
-        <form>
-            <button  type="submit" id="old-forest" class="btn btn-primary">Wander around old forest</button>
-            <button  type="submit" id="to-border" class="btn btn-primary">Get into the border of Solitude</button>
+        <form class="form-group">
+            <button  type="submit" id="old-forest" class="btn btn-primary">Wander around old forest</button><br><br>
+            <button  type="submit" id="to-border" class="btn btn-primary">Get into the border of Solitude</button><br><br>
             <button  type="submit" id="rebel" class="btn btn-primary">Plan a rebel to overthrow the Builder</button>
         </form> <br> 
         <div class="first-choice-wanderer"></div>
         <div class="second-choice-wanderer">
                 <br> <br>
-        <form id="if-wander-forest">
+        <form id="if-wander-forest"class="form-group">
             <button class="btn btn-primary" type="submit" id="get-rocket">Walk to the building</button>
             <button class="btn btn-primary" type="submit" id="leave-rocket">Leave the building</button>
         </form>
-        <form id="if-into-border">
+        <form id="if-into-border"class="form-group">
             <button class="btn btn-primary" type="submit" id="go-beyond">Go beyond the border</button>
             <button class="btn btn-primary" type="submit" id="leave-border">Go back to Solitude</button>
         </form>
@@ -141,11 +143,11 @@ text-align: center;
         
     </div> 
     <div class="third-choice-wanderer">
-    <form id="mars">
+    <form id="mars"class="form-group">
             <button class="btn btn-primary" type="submit" id="leave-earth">Leave Earth and fly to Mars</button>
             <button class="btn btn-primary" type="submit" id="stay">Stay in Earth as wanderer</button>
     </form>
-    <form id="last-arc">
+    <form id="last-arc"class="form-group">
             <button class="btn btn-primary" type="submit" id="re-join">Re-join the builder</button>
             <button class="btn btn-primary" type="submit" id="decline">Decline the offer</button>
     </form>

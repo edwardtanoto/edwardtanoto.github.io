@@ -1,9 +1,16 @@
 .example-item {
-    padding-left: 438px;
+    padding-left:438px;
     display: inline-block;
 }
 .lightsaber { position: relative; }
-
+@media(max-width:768px){
+    .example-item{
+        display: none;
+    }
+    .ph{
+        padding-left: 65px;
+    }
+}
 .lightsaber label {
 cursor: pointer;
 position: absolute;
@@ -281,4 +288,7 @@ to { box-shadow: 0 0 10px #3784d6; }
 
 #mars, #last-arc , #stark {
     display:none;
+}
+.f1{
+    
 }
