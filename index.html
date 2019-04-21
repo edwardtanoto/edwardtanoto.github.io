@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="style3.css">
-  <script src="main.js"></script>
+ 
   <title>Edward Tanoto</title>
 </head>
 <body class="mw-100">
@@ -98,28 +98,27 @@ $(window).on("scroll", function() {
  
 
  <div>
-<p class="lead">
-<form method="get" action="javascript:void()">
-   <label>&nbsp;&nbsp;&nbsp;&nbsp;
-     <strong>Language:</strong>&nbsp;&nbsp; 
-     <select name="language" id="language">
-         <option>English</option>
-       <option>Chinese</option>
-       <option>Indonesian</option>
-       <option>Japanese</option>
-     </select>
-   </label>&nbsp;&nbsp;
-   <input type="button" onclick="sayHello(this.form.language.options[this.form.language.selectedIndex].value);" value="Say Hello" />
- </form>
+  <form>
+    <label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <strong>Language:</strong>&nbsp;&nbsp; 
+      <select name="language" id="language">
+        <option selected="selected">Try me</option>
+        <option>English</option>
+        <option>Chinese</option>
+        <option>Indonesian</option>
+        <option>Japanese</option>
+      </select>
+    </label>
+  </form>
 
 
 
-</p> 
+
 
 </div>
 <div class="row">
 <div class="col-md-6">
-     <p class="phone" style="margin-top: 100px;">
+     <p class="phone" id="output" style="margin-top: 100px;">
  Language the method of human communication,<br>
   that has huge role to let our 'voice' out.<br><br> English is my most comfortable global language to speak with people.<br> <br>I speak anime language as well, I took Japanese language course in my high school<br><br> As for Mandarin, I speak it for daily life only, you can call me 陈 .<br>
  

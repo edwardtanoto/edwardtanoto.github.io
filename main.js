@@ -64,15 +64,7 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
     }
   
 
-function sayHello(language) {
-	var arrHellos = {
-		"Chinese" : "你好世界",
-		"Indonesian" : "Halo Dunia",
-		"English" : "Hello world",
-		"Japanese" : "こんにちは世界",
-	};
-	alert(arrHellos[language]);
-}
+
 
 jQuery(document).ready(function(){
 	jQuery('.skillbar').each(function(){
@@ -135,3 +127,34 @@ if ($target.is(":focus")) { // Checking if the target was focused
 }
 });
 })
+
+const language = document.getElementById('language');
+const output = document.getElementById('output');
+
+const tryme= "Language the method of human communication,<br> that has huge role to let our 'voice' out.<br><br> English is my most comfortable global language to speak with people.<br> <br>I speak anime language as well, I took Japanese language course in my high school<br><br> As for Mandarin, I speak it for daily life only, you can call me 陈 .<br>";
+
+const indo = "Halo! Saya Edward, dari Jakarta.<br><br> Saya hobby main komputer dari SD, terutama main game. Pas SMA, saya baru mulai belajar coding.<br><br> Coding itu pertama-tama asing　karena kita di sekolah ga diajarin apa-apa, tapi setelah kita lewatin stress-stessnya, coding jadi semakin seru, tetep susah, tapi lebih seru.<br><br> Saya berharap bisa menggunakan bakat dan talenta untuk dunia yang lebih baik ";
+const english = "Hi! My name is Edward <br><br> I honestly not sure what to wrote since there is a section dedicated for about me. Nevermind. This is another about me. <br><br>I am 17 years old, loved computer since kids and never seen code until 16 . Wait, I typed tracert and ipconfig in terminal on 15 y.o, which made me look really cool, does that count? <br><br> My first time learning code was in an app called Sololearn in my phone, simple console.log('Hello World') until a lot of complicated things.<br><br>I also enjoy doing other stuff like video editing, playing video games, and watching movies.";
+const japanese = "はじめまして、私はエドワドです。<br><br>私はじゅうななさいです  <br><br> 私はインドネシアからきました。<br><br> 私はコンピュウタが大好き、 <br><br>これは私のはじめての日本語でのコドです、よろしくおねがいします。 ";
+const mandarin = "您好，我的名字是陈永德。<br><br>我来自印尼.我是计算机科学的学生。<br><br>我的爱好是电脑程序设计和音乐。祝你今天愉快.";
+
+
+language.addEventListener('change',sayHello)
+
+function sayHello(language) {
+    language = document.getElementById('language').value
+    if(language === "English"){
+        output.innerHTML = english;
+    } else if(language === "Japanese"){
+        output.innerHTML = japanese;
+    }
+      else if(language === "Chinese"){
+        output.innerHTML = mandarin;
+    }
+      else if(language === "Indonesian"){
+        output.innerHTML = indo;
+    }
+      else if(language === "Try me"){
+        output.innerHTML = tryme;
+  }
+}
