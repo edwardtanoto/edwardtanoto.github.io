@@ -192,7 +192,6 @@ function darkSideIntro(){
     lightSide.disabled = true
     firstInput.disabled =true
     obiwan.style.display = 'none';
-    darthvader.style.zIndex = '0'
     wandererLabel.style.display = 'none'
     builderPartOne()
     
@@ -207,7 +206,6 @@ function lightSideIntro(){
    darkSide.disabled = true;
    firstInput.disabled =true;
    darthvader.style.display = 'none';
-   obiwan.style.zIndex = '0'
    builderLabel.style.display = 'none'
    wandererPartOne()
    
@@ -331,7 +329,7 @@ function starkResearchPath(e){
   if(true){
     const user = firstInput.value;
     leaveStark.style.display = 'none'
-    firstBuilder.textContent = `According to vault777 archieves in the old computer, V1A controlled the world through technology, they watched over everyone, blackmailed the leader of nations to fight each other, assassinated the opposition by 'vehicle accident' and other ways, and have ruled the world in shadow for centuries. There are some people who escaped this global organisation , approximately 200 people. They were under protection of other global organisation, which was StarX. StarX escaped to other planet, and build their utopian there. Meanwhile, the remnant of V1A who were responsible for the start of nuclear war, disguised as the member of the Builder , they make Stark their leader as a scapegoat in case their absolute control threaten. Stark raised you, ${user}, to maintain the order in the Builder's way , so the Builder won't lay a finger to his child. He asked you to let him rebuild this world they way it was supposed to be.`
+    firstBuilder.textContent = `According to vault777 archieves in the old computer, V1A controlled the world through technology, they watched over everyone, blackmailed the leader of nations to fight each other, assassinated the opposition by 'vehicle accident' and other ways, and have ruled the world in shadow for centuries. There are some people who escaped this global organisation , approximately 200 people. They were under protection of other global organisation, which was StarX. StarX escaped to other planet, and build their utopian there. Meanwhile, the remnant of V1A who were responsible for the start of nuclear war, disguised as the member of the Builder , they make Stark their leader as a scapegoat in case their absolute control threatened. Stark raised you, ${user}, to maintain the order in the Builder's way , so the Builder won't lay a finger to his child. He asked you to let him rebuild this world they way it was supposed to be.`
     stark.style.display = 'block';
     starkResearch.style.display = 'none'
   }
@@ -431,7 +429,7 @@ function punishStarkPath(e){
     punishStark.textContent = "Game Over"
     firstBuilder.style.color = 'red';
     joinStark.style.display = 'none'
-    firstBuilder.textContent = "You bring him to 'justice' in the Builder's court. The Builder's appreciate your action, and let you join the elites, you control Solitude with absolute control, keeping them stay when they were about to flee, and continue the dystopian control for 3 years, until someone from StarX called for help of Martians to liberate Solitude. They wiped away the Builder elites, including you and every executives, and reform Solitude.  "
+    firstBuilder.textContent = "You bring him to 'justice' in the Builder's court. The Builder's appreciate your action, and let you join the elites, you control Solitude with absolute control, keeping them stay when they were about to flee, and continue the dystopian control for 3 years, until someone from StarX called for help of Martians to liberate Solitude. Solitude's won the war with heavy casualties. You stay as the emperor of Solitude, and murder the Builder's elite while they were recovering and stay at the top as absolute monarchy .  "
   }
   e.preventDefault()
 }
