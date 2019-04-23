@@ -28,6 +28,9 @@ h3{
     color: black;
 
 }
+.mylogo{
+    width:100px;
+}
 .me{
     width: 550px;
 }
@@ -38,12 +41,14 @@ h3{
    .t{
        font-size: 18px
    }
-   
+   .mylogo{
+      float: left;
+   }
     .jumbotronFour{
         margin-bottom:100vh;
     }
    .h2{
-       font-size:1.5rem;
+       font-size:2rem;
    }
 }
 video::-webkit-media-controls-panel {
