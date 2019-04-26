@@ -186,8 +186,8 @@ $(window).on("scroll", function() {
 
 <div class="row">
   <div class="col-md-4">
-    <h2 style="text-align: left; margin-left: 100px;" class="h2">About me</h2>
-            <div class="center" style="margin-top:150px;">
+   
+            <div class="center" style="margin-top:250px;">
              
                 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="edwardtanoto"><a target="_blank" class="LI-simple-link" href='https://id.linkedin.com/in/edwardtanoto?trk=profile-badge'>Edward Tanoto</a></div>
                       <br>
@@ -199,8 +199,9 @@ $(window).on("scroll", function() {
             </div>            
 
 <div class="col-md-8" style="margin-top:110px;">
+  <h2 style="text-align: center;" class="h2 mb-5">Code for better</h2>
 <p class="t mw-100 mx-auto">
-My name is Edward. I've started to code since high school and loved doing it. <br> <br>
+ What is programming in my opinion and why should we learn it<br> <br>
 For me programming is like an art, art of solving problem, but a little bit more cryptic than whatever despacito is.<br>
 <br> Just like this whole thing is just binaries converted into pixels which forms this.text and everything in this.screen , code have deeply shaped our modern life. <br><br>
 
@@ -283,24 +284,89 @@ It was fun learning it, I believe getting good at DOM will open up a lot of crea
 </div>
 <br><br><br>
 <div style="margin-top:2em" class="mw-100">
-  <p  style="font-size:1.2em">Python Facial Recognition</p>
-  <p style="font-size:1rem" class="mw-100"><a href="https://github.com/ageitgey/face_recognition" class="a">https://github.com/ageitgey/face_recognition</a></p>
+  <p>Python Facial Recognition</p>
+  <p class="mw-100"><a href="https://github.com/ageitgey/face_recognition" class="a">https://github.com/ageitgey/face_recognition</a></p>
+  <p><a class="a" href="https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78">Read his articles here</a></p>
   <br>
-<video class="center mw-100"  controls>
-  <source src="findfaces.mov" type="video/mp4">
-  </video>
+  <div class="row">
+    <div class="col-md-6">
+        <video class="center mw-100"  controls>
+            <source src="findfaces.mov" type="video/mp4">
+            </video>
+            <img src="flocation.png" class="mw-100 mb-3 mt-3 center" alt="face_locations">
+    </div>
+    <div class="col-md-6">
+         <p>Find Faces</p>
+        <p>With the imported <nobr style="color:#FF5D4A">face_recognition</nobr> libary, we could access <nobr style="color:#FF5D4A">load_image_file</nobr> method from face recognition library, and pass our image as an argument and store it to a variable called <nobr style="color:#FF5D4A">image</nobr>.</p>
+        <p><nobr style="color:#FF5D4A">image</nobr> later will be passed as argument in <nobr style="color:#FF5D4A">face_location</nobr> method that we can access after we import <nobr style="color:#FF5D4A">face_recognition</nobr> library, then we store it into <nobr style="color:#FF5D4A">face_locations</nobr> variable. </p>
+        <p>To show the output in the terminal, we have to <nobr style="color:#FF5D4A">print</nobr> it, and what we want to do is to show how many faces in the image.</p>
+        <p>What <nobr style="color:#FF5D4A">face_locations</nobr> show is actually not the number of people the code </p>
+        
+        <p>It shows the coordinate of the faces that the code reads in <nobr style="color:#FF5D4A">image</nobr> variables, and output the coordinates as tuples and put it inside a list.  </p>
+        <p>So, if we want to show the number of coordinates, we have to use <nobr style="color:#FF5D4A">len</nobr>() and get the number of people</p>
+        <p>The code itself isn't 100% accurate, for example, it doesn't read someone on the far left of the picture.</p>
+    </div>
+  </div>
+
   <br>
-  <video class="center mw-100" controls>
-    <source src="pullfaces.mov" type="video/mp4">
-    </video>
+  <div class="row">
+    <div class="col-md-6">
+       <p>Pull Faces</p>
+       <p>In <nobr style="color:#FF5D4A">findfaces</nobr> before, we can see that we get the coordinates of the faces.</p>
+       <p>What <nobr style="color:#FF5D4A">pullfaces</nobr> do here is basically it loops through the coordinates of the location and show it to us with help of PIL.</p>
+       <p>We will have to import <nobr style="color:#FF5D4A">Image</nobr> from <nobr style="color:#FF5D4A">PIL</nobr>, which is the short of Python Imaging Library, to help us show or save images we get faster. You can install <nobr style="color:#FF5D4A">PIL</nobr> by typing <nobr style="color:#FF5D4A">pip install Pillow</nobr>. Pillow is a maintained fork of PIL </p>
+       <p>The Image module provides a class with the same name which is used to represent a PIL image. The module also provides a number of factory functions, including functions to load images from files, and to create new images.</p>
+       <p>So what we want to do after that is to loop the <nobr style="color:#FF5D4A">face_locations</nobr> and assign the coordinates, top,right,bottom,left into <nobr style="color:#FF5D4A">face_location</nobr></p>
+       <p><nobr style="color:#FF5D4A">image</nobr> has value of lists. To get the image of faces, we want to take every different coordinates from top coordinates to bottom, and left coordinates to right, then we can store it to <nobr style="color:#FF5D4A">face_image</nobr> variable. </p>
+      <p><a class="a" href="https://stackoverflow.com/questions/509211/understanding-slice-notation">Understanding slice notation</a> to know how to take the coordinates of  <nobr style="color:#FF5D4A">face_image</nobr></p> 
+      <p>Then we create <nobr style="color:#FF5D4A">pil_image</nobr> variable that stores the Image.fromarray()</p>
+      <p>Creates an image memory from an object exporting the array interface (using the buffer protocol).</p>
+      <p>After that, we use <nobr style="color:#FF5D4A">show</nobr>() to show <nobr style="color:#FF5D4A">pil_image</nobr></p>
+      <p>We can also save it with <nobr style="color:#FF5D4A">save</nobr>() method and pass filename as argument </p>
+    </div>
+    <div class="col-md-6">
+        <video class="center mw-100" controls>
+            <source src="pullfaces.mov" type="video/mp4">
+            </video>
+            <img src="image.png" class="mw-100 center" alt="What is image">
+    </div>
+  </div>
+  
     <br>
-    <video class="center mw-100" controls>
-      <source src="facematch.mov" type="video/mp4">
-      </video>
+    <div class="row">
+      <div class="col-md-6">
+          <video class="center mw-100" controls>
+              <source src="facematch.mov" type="video/mp4">
+              </video> <br>
+              <img class="center mw-100" src="encoding.png" alt="Without [0]">
+           
+      </div>
+      <div class="col-md-6">
+        <p>Face Match</p>
+       <p>Can't match a face if there is only one face. Store your images into variables.</p>
+       <p><nobr style="color:#FF5D4A">face_recognition</nobr> has a method of <nobr style="color:#FF5D4A">face_encodings</nobr> that passes image as the argument.</p>
+       <p>Notice <nobr style="color:#FF5D4A">face_recognition.face_encodings(edward2019_image)[0]</nobr></p>
+       <img  class="center mw-100"src="encoding1.png" alt="With [0]"> <br>
+       <p>We use [0] to access the first value of list , which then we compare with <nobr style="color:#FF5D4A">compare_faces</nobr> method which takes 2 argument of the comparison, and store it into <nobr style="color:#FF5D4A">results</nobr> variable. </p>
+       <p>And if the first value of results is accurate, then we print something we want, else, we print something else.</p>
+      
+      </div>
+    </div>
+   
       <br>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <p><a class="a" href="https://github.com/ageitgey/face_recognition/blob/master/examples/identify_and_draw_boxes_on_faces.py">Identify</a></p>
+          <p>You can read the comments to understand what the code does</p>
+          <p>The code is longer and trickier than others, so explaining it to the detail will take a lot of time.</p>
+        </div>
+        <div class="col-md-6">
+          
       <video class="center mw-100" controls>
-        <source src="identify.mov" type="video/mp4">
-        </video>
+          <source src="identify.mov" type="video/mp4">
+          </video>
+        </div>
+      </div>
         <br><br>
         <p class="mw-100">Doesn't work on your computer?
           <ul class="mw-100">
@@ -311,7 +377,7 @@ It was fun learning it, I believe getting good at DOM will open up a lot of crea
             <p> <li>Follow <a href="https://gist.github.com/ageitgey/629d75c1baac34dfa5ca2a1928a7aeaf">this step</a> to install dlib in MacOS or Ubuntu, if you're using windows you should google it.</li></p>
               <p> <li>And you probably have to install cmake to install dlib</li></p>
                 <p> <li>For identify and pullfaces, you have to install PIL in your terminal, then import it.</li></p>
-                  <p> <li>This is how python works, 4 lines of code and you can findfaces. 90% of the code only works by import face_recognition, the rest is just following the docs.</li></p>
+                  <p> <li>Most of Python's code works this way, 4 lines of code and you can findfaces. 90% of the code only works because import face_recognition.</li></p>
           </ul>
         </p>
         
@@ -572,7 +638,8 @@ It was fun learning it, I believe getting good at DOM will open up a lot of crea
    <a class="a" href="mailto:edwardt.dev@gmail.com?subject=Hi There!"><i class="fa fa-envelope-o"style="font-size:32px; text-align:center;" aria-hidden="true"></i></a>
       &nbsp;&nbsp;&nbsp; <a class="a" href="https://github.com/edwardtanoto"><i class="fa fa-github" aria-hidden="true" style="font-size:32px;"></i></a>&nbsp;&nbsp;<a class="a" href="#home"> edwardtanoto</a>
 </footer>
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   <script src="main.js"></script>
+  
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>
