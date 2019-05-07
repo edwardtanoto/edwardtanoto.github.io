@@ -135,8 +135,8 @@ const tryme= "Language the method of human communication,<br> that has huge role
 
 const indo = "Halo! Saya Edward, dari Jakarta.<br><br> Saya hobby main komputer dari SD, terutama main game. Pas SMA, saya baru mulai belajar coding.<br><br> Coding itu pertama-tama asing　karena kita di sekolah ga diajarin apa-apa, tapi setelah kita lewatin stress-stessnya, coding jadi semakin seru, tetep susah, tapi lebih seru.<br><br> Saya berharap bisa menggunakan bakat dan talenta untuk dunia yang lebih baik. ";
 const english = "Hi! My name is Edward <br><br>I am 17 years old, loved computer since kids and never seen code until 16 . Wait, I typed tracert and ipconfig in cmd on 15, which made me look really cool, did that count? <br><br> My first time learning code was in an app called Sololearn in my phone, simple console.log('Hello World') until a lot of complicated things.<br><br>I also enjoy doing other stuff like video editing, playing video games, and creating cool things.";
-const japanese = "はじめまして、私はエドワドです。<br><br>私はじゅうななさいです、  <br><br> インドネシアからきました、<br><br> 私はコンピュウタが大好き、 <br><br>日本語でコンピュータプロガムおコドするのはこれがはじめてです、よろしくおねがいします。 ";
-const mandarin = "您好，我的名字是陈永德。<br><br>我来自印尼.我是计算机科学的学生。<br><br>我的爱好是程序设计和音乐。<br><br>祝你今天愉快.";
+const japanese = "はじめまして、エドワドと申します。<br><br>私はじゅうななさい、  <br><br> インドネシアからきました、<br><br> コンピュウタプログラミングが大好き、 <br><br> よろしくおねがいします。 ";
+const mandarin = "您好，我的名字是陈永德。<br><br>我来自印尼 . 现在，我是计算机学的学生， 我想成为一名软件开发人员。<br><br>我喜欢玩电脑和听音乐。<br><br>祝你今天愉快.";
 
 
 language.addEventListener('change',sayHello)
