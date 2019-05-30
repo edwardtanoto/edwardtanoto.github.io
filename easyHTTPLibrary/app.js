@@ -4,6 +4,9 @@ const http = new EasyHTTP;
 // http.get('https://jsonplaceholder.typicode.com/users')
 // .then(data=> console.log(data))
 // .catch(err=>console.log(err))
+http.get('https://www.example.com/comments?count=10')
+.then(data=> console.log(data))
+.catch(err=>console.log(err))
 
 
 //User data
@@ -23,6 +26,6 @@ const data = {
 // .catch(err=>console.log(err))
 
 //Delete user
-http.delete('https://jsonplaceholder.typicode.com/users/2')
-.then(data=> console.log(data))
-.catch(err=>console.log(err))
+// http.delete('https://jsonplaceholder.typicode.com/users/2')
+// .then(data=> console.log(data))
+// .catch(err=>console.log(err))
