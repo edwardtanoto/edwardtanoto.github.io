@@ -1,691 +1,117 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="icon" href="icon.ico" />
-   
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style2.css">
-  <link rel="stylesheet" href="style3.css">
- 
-  <title>Edward Tanoto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Edward Tanoto</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Hind&display=swap" rel="stylesheet">
 </head>
-<body class="mw-100">
-            
-
-  <div class="container mw-100" id="home">
-  <br>
-  
-    <h1>EDWARD&nbsp;TANOTO</h1>
-    <h2 style="color:white ">&nbsp;<span class="txt-type" data-wait="2000" data-words='["The Student","learn to change", "The Developer","live to contribute"]'></span></h2>
- <br>
- <br>
-
-
-    
-  </div>
-  <div class="wrapper mw-100">
-    <header>
-
-          <nav>
-
-                <div class="menu-icon">
-                      <i class="fa fa-bars fa-2x"></i>
-                </div>
-
-                <div class="menu">
-                  
-                      <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href=#about>About</a></li>
-                            <li><a href="#projects">Projects</a></li>
+<body>
+    <div class="loader">
+                <div class="circle"></div>
+                <div class="circle"></div>
+    </div> 
+   
+    <div class="main main-container" id="home">
+        <!-- Sidebar -->
+        	<i class="fa fa-bars toggle_menu opacity_one"></i>
+            <div class="sidebar_menu hide_menu">
+                    <i class="fa fa-times"></i>
+                    <center>
+                       <br>
+                        <a target="_blank" href="#portfolio">
+                            <h1 class="boxed_item">EDWARD TANOTO</h1></a>
                             
-                      </ul>
+                        <h2 class="logo_title">Future Software Developer</h2>
+                    </center>
+            
+                    <ul class="navigation_section">
+                        <li class="navigation_item" id="#profile">
+                            <a href="#portfolio" class="b"> <i class="fa fa-user" aria-hidden="true"></i> PROFILE</a>
+                        </li>
+                        <li class="navigation_item" id="#education">
+                            <a href="#portfolio" class="b"><i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION</a>
+                        </li>
+                        <li class="navigation_item" id="#work_experience">
+                            <a href="#portfolio" class="b"> <i class="fa fa-briefcase" aria-hidden="true"></i> WORK EXPERIENCE</a>
+                        </li>
+                        <li class="navigation_item" id="#skills">
+                            <a href="#portfolio" class="b"> <i class="fa fa-code" aria-hidden="true"></i> SKILLS</a>
+                        </li>
+                        <li class="navigation_item" id="#portfolio">
+                            <a href="#portfolio" class="b"><i class="fa fa-github" aria-hidden="true"></i> PORTFOLIO</a>
+                        </li>
+                        <li class="navigation_item" id="#contact">
+                            <a href="#portfolio" class="b"> <i class="fa fa-mobile" aria-hidden="true"></i> CONTACT</a>
+                        </li>
+                    </ul>
+            
+                    <center>
+                        <a href="mailto:edwardt.dev@gmail.com?Subject=Hi There!"><h1 class="boxed_item boxed_item_smaller signup">
+                        <i class="fa fa-envelope"></i>
+                            MAIL ME
+                        </h1></a>
+                    </center>
                 </div>
-          </nav>
+            <!-- End of sidebar -->
+            <div class="toggleWrapper">
+                    <input type="checkbox" class="dn" id="daynight"/>
+                    <label for="daynight" class="toggle">
+                      <span class="toggle__handler">
+                        <span class="crater crater--1"></span>
+                        <span class="crater crater--2"></span>
+                        <span class="crater crater--3"></span>
+                      </span>
+                      <span class="star star--1"></span>
+                      <span class="star star--2"></span>
+                      <span class="star star--3"></span>
+                      <span class="star star--4"></span>
+                      <span class="star star--5"></span>
+                      <span class="star star--6"></span>
+                    </label>
+                  </div>
+        <div id="intro">
+            <div>
+                
 
-    </header>
-
-    
-</div>
-
-
-<script type="text/javascript">
-
-
-// Menu-toggle button
-
-$(document).ready(function() {
-    $(".menu-icon").on("click", function() {
-          $("nav ul").toggleClass("showing");
-    });
-});
-
-// Scrolling Effect
-
-$(window).on("scroll", function() {
-    if($(window).scrollTop()) {
-          $('nav').addClass('black');
-    }
-
-    else {
-          $('nav').removeClass('black');
-    }
-})
-
-
-</script>
- <br>
- 
-
-
- 
-<div class="container-fluid">
- <div class="jumbotronOne">
-<p><a class="a" href="resume/src/index.html">10 Seconds look here (html)</a></p>
-     <br>
- <h2 class="h2" id="about">Hello World!</h2>
- 
-
- <div>
-  <form>
-    <label>&nbsp;&nbsp;&nbsp;&nbsp;
-      <strong>Language:</strong>&nbsp;&nbsp; 
-      <select name="language" id="language">
-        <option selected="selected">Try me</option>
-        <option>English</option>
-        <option>Chinese</option>
-        <option>Indonesian</option>
-        <option>Japanese</option>
-      </select>
-    </label>
-  </form>
-
-
-
- 
-
-</div>
-<div class="row">
-<div class="col-md-6">
-     <p class="phone" id="output" style="margin-top: 100px;">
- Language the method of human communication,<br>
-  that has huge role to let our 'voice' out.<br><br> English is my most comfortable global language to speak with people.<br> <br>I speak anime language as well, I took Japanese language course in my high school and familiar with the basics<br><br> As for Mandarin, I mainly speak it for daily life<br>
- 
-        </p>
-       </div>
-<div class="col-md-6">
-  <br><br>
-  <div class="skillbar clearfix " data-percent="100%">
-    <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
-    <div class="skillbar-bar" style="background: #e67e22;"></div>
-    <div class="skill-bar-percent">100%</div>
-  </div> <!-- End Skill Bar -->
-  
-  <div class="skillbar clearfix " data-percent="80%">
-    <div class="skillbar-title" style="background: #2980b9;"><span>CSS</span></div>
-    <div class="skillbar-bar" style="background: #3498db;"></div>
-    <div class="skill-bar-percent">80%</div>
-  </div> <!-- End Skill Bar -->
-  
-  <div class="skillbar clearfix " data-percent="90%">
-    <div class="skillbar-title" style="background: #F7D810;"><span>Javascript</span></div>
-    <div class="skillbar-bar" style="background: #FFEF8B;"></div>
-    <div class="skill-bar-percent">90%</div>
-  </div> <!-- End Skill Bar -->
-  
-  <div class="skillbar clearfix " data-percent="60%">
-    <div class="skillbar-title" style="background: #2D7BD4  ;"><span>Python</span></div>
-    <div class="skillbar-bar" style="background: #F6DF4D;"></div>
-    <div class="skill-bar-percent">80%</div>
-  </div> <!-- End Skill Bar -->
-  
-  <div class="skillbar clearfix " data-percent="60%">
-    <div class="skillbar-title" style="background: #2DF5E9;"><span>React</span></div>
-    <div class="skillbar-bar" style="background: #79FFF7;"></div>
-    <div class="skill-bar-percent">50%</div>
-  </div> <!-- End Skill Bar -->
-  <div class="skillbar clearfix " data-percent="40%">
-      <div class="skillbar-title" style="background: #FF5900  ;"><span>Swift</span></div>
-      <div class="skillbar-bar" style="background: #FF5900  ;"></div>
-      <div class="skill-bar-percent">30%</div>
-    </div>
-  
-  <div class="skillbar clearfix " data-percent="40%">
-    <div class="skillbar-title" style="background: #FF8429  ;"><span>Java</span></div>
-    <div class="skillbar-bar" style="background: #FFA25E  "></div>
-    <div class="skill-bar-percent">30%</div>
-  </div> <!-- End Skill Bar -->
-  
-  <div class="skillbar clearfix " data-percent="0%">
-    <div class="skillbar-title" style="background: #8A8581;"><span>Dancing</span></div>
-    <div class="skillbar-bar" style="background: #4288d0;"></div>
-    <div class="skill-bar-percent">0%</div>
-</div>
-</div>
- </div>
-</div>
-
-<div class="jumbotronTwo" style="margin-top:160px;">
-
-   
-   
-
-
-<div class="row">
-  <div class="col-md-4">
-   
-            <div class="center" style="margin-top:250px;">
-             
-                <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="edwardtanoto"><a target="_blank" class="LI-simple-link" href='https://id.linkedin.com/in/edwardtanoto?trk=profile-badge'>Edward Tanoto</a></div>
-                      <br>
-                        <div>
-                       <a class="b" target="_blank" href="https://www.instagram.com/edwardtanotoo/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
-                       <a class="c" href="https://www.freecodecamp.org/edwardtanoto"><i class="fa fa-free-code-camp fa-2x" aria-hidden="true"></i></a>
-                      </div>
-                    </div>           
-            </div>            
-
-<div class="col-md-8" style="margin-top:110px;">
-  <h2 style="text-align: center;" class="h2 mb-5">code for better</h2>
-<p class="t mw-100 mx-auto">
- What is programming in my opinion and why should we learn it<br> <br>
-For me programming is like an art, art of solving problem, but a little bit more cryptic than whatever despacito is.<br>
-<br> Just like this whole thing is just binaries converted into pixels which forms this.text and everything in this.screen , code have deeply shaped our modern life. <br><br>
-
-<a class="a" target="_blank" href="https://ideaing.com/ideas/best-smart-coffee-makers/">Coffee machines</a>, <a class="a" target="_blank" href="https://www.lifewire.com/best-smart-fridges-4159454"> fridges</a>,<a class="a" target="_blank"  href="https://www.uber.com/in/en/ride/"> transportation</a>,
-  <a target="_blank" class="a" href="https://www.instagram.com/"> communication</a>,<a class="a" target="_blank" href="https://www.edx.org/"> education</a> ,<a class="a" target="_blank" href="https://www.airbnb.com/"> accommodation</a>, and I forgot to mention a <a class="a" target="_blank" href="https://www.youtube.com/watch?v=AjWfY7SnMBI">web app</a> that lets your imagination run freely , or complete nothingness depending how you see it.<br><br>
-<p style="text-align: center">
-Programming is the foundation of our modern life, and it solves our problems<br>
-&nbsp;&nbsp;&nbsp;Free education content from scratch until you see sharper ,<br>
-Connecting the whole world through internet, <br>
-&nbsp;&nbsp;&nbsp;Overpriced smart fridge and coffee machines but really cool , <br>
-possibility of AI takeover in the future, <br>
-&nbsp;&nbsp;&nbsp;And all of that is now possible through code. <br> <br>
-When I was a kid I loved to watch Iron man, I wanted to become Tony Stark. <br>
-Not the no life engineer part, but the genius billionaire philanthropist engineer that everyone loves part. <br>
-
-
-</p>
-
-
-
-</p>
-</div>
-  
-
-
-
-
-
-</div>
-</div>
-
-<div class="jumbotronThree">
-
- <a href="mygameJS/index.html" class="a"><h2 class="h2">Eight Armies</h2></a>
- <br>
- <br>
- <video class="center" controls>
-   <source src="mygamee.mp4"type="video/mp4">
-   </video>
-
-<p class="mw-100" style="font-size: 1.2rem;margin-top:100px;">
-  
-This is the original project I've made after I learnt javascript. 
-<ul class="mw-100">
-  <li>First on every project, I always create a txt file to summarize how the game will work and how I will make it work.</li>
-  <li>The nature of this game is a mind game, which means I have to hide what chars I will play, so I change the input type to password to hide the chars. Then, I create javascript code so I can reveal the hidden chars in a click.</li>
-  <li>I've also found that its very important to know what to do code before do the code, my game has a lot of characters which have each unique skills, it is important to think realistically on how each char works.</li>
-  <li>I have to create variables for each char to make the score system works. </li>
-  <li>Each char has their own array which holds property to hold the char value, such as "K", "Q", etc, and points of each chars, for example Pawn has 1 point if alone</li>
-  <li>The game would be very boring if there is no interesting skills or combos, so I wrote the function that loops for the input, and create if elses condition for the combos to work, and manipulate the points inside the variables if certain conditions are true.</li>
-  <li>Some skills are based upon the opponent's input, which makes it more challenging to code.</li>
-  <li>After couple hours of coding and testing the function, it finally works and then I am working on the input.</li>
-  <li>I have P1 and P2, but my function only loop the input of P1 input, and thus the function cant declare a winner.</li>
-  <li>So I create the same loop but for P2, and I created variables to hold the score1 and score2 data for each players</li>
-  <li>After I done testing by doing console.log everything I input and check the score, all that left is how to declare the winner. </li>
-  <li>Declaring the winner only took some if elses statement, then change the value of the input with document.getElementbyId("name").value</li>
-  <li>Now it looks like everything is done, the score system and declaring winner system for each round is done, there is something missing, the most important part of this board game</li>
-  <li>At this point I only develop the game itself, and not the code.</li>
-  <li>I added maxlength="4" to each input, but I didnt add minlength="4", Why ?</li>
-  <li>If every input of P1 and P2 is not 4, then certain combos are very easy to guess, which might be good for a mindgame, but this is the interesting part, I introduce the "bluffing mechanic", which means you can add unrelated letters to confuse your opponents by writing 4 letters in input, but in reality you've only put 2 chars in the input, and the game is based on round system, so it would be unfair for the first player if they get countered so easily.</li>
-  <li>The round system will make the game more balanced, because the next round, each players can guess which combos the other player will play, and which combos are no longer available.</li>
-  <li>I was very excited when the code works, and I will learn mobile dev, or make it online, and developed this project. </li>
-</ul>
-
-</p>
-<br><br>
-<div class="row">
-  <div class="col-md-6">
-<a href="funStation/index.html" class="a"><h2 class="h2" style="margin-top:100px;margin-bottom:50px;">Dystopian RPG</h2></a> <br>
-<img src="funStation.jpg" class="me center mw-100">
-</div>
-<div class="col-md-6">
-<p class="mw-100" style="margin-top:100px" >
-Fun, interactive web that helped me learn DOM and events in Javascript <br><br>
-It's a RPG game with storyline you can choose and have different ending for every choice you made. <br><br>
-Playing with DOM is very fun since you have control over the whole web, and I can do a lot of things with it. <br><br>
-First, I created new const for every class and id that is used in the DOM, then addEventListener to every button. <br><br>
-Some basic DOM I used here is display manipulation and textContent, after I clicked a button, I made some appears and some disappears. <br><br>
-And with DOM I can make better UX design, for example, you can't go back after the choice you made, and other choices will disappeared so you can't choose twice. <br><br>
-It was fun learning it, I believe getting good at DOM will open up a lot of creativity potential of programmers.
-</p>
-</div>
-</div>
-<br><br><br>
-<div style="margin-top:2em" class="mw-100">
-  <p>Python Facial Recognition</p>
-  <p class="mw-100"><a href="https://github.com/ageitgey/face_recognition" class="a">Check this link!</a></p>
-  <p><a class="a" href="https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78">Read his articles here</a></p>
-  <br>
-  <div class="row">
-    <div class="col-md-6">
-        <video class="center mw-100"  controls>
-            <source src="findfaces.mov" type="video/mp4">
-            </video>
-            <img src="flocation.png" class="mw-100 mb-3 mt-3 center" alt="face_locations">
-    </div>
-    <div class="col-md-6">
-         <p>Find Faces</p>
-        <p>With the imported <nobr style="color:#FF5D4A">face_recognition</nobr> libary, we could access <nobr style="color:#FF5D4A">load_image_file</nobr> method from face recognition library, and pass our image as an argument and store it to a variable called <nobr style="color:#FF5D4A">image</nobr>.</p>
-        <p><nobr style="color:#FF5D4A">image</nobr> later will be passed as argument in <nobr style="color:#FF5D4A">face_location</nobr> method that we can access after we import <nobr style="color:#FF5D4A">face_recognition</nobr> library, then we store it into <nobr style="color:#FF5D4A">face_locations</nobr> variable. </p>
-        <p>To show the output in the terminal, we have to <nobr style="color:#FF5D4A">print</nobr> it, and what we want to do is to show how many faces in the image.</p>
-        <p>What <nobr style="color:#FF5D4A">face_locations</nobr> show is actually not the number of people the code </p>
-        
-        <p>It shows the coordinate of the faces that the code reads in <nobr style="color:#FF5D4A">image</nobr> variables, and output the coordinates as tuples and put it inside a list.  </p>
-        <p>So, if we want to show the number of coordinates, we have to use <nobr style="color:#FF5D4A">len</nobr>() and get the number of people</p>
-        <p>The code itself isn't 100% accurate, for example, it doesn't read someone on the far left of the picture.</p>
-    </div>
-  </div>
-
-  <br>
-  <div class="row">
-    <div class="col-md-6">
-       <p>Pull Faces</p>
-       <p>In <nobr style="color:#FF5D4A">findfaces</nobr> before, we can see that we get the coordinates of the faces.</p>
-       <p>What <nobr style="color:#FF5D4A">pullfaces</nobr> do here is basically it loops through the coordinates of the location and show it to us with help of PIL.</p>
-       <p>We will have to import <nobr style="color:#FF5D4A">Image</nobr> from <nobr style="color:#FF5D4A">PIL</nobr>, which is the short of Python Imaging Library, to help us show or save images we get faster. You can install <nobr style="color:#FF5D4A">PIL</nobr> by typing <nobr style="color:#FF5D4A">pip install Pillow</nobr>. Pillow is a maintained fork of PIL </p>
-       <p>The Image module provides a class with the same name which is used to represent a PIL image. The module also provides a number of factory functions, including functions to load images from files, and to create new images.</p>
-       <p>So what we want to do after that is to loop the <nobr style="color:#FF5D4A">face_locations</nobr> and assign the coordinates, top,right,bottom,left into <nobr style="color:#FF5D4A">face_location</nobr></p>
-       <p><nobr style="color:#FF5D4A">image</nobr> has value of lists. To get the image of faces, we want to take every different coordinates from top coordinates to bottom, and left coordinates to right, then we can store it to <nobr style="color:#FF5D4A">face_image</nobr> variable. </p>
-      <p><a class="a" href="https://stackoverflow.com/questions/509211/understanding-slice-notation">Understanding slice notation</a> to know how to take the coordinates of  <nobr style="color:#FF5D4A">face_image</nobr></p> 
-      <p>Then we create <nobr style="color:#FF5D4A">pil_image</nobr> variable that stores the Image.fromarray()</p>
-      <p>Creates an image memory from an object exporting the array interface (using the buffer protocol).</p>
-      <p>After that, we use <nobr style="color:#FF5D4A">show</nobr>() to show <nobr style="color:#FF5D4A">pil_image</nobr></p>
-      <p>We can also save it with <nobr style="color:#FF5D4A">save</nobr>() method and pass filename as argument </p>
-    </div>
-    <div class="col-md-6">
-        <video class="center mw-100" controls>
-            <source src="pullfaces.mov" type="video/mp4">
-            </video>
-            <img src="image.png" class="mw-100 center" alt="What is image">
-    </div>
-  </div>
-  
-    <br>
-    <div class="row">
-      <div class="col-md-6">
-          <video class="center mw-100" controls>
-              <source src="facematch.mov" type="video/mp4">
-              </video><br>
-              <img class="center mw-100" src="encoding.png" alt="Without [0]">
-           
-      </div>
-      <div class="col-md-6">
-        <p>Face Match</p>
-       <p>Can't match a face if there is only one face. Store your images into variables.</p>
-       <p><nobr style="color:#FF5D4A">face_recognition</nobr> has a method of <nobr style="color:#FF5D4A">face_encodings</nobr> that passes image as the argument.</p>
-       <img  class="center mw-100"src="encoding1.png" alt="With [0]"> <br>
-       <p>We use [0] to access the first value of list , which then we use <nobr style="color:#FF5D4A">compare_faces</nobr> method to compare, which takes 2 argument of the comparison, and store it into <nobr style="color:#FF5D4A">results</nobr> variable. </p>
-       <p>And if the first value of results is accurate, then we print something we want, else, we print something else.</p>
-      
-      </div>
-    </div>
-   
-      <br>
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <p><a class="a" href="https://github.com/ageitgey/face_recognition/blob/master/examples/identify_and_draw_boxes_on_faces.py">Identify</a></p>
-          <p>You can read the comments to understand what the code does</p>
-          <p>The code is longer and trickier than others, so explaining it to the detail will take a lot of time.</p>
-        </div>
-        <div class="col-md-6">
-          
-      <video class="center mw-100" controls>
-          <source src="identify.mov" type="video/mp4">
-          </video>
-        </div>
-      </div>
-        <br><br>
-        <p class="mw-100">Doesn't work on your computer?
-          <ul class="mw-100">
-            <p><li>Read the github page</li></p>
-            <p></p><li>You have to install dlib into your computer before you able to import face_recognition</li></p>
-            <p></p><li>then type <code>pip3 install face_recognition</code> into your terminal</li></p>
-            <p></p><li>If it doesn't work its because you don't have pip installed in your computer, just google how to install it (Mac and windows have different installation).<a href="https://www.makeuseof.com/tag/install-pip-for-python/">This link might help</a></li></p>
-            <p> <li>Follow <a href="https://gist.github.com/ageitgey/629d75c1baac34dfa5ca2a1928a7aeaf">this step</a> to install dlib in MacOS or Ubuntu, if you're using windows you should google it.</li></p>
-              <p> <li>And you probably have to install cmake to install dlib</li></p>
-                <p> <li>For identify and pullfaces, you have to install PIL in your terminal, then import it.</li></p>
-                  <p> <li>Most of Python's code works this way, 4 lines of code and you can findfaces. 90% of the code only works because import face_recognition.</li></p>
-          </ul>
-        </p>
-        
-      </div>
-      <div style="margin-top: 300px;">
-        <div class="row">
-          
-            <div class="col-md-8">
-                <p style="font-size:1.5rem;text-align: center">Contributing to Society</p>
-                <br><br>
-                <video controls class="center"  poster="placeholder.png" >
-                    <source src="educationstation.mov" type="video/mp4">
-                  </video>
-                <br><br><br>
-                <div class="mw-100">
-                <p>I am a self taught learner, internet taught me a lot and I have no reason to not do the same.</p>
-                <p>I develop <a class="a"target="_blank" href="educationstation/index.html">Code Zone</a> to create a coding community. </p>
-                <p>You can expect beginner into intermediate Javascript challenge in the Algorithm Practice Station.<br>
-                Don't worry getting stuck, there are hidden solutions in white font so you can highlight if after you code on your own.</p>
-             <p>Codezone covers every basic and some ES6 syntax, functional programming, regular expression, interactive DOM learning.</p>
-                <p>Don't just study from one source, I also share my sources to learn code.</p>
-                <p>If you have a project and stuck doing it, I have prepared google drive link in the discord.<br> 
-                  I will try to help without giving too much solution so you can develop your skills better.</p>
-                <p><a class="a" target="_blank" href="https://discord.gg/ZEvEnEj">Join the discord channel here</a></p>
-                <p>Happy Coding!</p>
-                </div>
+	
             </div>
-          <div class="col-md-4">
-            <br>
-              <iframe src="https://discordapp.com/widget?id=562608841003630612&theme=dark" width="340" height="470" style="float:right;" allowtransparency="true" frameborder="0" ></iframe>
-       
-          </div>
-      </div>
-    </div>
-  </div>
-<div class="jumbotronFour">
-
-<h2 class="h2" style="margin-top: 220px;">Code Journey</h2>
-
-<br><br>
-
-<div class="row">
-            <div class="col-md-6"style="margin-top:50px;">
-                        <div class="owl-carousel owl-theme"> 
-                                    <div class="item"><img alt="freeCodeCamp Javascript certificate" src="fccjavascript.jpg"></div>
-                                    <div class="item"><img alt="Sololearn Python certificate" src="image1.jpeg"></div>
-                                    <div class="item"><img  alt="Sololearn Javascript certificate"src="sljs.jpg"></div>
-                                    <div class="item"><img alt="Sololearn HTML certificate" src="slhtml.jpg"></div>
-                                    <div class="item"><img alt="freeCodeCamp Responsive Web certificate" src="fccweb.jpg"></div>
-                                    <div class="item"><img alt="freeCodeCamp Front End Library certificate" src="fel.jpg"></div>
-                                    <div class="item"><img alt="Static website certificate" src="Image.jpg"></div>
-                                    <div class="item"><img alt="Modern JS" src="modernjs.png"></div>
-                                </div>
-                        </div>
-<div class="col-md-6">
-  
-
- 
-
-<p class="mw-100"style="padding-top:15%">Technical Skills : <ul><p><li>HTML-CSS-Javascript-Bootstrap</li><li>MongoDB-Express-React-Redux-Node</li><li>AJAX-XML-REST API-HTTP</li>  <li>Python-Panda-Numpy</li>  <li>Java</li> <li>Github</li><li>Unix Terminal</li></p> </ul><p>Soft Skills:</p><ul><li>Tutor</li></ul> <br><br>
-  
-</p>  </div>
-
-
-
-
-
-</div>
-</div>
-
-<br>    
-                     
-
-<div class="xop-section"style="margin-top:100px;">
-            <h2 id="projects">Chapter 1 : Javascript</h2>
-<br>
-<br>
-<br>
- <ul class="xop-grid">
-    <li>
-        <div class="xop-box xop-img-1">
-          <a href="converter/index.html">
-          <div class="xop-info">
-            <h3>Weight Converter</h3>
-            <p>Measurement Station<br>Convert gram into ounce, lbs, kg, mg</p>
-          </div></a>
+            <div class="about">
+                <h2 class="job-title">Programmer</h2> <h2 class="job-title separator">||</h2> <h2 class="job-title">Designer</h2> <h2 class="job-title separator">||</h2> <h2 class="job-title">Creative</h2>
+                <h1 class="name-title">EDWARD TANOTO</h1> 
+                
+                <p class="summary"></p>
+                <p class="header-text"></p>
+            </div>
         </div>
-      </li>
-   <li>
-     <div class="xop-box xop-img-1">
-       <a href="https://edwardtanoto.github.io/weatherapp/">
-       <div class="xop-info">
-         <h3>Weather App</h3>
-         <p>Weather Station<br>Plan your day after you check the temperature and condition outside. Developed with React.JS  </p>
-       </div></a>
-     </div>
-   </li>
-   <li>
-     <div class="xop-box xop-img-1">
-       <a href="budgetAppJS/index.html">
-       <div class="xop-info">
-         <h3>Budget App</h3>
-         <p>Budget Management Station<br>It calculates your budget and expenses and allow user to make a list of their expenses. </p>
-       </div></a>
-     </div>
-   </li>
-   <li>
-     <div class="xop-box xop-img-1">
-       <a href="tictactoeJS/index.html">
-       <div class="xop-info">
-         <h3>TicTacToe</h3>
-         <p>Procrastionation Station<br>Tictactoe against an AI that has been implemented with minimax algorithm. Same AI that will takeover the world</p>
-       </div></a>
-     </div>
-   </li>
-   <li>
-    <div class="xop-box xop-img-1">
-      <a href="numberGuesser/index.html">
-      <div class="xop-info">
-        <h3>NumGuesser</h3>
-        <p>Even Better Procrastionation Station<br>Guess the number that randomly decided by the program.</p>
-      </div></a>
+        <div id="portfolio" class="profile">
+            <div class="portfolio">
+                <iframe style="-webkit-transform:scale(0.9);-moz-transform-scale(0.9);" frameBorder="0" src="https://edwardtanoto.github.io/resume/src/index.html">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+            </div>
+                 
+        </div>
     </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-1">
-      <a href="https://edwardtanoto.github.io/pomodoro/">
-      <div class="xop-info">
-        <h3>Pomodoro</h3>
-        <p>Productivity Station<br>Pomodoro Timer that helps us manage time better, created with ReactJS</p>
-      </div></a>
-    </div>
-  </li>
-   <li>
-    <div class="xop-box xop-img-5">
-      <a href="funStation/index.html">
-      <div class="xop-info">
-        <h3>Dystopian RPG</h3>
-        <p>Fun Station<br>A RPG with a lot of stories that you can choose.</p>
-      </div></a>
-    </div>
-  </li>
-   <li>
-    <div class="xop-box xop-img-5">
-      <a href="educationstation/index.html">
-      <div class="xop-info">
-        <h3>Code Zone</h3>
-        <p>Education Station<br>A Coding community, learn how to code here. </p>
-      </div></a>
-    </div>
-  </li>
-   <li>
-    <div class="xop-box xop-img-5">
-      <a href="mygameJS/index.html">
-      <div class="xop-info">
-        <h3>Eight Armies</h3>
-        <p>Game Station<br>Original game with fun rules to play with friends.</p><a target="_blank" href="https://github.com/edwardtanoto/edwardtanoto.github.io/tree/master/mygameJS"><i class="fa fa-github" aria-hidden="true" style="font-size:32px;color:#FF8A4B"></i></a>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-1">
-      <a href="d3barchart/index.html">
-      <div class="xop-info">
-        <h3>D3 Bar Chart</h3>
-        <p>Analytic Station<br>A data visualisation project from freeCodeCamp.org , creating graph based on dataset that has been given.</p>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-1">
-      <a href="quotesgenerator/index.html">
-      <div class="xop-info">
-        <h3>QOTD</h3>
-        <p>Inspiration Station<br>A jQuery quotes generator project from freeCodeCamp.org , using API for quotes data.</p>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-1">
-      <a href="chuckNorrisJokes/index.html">
-      <div class="xop-info">
-        <h3>Jokes Generator</h3>
-        <p>Entertainment Station<br>GET json API of Chuck Norris Jokes, and generate it every click.</p>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-1">
-      <a href="taskList/index.html">
-      <div class="xop-info">
-        <h3>Task List</h3>
-        <p>Goals Station<br>Set your goals once and keep it forever. Working with DOM, events, and local storage.</p>
-      </div></a>
     
-  </li>
-  <li>
-    <div class="xop-box xop-img-1">
-      <a href="formvalidator/index.html">
-      <div class="xop-info">
-        <h3>Form Validator</h3>
-        <p>Legal Station<br>You start phone number with letter? That's illegal. With regular expression, we able to check it.</p>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-1">
-      <a href="taskList/index.html">
-      <div class="xop-info">
-        <h3>Book List</h3>
-        <p>Library Station<br>OOP, DOM , LocalStorage practice , save the books you want to read here. </p>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-1">
-      <a href="loanCalculator/index.html">
-      <div class="xop-info">
-        <h3>Loan Calculator</h3>
-        <p>Accommodation Station<br>Check how long you can manage accommodation here. Vanilla Javascript project</p>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-1">
-      <a href="https://github.com/edwardtanoto/edwardtanoto.github.io/tree/master/easyHTTPLibrary">
-      <div class="xop-info">
-        <h3>HTTP Library</h3>
-        <p>API Station<br>Custom HTTP Library that allows users to GET, DELETE, from JSON API and POST, PUT, to JSON API much faster.</p>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-2">
-      <a href="githubfinder/index.html">
-      <div class="xop-info">
-        <h3>Github Finder</h3>
-        <p>Developer Station<br>App that allows user to find developer in github, and shows user's profile and repositories.</p>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-2">
-      <a href="tracalorie/index.html">
-      <div class="xop-info">
-        <h3>Tracalorie</h3>
-        <p>Calorie Tracker Station<br>Designed with Javascript module pattern, an app that allows user to track their calories  </p>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-3">
-      <a href="https://creativezone.herokuapp.com">
-      <div class="xop-info">
-        <h3>Creative Zone</h3>
-        <p>Social Media<br>MERN Stack Secured Social Media. Create your own developer portfolio and share it with your friend. </p>
-      </div></a>
-    </div>
-  </li>
 
- </ul>
-</div>
-</div>
-<div class="xop-section"style="margin-top:100px;">
-  <h2 id="projects">Chapter 2 : Python</h2>
-<br>
-<br>
-<br>
-<ul class="xop-grid">
-  <li>
-    <div class="xop-box xop-img-6">
-      <a href="https://github.com/edwardtanoto/edwardtanoto.github.io/tree/master/facial_recognition_py">
-      <div class="xop-info">
-        <h3>Face Recognition</h3>
-        <p>Image Station<br>Face Recognition code that was developed in Python.</p>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-6">
-      <a href="https://github.com/edwardtanoto/dictionary">
-      <div class="xop-info">
-        <h3>Dictionary</h3>
-        <p>Words Station<br>Find the meaning of the words you want to know.</p>
-      </div></a>
-    </div>
-  </li>
-  <li>
-    <div class="xop-box xop-img-6">
-      <a href="https://github.com/edwardtanoto/gdata">
-      <div class="xop-info">
-        <h3>Google Data</h3>
-        <p>Analytic Station<br>You can see my life changes from google search data of 2015-2019 compiled into 1 video.</p>
-      </div></a>
-    </div>
-  </li>
-</ul>
-</div>
-</div>
-  <footer class="row-footer mw-100" style="color:#FF5D4A">
+    <footer>
 
-   <a class="a" href="mailto:edwardt.dev@gmail.com?subject=Hi There!"><i class="fa fa-envelope-o"style="font-size:32px; text-align:center;" aria-hidden="true"></i></a>
-      &nbsp;&nbsp;&nbsp; <a class="a" href="https://github.com/edwardtanoto"><i class="fa fa-github" aria-hidden="true" style="font-size:32px;"></i></a>&nbsp;&nbsp;<a class="a" href="#home"> edwardtanoto</a>
-</footer>
-  <script src="main.js"></script>
-  
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+           
+           <a href="#home" class="a"> <i class="fa fa-code" aria-hidden="true"></i> edwardtanoto <i class="fa fa-desktop" aria-hidden="true"></i> </a>
+         </footer>
+
+    <script src="js/close_menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>
