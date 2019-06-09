@@ -51,11 +51,11 @@ function toggleTime(){
     if(!isDayTime){
         checkbox.checked = true
         toggleWallpaper('.main',0)
-        toggleWallpaper('.skillset',2)
+        toggleWallpaper('.profile',2)
     } else {
         checkbox.checked = false;
         toggleWallpaper('.main',1)
-        toggleWallpaper('.skillset',3)
+        toggleWallpaper('.profile',3)
     }
 }
 
