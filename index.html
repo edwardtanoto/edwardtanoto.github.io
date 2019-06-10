@@ -14,10 +14,10 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis|Hind&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="loader">
+    <!-- <div class="loader">
                 <div class="circle"></div>
                 <div class="circle"></div>
-    </div> 
+    </div>  -->
    
     <div class="main main-container" id="home">
         <!-- Sidebar -->
@@ -77,12 +77,9 @@
                       <span class="star star--6"></span>
                     </label>
                   </div>
-        <div id="intro">
-            <div>
-                
 
-	
-            </div>
+        <!-- Intro -->
+        <div id="intro">
             <div class="about">
                 <h2 class="job-title">Programmer</h2> <h2 class="job-title separator">||</h2> <h2 class="job-title">Designer</h2> <h2 class="job-title separator">||</h2> <h2 class="job-title">Creative</h2>
                 <h1 class="name-title">EDWARD TANOTO</h1> 
@@ -91,106 +88,60 @@
                 <p class="header-text"></p>
             </div>
         </div>
-        <div id="skill" class="profile">
+        <!-- Intro -->
+
+        <!-- Skills -->
+        <div id="skill">
             <div class="skill">
-                <div class="skill-summary">
-                    <h1 class="skill-title name-title">Skills</h1>
-                    <h2 class="skill-opening">learn, code, build</h2>
-                </div>
+                
                 <div class="container">
+                        <div class="skill-summary">
+                                <h1 class="skill-title name-title">Skills</h1>
+                                <h2 class="skill-opening">Web Development, iOS App Development, Python programming</h2>
+                            </div>
                 <div id="room" class="card card-body py-5"> 
-                    <h4 class="skill-category"><i class="fa fa-code fa-2x"></i>&nbsp; Web Development</h4>
-                    <br>
-                <div class="row no-gutters">
-                        <div class="col-md-3" style="background: white">
-                                <img src="images/html.webp" class="skill-icon img-fluid" alt="HTML">
-                        </div>
-                        
-                        <div class="col-md-3" style="background: white">
-                               <img src="images/css.webp" class="skill-icon img-fluid" alt="CSS">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="images/nodejs-logo.webp" class="skill-icon img-fluid" id="node-icon" alt="Node">
-                        </div> 
-                        <div class="col-md-3">
-                            <img src="images/js.webp" class="skill-icon img-fluid" alt="JS">
-                        </div>
-                      </div>
-                      <div class="row no-gutters">
-                            <div class="col-md-6" style="background: rgb(37, 36, 37)">
-                                    <img src="images/reactexpress.webp" class="skill-icon img-fluid" alt="Express and React">
+                            <h3 class="skill-category"><i class="fa fa-desktop fa-1x"></i> &nbsp;<i class="fa fa-code fa-1x"></i></h3>
+                            <br>
+                    <div class="row no-gutters">
+                            <div class="col-md-3" style="background: #4CAF50">
+                                    <img src="images/html.webp" class="skill-icon img-fluid" alt="HTML">
                             </div>
                             
-                            <div class="col-md-3">
-                                   <img src="images/redux.webp" class="skill-icon img-fluid" alt="Redux">
+                            <div class="col-md-3" style="background: #8BC34A">
+                                   <img src="images/css.webp" class="skill-icon img-fluid" alt="CSS">
                             </div>
-                            <div class="col-md-3" style="background: rgb(37, 36, 37)">
-                                   <img src="images/bootstrap.webp" class="skill-icon img-fluid" alt="Bootstrap">
+                            <div class="col-md-3" style="background: #CDDC39">
+                                <img src="images/nodejs-logo.webp" class="skill-icon img-fluid" alt="Node">
                             </div> 
+                            <div class="col-md-3">
+                                <img src="images/js.webp" class="skill-icon img-fluid" alt="JS">
+                            </div>
                           </div>
-                          <br><br><br>
-                          <div class="row">
-                              <div class="col-md-6">
-                                    <h4 class="skill-category"><i class="fa fa-mobile fa-2x"></i>&nbsp; App Development</h4>
-                                    <br>
-                                    <div id="app-dev" class="row no-gutters">
-                                          <div class="col-md-6">
-                                                  <img src="images/xcode.webp" class="skill-icon img-fluid" alt="Xcode">
-                                          </div>
-                                          <div class="col-md-6">
-                                                 <img src="images/swift.webp" class="skill-icon img-fluid" alt="Swift">
-                                          </div> 
-                                        </div>
-                              </div>
-                              <div class="col-md-6">
-                                    <h4 style="text-align:right;" class="skill-category"><i class="fa fa-bar-chart fa-2x"></i>&nbsp; Data Visualisation</h4>
-                                    <br>
-                                    <div id="data-vis" class="row no-gutters">
-                                            <div class="col-md-4" style="background: white">
-                                                    <img src="images/numpy.webp" class="skill-icon img-fluid" alt="numpy">
-                                            </div>
-                                            <div class="col-md-4" style="background: white">
-                                                    <img src="images/python.webp" class="skill-icon img-fluid" alt="Python">
-                                            </div>
-                                            <div class="col-md-4" style="background: white">
-                                                    <img src="images/pandas-logo.webp" class="skill-icon img-fluid" alt="Pandas">
-                                             </div> 
-                                    </div>
-                              </div>
-                          </div>
-                      
-                          <br><br><br>
-                        <div class="row">
-                        <div class="col-md-6">
-                                <h4 class="skill-category"><i class="fa fa-code-fork fa-2x"></i>&nbsp; Version Control</h4>
-                                <br>
-                                <div id="version-control" class="row no-gutters">
-
-                                        <div class="col-md-6">
-                                                <img src="images/github.webp" class="skill-icon img-fluid" alt="Github">
-                                        </div>
-                                        <div class="col-md-6">
-                                               <img src="images/git.webp" style="color:white" class="skill-icon img-fluid" alt="git">
-                                        </div> 
-                                      </div>
-                        </div>
-                        <div class="col-md-6">
-                                <h4 style="text-align:right;" class="skill-category"><i class="fa fa-database fa-2x"></i>&nbsp; Database</h4>
-                            <div id="Database" class="row no-gutters">
-                                  <div style="background: white">
-                                          <img src="images/mongodb.webp"  class="skill-icon img-fluid" alt="mongodb">
-                                  </div>
+                          <div class="row no-gutters">
+                                <div class="col-md-3"style="background: #FF9800 " >
+                                        <img src="images/swift.webp" class="skill-icon img-fluid" alt="Swift">
                                 </div>
-                        </div>
-                        </div>
-                      
-                          
-                            <br><br><br>
-                    </div>
+                                <div class="col-md-3"style="background: #FF9800 ">
+                                        <img src="images/xcode.webp" class="skill-icon img-fluid" alt="Xcode">
+                                 </div>
+                                <div class="col-md-3"style="background: #FFC107 ">
+                                        <img src="images/github.webp" class="skill-icon img-fluid" alt="Github">
+                                    </div>
+                                    <div class="col-md-3"style="background: #8BC34A ">
+                                        <img src="images/python.webp" class="skill-icon img-fluid" alt="Python">
+                                </div> 
+                              </div>
+                            </div>
                 </div>
-                <!--Test-->
+              
                 </div>
             </div>
+             <!--Skills -->
+             <!-- Profile -->
+             <div id="profile-section">
+et
+             </div>
+                   <!-- Profile -->
     </div>
     
 
