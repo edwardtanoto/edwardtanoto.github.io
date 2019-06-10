@@ -14,7 +14,7 @@ body {
     height:100%;
 }
 .skill-opening{
-  color:#9EB0FF  
+  color:#dadbea
 }
 html{scroll-behavior:smooth !important}
 .no-gutters {
@@ -36,7 +36,6 @@ html{scroll-behavior:smooth !important}
     word-wrap: break-word;
 }
 .skill-summary{
-  text-align: left;
   font-family: 'Hind', sans-serif;
   color:white;
   line-height: 1;
@@ -72,8 +71,8 @@ img {
 .main {
     background-image: url('images/bg2.webp');
     z-index: 1;
-    opacity: 0; 
-    display: none ;
+    /* opacity: 0;  */
+    display: block ;
     transition: opacity 1s ease-in;
     position: absolute;
     background-position: center;
@@ -91,17 +90,14 @@ h1,h2 {
     line-height: 0;
 }
 
-.profile{
+#skill{
     background-image: url('images/bg3.webp');
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     min-height: 100%;
     width: 100%;
     position: absolute;
-    z-index: -1;
 }
-
 .b{
   color: inherit;
   text-decoration: none !important;
@@ -130,7 +126,13 @@ h1,h2 {
   }
 }
 
-
+#profile-section{
+  background-image: url('images/bg3.webp');
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
 
 
 
@@ -555,6 +557,8 @@ footer {
 
 
 
+
+
 .skill-icon{
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -570,14 +574,5 @@ footer {
 .skill-category{
 
   opacity: 1;
-  color:#B9C0FF  
-}
-#node-icon{
-  opacity: 1;
-  background: white;
-}
-#data-vis{
-  opacity: 1;
-    margin-left: auto;
-    margin-right: auto;
+  color:white;
 }

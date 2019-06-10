@@ -18,7 +18,7 @@ init();
 
 
 //Day and Night Toggle
-let wallpaper = ["url('images/night.webp')","url('images/bg2.webp')","url('images/bg3-night.webp')","url('images/bg3.webp')"]
+let wallpaper = ["url('images/night.webp')","url('images/bg2.webp')","url('images/bg3-night.webp')","url('images/bg3.webp')","url('images/ios.webp')","url('images/bg4.2.webp')"]
 var checkbox = document.querySelector("input[type=checkbox]");
 
 function toggleWallpaper(element,dayOrNight){
@@ -31,10 +31,10 @@ if(checkbox){
     checkbox.addEventListener( 'change', function() {
         if(this.checked) {
             toggleWallpaper('.main',0)
-            toggleWallpaper('.profile',2)
+            toggleWallpaper('.skill',2)
         } else {
             toggleWallpaper('.main',1)
-            toggleWallpaper('.profile',3)
+            toggleWallpaper('.skill',3)
         }
     });
     
@@ -51,11 +51,11 @@ function toggleTime(){
     if(!isDayTime){
         checkbox.checked = true
         toggleWallpaper('.main',0)
-        toggleWallpaper('.profile',2)
+        toggleWallpaper('.skill',2)
     } else {
         checkbox.checked = false;
         toggleWallpaper('.main',1)
-        toggleWallpaper('.profile',3)
+        toggleWallpaper('.skill',3)
     }
 }
 
@@ -67,7 +67,7 @@ let summary = document.querySelector('.about');
 let htmlSummaryText = `<div class="summary"></div>`
 summary.innerHTML+= htmlSummaryText;
 
-let summaryTextValue = `Hello, world! I'm Edward, a Computer Science student in the University of Nottingham Ningbo and a Tech Enthusiast. <br> I'm here to help making a change, to learn more, and to code.`
+let summaryTextValue = `Hello, world! I'm Edward, a Computer Science student in the University of Nottingham Ningbo and a passionate programmer. <br> I'm here to help making a change, to learn more, and to code.`
 
 let summaryText = document.querySelector(".summary");
 summaryText.innerHTML = '';
