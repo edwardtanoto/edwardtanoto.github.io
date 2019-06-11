@@ -3,6 +3,8 @@
 Hello, world! I'm Edward, a Computer Science student in the University of Nottingham Ningbo and a passionate programmer. 
 I'm here to help making a change, to learn more, and to make code beyond than just binaries.
 
+![Hello, world!](https://edwardtanoto.github.io/images/showcase.png "Portfolio")
+
 ## Skills that I can help you with
 
 ### Languages
