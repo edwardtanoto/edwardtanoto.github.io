@@ -21,13 +21,13 @@ For fast 10 seconds look at my [resume](https://edwardtanoto.github.io/resume/sr
   - Python
   - Swift
 
-### Web Developer
+### As a Web Developer
 I am familiar with OOP, module design pattern and state pattern in Javascript, Regular Expression, AJAX and XHR, http REST API ,terminal CLI on macOS, noSQL database like mongoDB, Node's framework Express.js, React and Redux, and Node.js.
 
-### iOS Development
+### As a iOS Developer
 Able to develop apps with MVC design pattern, design with Xcode, and code in Swift.
 
-### Data Visualisation
+### As a Python programmer
 Have a good grasp to code in Python and command line interface. Have created a face recognition and visualisation of google search data for over 5 years. 
 
 _____________
