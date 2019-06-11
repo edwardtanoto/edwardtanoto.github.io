@@ -67,7 +67,7 @@ let summary = document.querySelector('.about');
 let htmlSummaryText = `<div class="summary"></div>`
 summary.innerHTML+= htmlSummaryText;
 
-let summaryTextValue = `Hello, world! I'm Edward, a Computer Science student in the University of Nottingham Ningbo and a passionate programmer. <br> I'm here to help making a change, to learn more, and to code.`
+let summaryTextValue = `Hello, world! I'm Edward, a Computer Science student in the University of Nottingham Ningbo and a passionate programmer. <br> I'm here to help making a change, to learn more, and to make code beyond than just binaries.`
 
 let summaryText = document.querySelector(".summary");
 summaryText.innerHTML = '';
@@ -99,4 +99,3 @@ $(document).ready(function(){
 
 	
 });
-
