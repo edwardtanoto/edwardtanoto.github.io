@@ -48,7 +48,7 @@ Codes and entrepreneurship could make the modern world a better place.
 
 One of the many things I learned after watching Silicon Valley HBO, its that, startups change the world. Building a team, doing SCRUM for works, eating pizza and codes, start a fundraising, getting sued by competitors, getting fired in your own company by the majority of shareholders, keep inventing new ideas and work to your goals, and finally change the world, okay that went really bad for a second.
 
-It is undeniable that startup have really high chances of failures. My chance building unicorn company is lower than getting strucked by lightning, but it doesn't change the facts that startups change the world. Technology grows really fast, and I want to be the part that contributes to the future.
+It is undeniable that startup have a really high chances of failures. My chance building unicorn company is lower than getting strucked by lightning, but it doesn't change the facts that startups change the world. Technology grows really fast, and I want to be the part that contributes to the future.
 
 ### Work in one of the Big 4/ Big 5
 
