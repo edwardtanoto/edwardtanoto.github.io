@@ -63,7 +63,7 @@ The (+) is everything else. Great environment to work, free lunch, high paying j
 ### Tutoring
 
 [Mark Zuckeberg](https://news.harvard.edu/gazette/story/2017/05/mark-zuckerbergs-speech-as-written-for-harvards-class-of-2017/) once said 
-"But it’s not just about money. You can also give time. I promise you, if you take an hour or two a week — that’s all it takes to give someone a hand, to help them reach their potential." on his Harvard speech, you can search Mark Zuckeberg Harvard speech transcript, as a credibility.
+"But it’s not just about money. You can also give time. I promise you, if you take an hour or two a week — that’s all it takes to give someone a hand, to help them reach their potential." on his Harvard speech. Link have been provides as a credibility
 
 That speech was probably refering to the CS Harvard graduates, but yeah it doesn't really change the message.
 We love to talk about making a world a better place, but better place means better people as well. If I could help someone learn something in the field of computers, I want to help them. It will take some time, but no one become good in 1 night.
