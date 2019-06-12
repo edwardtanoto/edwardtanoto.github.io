@@ -84,7 +84,7 @@ Each people have talents and each computers have processors. For example, Justin
 
 Leadership in general is a skill to influence people. 
 
-In my opinion, leadership is about building a chemistry in a team that is so high that you become love working with them.
+In my opinion, leadership is about building a chemistry in a team that is so high that you become love working with them, and high chemistry team is a team that loves what they are doing and their environment.
 
 ### Communication Skills
 
