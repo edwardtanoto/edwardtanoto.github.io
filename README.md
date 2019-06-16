@@ -6,7 +6,7 @@ I'm here to help making a change, to learn more, and to make code beyond than ju
 
 I am here to tell you that every lines of code I type in a computer, every zeros and ones which forms pixels, which later forms colours in our computers, which later forms websites, which later sends your message to the world. 
 
-I am here to tell you that it never was about the binaries, it's always about making it become more than binaries.
+I am here to tell you that it never was about the binaries, it's always about making it more than just binaries.
 
 
 ![Hello, world!](https://edwardtanoto.github.io/images/showcase.png "Portfolio")
