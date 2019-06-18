@@ -18,7 +18,7 @@ init();
 
 
 //Day and Night Toggle
-let wallpaper = ["url('images/night.webp')","url('images/bg2.webp')","url('images/bg3-night.webp')","url('images/bg3.webp')","url('images/ios.webp')","url('images/bg4.2.webp')"]
+let wallpaper = ["url('images/night.webp')","url('images/bg2.webp')","url('images/bg3-night.webp')","url('images/bg3.webp')","url('images/bg4.2.webp')","url('images/bg4-night.webp')"]
 var checkbox = document.querySelector("input[type=checkbox]");
 
 function toggleWallpaper(element,dayOrNight){
@@ -32,9 +32,11 @@ if(checkbox){
         if(this.checked) {
             toggleWallpaper('.main',0)
             toggleWallpaper('.skill',2)
+            toggleWallpaper('.profile-section',5)
         } else {
             toggleWallpaper('.main',1)
             toggleWallpaper('.skill',3)
+            toggleWallpaper('.profile-section',4)
         }
     });
     
@@ -52,10 +54,12 @@ function toggleTime(){
         checkbox.checked = true
         toggleWallpaper('.main',0)
         toggleWallpaper('.skill',2)
+        toggleWallpaper('.profile-section',5)
     } else {
         checkbox.checked = false;
         toggleWallpaper('.main',1)
         toggleWallpaper('.skill',3)
+        toggleWallpaper('.profile-section',4)
     }
 }
 
@@ -84,7 +88,6 @@ function typeAnim(){
         wordIndex++;
     }
 }
-
 
 //Side Bar
 $(document).ready(function(){
