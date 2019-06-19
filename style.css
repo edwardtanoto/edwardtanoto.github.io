@@ -73,8 +73,8 @@ html{scroll-behavior:smooth !important}
 }
 .main {
     z-index: 1;
-    /* opacity: 0;  */
-    display: block;
+    opacity: 0; 
+    display: none;
     transition: opacity 1s ease-in;
     position: absolute;
     background-position: center;
@@ -116,7 +116,7 @@ h1,h2 {
   text-align: center
 }
 
-.profile-section {
+#profile-section {
   margin: auto;
   display: block;
   height: 100%;
