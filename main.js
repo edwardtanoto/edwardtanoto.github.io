@@ -32,11 +32,11 @@ if(checkbox){
         if(this.checked) {
             toggleWallpaper('.main',0)
             toggleWallpaper('.skill',2)
-            toggleWallpaper('.profile-section',5)
+            toggleWallpaper('#profile-section',5)
         } else {
             toggleWallpaper('.main',1)
             toggleWallpaper('.skill',3)
-            toggleWallpaper('.profile-section',4)
+            toggleWallpaper('#profile-section',4)
         }
     });
     
@@ -54,12 +54,12 @@ function toggleTime(){
         checkbox.checked = true
         toggleWallpaper('.main',0)
         toggleWallpaper('.skill',2)
-        toggleWallpaper('.profile-section',5)
+        toggleWallpaper('#profile-section',5)
     } else {
         checkbox.checked = false;
         toggleWallpaper('.main',1)
         toggleWallpaper('.skill',3)
-        toggleWallpaper('.profile-section',4)
+        toggleWallpaper('#profile-section',4)
     }
 }
 
