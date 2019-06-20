@@ -10,12 +10,6 @@ body {
     justify-content: center;
     
   }
-.skill-icon{
-    height:100%;
-}
-.skill-opening{
-  color:#dadbea
-}
 html{scroll-behavior:smooth !important}
 .no-gutters {
   margin-right: 0;
@@ -97,9 +91,6 @@ html{scroll-behavior:smooth !important}
 }
 h1,h2 {
     line-height: 0;
-}
-.profile-button {
-  text-align: center;
 }
 
 .skill{
@@ -589,18 +580,6 @@ footer {
         color:#FF9FBC  
      }
 /** Footer */
-
-
-
-
-
-
-.skill-icon{
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-       border-radius: 0;
-       box-shadow: none;
-}
 #room{
   background: inherit;
   border:none;
