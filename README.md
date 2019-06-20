@@ -80,9 +80,9 @@ Good news is, most programmers are already used to this situation, we learn. We 
 Programming is literally giving computer set of instructions to do a task. 
 But computers and humans are different, the difference between humans and computers are their creativity. So, basically everything.
 
-Each people have talents and each computers have processors. For example, Justin Bieber can sing, but he can't read 01111000 01100100 like [some people](https://www.thetoptens.com/singers-who-use-auto-tune/) which does the same thing, singing in auto-tune software. Nevermind, I think he reads 01111000 01100100 better than some people. But the point remains that computers are different than humans. You just don't shout zero zero seven to people and expect them to understand all those numbers. 
+Each people have talents and each computers have processors. For example, Justin Bieber can sing, but he can't read 01111000 01100100 like [some people](https://www.thetoptens.com/singers-who-use-auto-tune/) which does the same thing, singing in auto-tune software. Nevermind, I think I chose a wrong comparison. But the point remains that computers are different than humans. 
 
-Leadership in general is a skill to influence people. 
+Leadership in general is a skill to influence people. It's a different skill than compiling whatever codes you tell your computer to do to create whatever you want.
 
 In my opinion, leadership is about building a chemistry in a team that is so high that you become love working with them, and high chemistry team is a team that loves what they are doing and their environment.
 
