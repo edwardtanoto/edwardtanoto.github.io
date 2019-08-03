@@ -18,7 +18,7 @@ init();
 
 
 //Day and Night Toggle
-let wallpaper = ["url('images/night.jpg')","url('images/bg2.jpg')","url('images/bg3-night.jpg')","url('images/bg3.jpg')","url('images/bg4.2.jpg')","url('images/bg4-night.jpg')"]
+let wallpaper = ["url('images/night.jpg')","url('images/bg2.jpg')","url('images/bg3-night.jpg')","url('images/bg3.jpg')","url('images/bg4.2_2.jpg')","url('images/bg4-night.jpg')"]
 var checkbox = document.querySelector("input[type=checkbox]");
 
 function toggleWallpaper(element,dayOrNight){
