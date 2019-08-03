@@ -67,8 +67,8 @@ html{scroll-behavior:smooth !important}
 }
 .main {
     z-index: 1;
-    opacity: 1; 
-    /* display: none; */
+    opacity: 0; 
+    display: none;
     transition: opacity 1s ease-in;
     position: absolute;
     background-position: center;
