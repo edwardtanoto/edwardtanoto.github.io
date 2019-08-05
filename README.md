@@ -56,7 +56,7 @@ One of the many things I learned after watching Silicon Valley HBO, its that, st
 
 It is undeniable that startup have a really high chances of failures. My chance building unicorn company is lower than getting strucked by lightning, but it doesn't change the facts that startups change the world. Technology grows really fast, and I want to be the part that contributes to the future.
 
-### Work in one of the Big 4/ Big 5 - probably gonna change this into Fortune 500 in next couple years :D 
+### Work in one of the Big 4/ Big 5 
 
 Mentioning each of their contributions here is not enough. Facebook, Amazon, Apple, Google, Microsoft, working with them are the dreams of every programmer. Every programmer and majority of human society. 
 
