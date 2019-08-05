@@ -32,9 +32,12 @@ I am familiar with OOP, module design pattern and state pattern in Javascript, R
 
 ### As an App Developer
 Able to develop apps with MVC design pattern, design with Xcode, and code in Swift.
-Currently learning flutter after I realised Apple doesn't really dominate the market in China, so I took a course on Flutter, and enjoy using it. Able to use flutter providers pattern etc to make app more efficient.
+I'm learning flutter after I realised Apple doesn't really dominate the market in China, and enjoy using it. 
+Able to use flutter providers pattern to make apps more efficient.
 
-### As a Python programmer
+### As a Python Programmer
+Python is really popular in the market, after DS, ML , and AI are currently used everywhere. 
+So, I learned python as my primary scripting language and learned some data-sci along the way.
 Have a good grasp to code in Python and command line interface. Have created a face recognition and visualisation of google search data for over 5 years. 
 
 ## Goals that I have in life
@@ -43,15 +46,17 @@ Have a good grasp to code in Python and command line interface. Have created a f
 
 [Bill Gates](https://singjupost.com/bill-gates-commencement-speech-at-harvard-2007-full-transcript/) once said "But humanity’s greatest advances are not in its discoveries, but in how those discoveries are applied to reduce inequity."
 
-Codes and entrepreneurship could make the modern world a better place.
+Technology is here to make the world a better place. ML can make our apps more advanced through personalisation, recommendation etc, App Development serves as the platform of today's software tech, and Web development is important to create our own API. 
 
-### Working in a startup
+Web Apps, Mobile Apps, ML-DS-AI have been here for some times. These technology are tools that have been applied to our modern life to make our world a better place.
+
+### Working in a startup, or building one
 
 One of the many things I learned after watching Silicon Valley HBO, its that, startups change the world. Building a team, doing SCRUM for works, eating pizza and codes, start a fundraising, getting sued by your competitor, keep inventing new ideas and work to your goals, and finally change the world, okay that went really bad for a second.
 
 It is undeniable that startup have a really high chances of failures. My chance building unicorn company is lower than getting strucked by lightning, but it doesn't change the facts that startups change the world. Technology grows really fast, and I want to be the part that contributes to the future.
 
-### Work in one of the Big 4/ Big 5
+### Work in one of the Big 4/ Big 5 - probably gonna change this into Fortune 500 in next couple years :D 
 
 Mentioning each of their contributions here is not enough. Facebook, Amazon, Apple, Google, Microsoft, working with them are the dreams of every programmer. Every programmer and majority of human society. 
 
