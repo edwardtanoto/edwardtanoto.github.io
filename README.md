@@ -74,7 +74,7 @@ I put my learning sources and some introduction to code in [here](https://edward
 ### Problem Solving Skills
 
 One thing I learn from programming is, you spent 10% of your time to code, and 90% to figure what is wrong with your code.
-Good news is, most programmers are already used to this situation, we learn. We are used to solving problems by splitting it into small pieces, figure out what is wrong, and solve it. For CS students, its basically merge sort algorithm. 
+Good news is, most programmers are already used to this situation, we learn. We are used to solving problems by splitting it into small pieces, figuring out what is wrong, and then solve it carefully.
 
 ### Leadership skills
 
