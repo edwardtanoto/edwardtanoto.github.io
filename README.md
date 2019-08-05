@@ -28,23 +28,24 @@ I am here to tell you that it never was about the binaries, it's always about ma
   - Swift
 
 ### As a Web Developer
-I am familiar with OOP, module design pattern and state pattern in Javascript, Regular Expression, AJAX and XHR, http REST API ,terminal CLI on macOS, noSQL database like mongoDB, Node's framework Express.js, React and Redux, and Node.js.
+I am familiar with OOP, module design pattern and state pattern in Javascript, Regular Expression, AJAX and XHR, http REST API ,terminal CLI on macOS, noSQL database like mongoDB, Node's framework Express.js, and Node.js.
 
-### As an iOS Developer
+### As an App Developer
 Able to develop apps with MVC design pattern, design with Xcode, and code in Swift.
+Currently learning flutter after I realised Apple doesn't really dominate the market in China, so I took a course on Flutter, and enjoy using it. Able to use flutter providers pattern etc to make app more efficient.
 
 ### As a Python programmer
 Have a good grasp to code in Python and command line interface. Have created a face recognition and visualisation of google search data for over 5 years. 
 
 ## Goals that I have in life
 
-### Making code beyond binaries through ideas and creativity
+### Making code beyond binary through ideas and creativity
 
 [Bill Gates](https://singjupost.com/bill-gates-commencement-speech-at-harvard-2007-full-transcript/) once said "But humanity’s greatest advances are not in its discoveries, but in how those discoveries are applied to reduce inequity."
 
 Codes and entrepreneurship could make the modern world a better place.
 
-### Building a startup
+### Working in a startup
 
 One of the many things I learned after watching Silicon Valley HBO, its that, startups change the world. Building a team, doing SCRUM for works, eating pizza and codes, start a fundraising, getting sued by your competitor, keep inventing new ideas and work to your goals, and finally change the world, okay that went really bad for a second.
 
@@ -54,7 +55,7 @@ It is undeniable that startup have a really high chances of failures. My chance 
 
 Mentioning each of their contributions here is not enough. Facebook, Amazon, Apple, Google, Microsoft, working with them are the dreams of every programmer. Every programmer and majority of human society. 
 
-The only (-) I see here is probably just because I don't think I'll ever quit a job in these companies, I have huge affection for Google which always be there when I debug something. I would solve this by build some startups and build some experiences before having worthy value for them.
+The only (-) I see here is probably just because I don't think I'll ever quit a job in these companies, which means I won't grow a lot because of the pace of big companies are different than startups. I would solve this by build some startups and build some experiences before having worthy value for them.
 
 The (+) is everything else. Great environment to work, free lunch, high paying jobs, I can add it on my resume, and a lot of other things.
 
@@ -68,7 +69,7 @@ The (+) is everything else. Great environment to work, free lunch, high paying j
 That speech was probably refering to the CS Harvard graduates, but yeah it doesn't really change the message.
 We love to talk about making a world a better place, but better place means better people as well. If I could help someone learn something in the field of computers, I want to help them. It will take some time, but no one become good in 1 night.
 
-I put my learning sources and some introduction to code in [here](https://edwardtanoto.github.io/educationstation/index.html) 
+I put my learning sources and some introduction to code in [here](https://edwardtanoto.github.io/educationstation/index.html)
 
 ### Problem Solving Skills
 
@@ -80,16 +81,9 @@ Good news is, most programmers are already used to this situation, we learn. We 
 Programming is literally giving computer set of instructions to do a task. 
 But computers and humans are different, the difference between humans and computers are their creativity. So, basically everything.
 
-Each people have talents and each computers have processors. For example, Justin Bieber can sing, but he can't read 01111000 01100100 like [some people](https://www.thetoptens.com/singers-who-use-auto-tune/) which does the same thing, singing in auto-tune software. Nevermind, I think I chose a wrong comparison. But the point remains that computers are different than humans. 
-
 Leadership in general is a skill to influence people. It's a different skill than compiling whatever codes you tell your computer to do to create whatever you want.
 
-In my opinion, leadership is about building a chemistry in a team that is so high that you become love working with them, and high chemistry team is a team that loves what they are doing and their environment.
-
-### Communication Skills
-
-Have I sucessfully make reading not boring?
-
+In my opinion, leadership is a skill about building a chemistry in a team that you become love working with them, and high chemistry team is a team that loves what they are doing and doing their best to achieve their goals together.
 
 _____________
 
