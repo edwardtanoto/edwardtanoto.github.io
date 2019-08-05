@@ -1,13 +1,7 @@
 ## About Me
 
 Hello, world! I'm Edward, a Computer Science student in the University of Nottingham Ningbo and a passionate programmer. 
-
 I'm here to help making a change, to learn more, and to make code beyond than just binaries.
-
-I am here to tell you that every lines of code I type in a computer, every zeros and ones which forms pixels, which later forms colours in our computers, which later forms websites, which later sends your message to the world. 
-
-I am here to tell you that it never was about the binaries, it's always about making it more than just binaries.
-
 
 ![Hello, world!](https://edwardtanoto.github.io/images/showcase.png "Portfolio")
 
@@ -26,6 +20,12 @@ I am here to tell you that it never was about the binaries, it's always about ma
   - Javascript
   - Python
   - Swift
+  - Dart
+  - Java
+
+### As a Programmer
+All programming languages aren't that different at its core, so I used my free time to develop skillsets to learn something that can contribute to the market.
+Also trying my best to implement efficient space and time codes.
 
 ### As a Web Developer
 I am familiar with OOP, module design pattern and state pattern in Javascript, Regular Expression, AJAX and XHR, http REST API ,terminal CLI on macOS, noSQL database like mongoDB, Node's framework Express.js, and Node.js.
@@ -87,4 +87,4 @@ In my opinion, leadership is a skill about building a chemistry in a team that y
 
 _____________
 
-Hit my email here and drink some coffee together <edwardt.dev@gmail.com>
+Leave some hello here <edwardt.dev@gmail.com>
