@@ -18,7 +18,7 @@ init();
 
 
 //Day and Night Toggle
-let wallpaper = ["url('images/night.jpg')","url('images/bg2.jpg')","url('images/bg3-night.jpg')","url('images/bg3.jpg')","url('images/bg4.2_2.jpg')","url('images/bg4-night.jpg')"]
+let wallpaper = ["url('images/night.jpg')","url('images/bg2.jpg')","url('images/bg4.2_2.jpg')","url('images/bg4-night.jpg')"]
 var checkbox = document.querySelector("input[type=checkbox]");
 
 function toggleWallpaper(element,dayOrNight){
@@ -26,17 +26,15 @@ function toggleWallpaper(element,dayOrNight){
     document.querySelector(element).style.WebkitTransition = "all 2s"
     document.querySelector(element).style.transition = "all 2s"
 }
-
+//skill 2 3
 if(checkbox){
     checkbox.addEventListener( 'change', function() {
         if(this.checked) {
             toggleWallpaper('.main',0)
-            toggleWallpaper('.skill',2)
-            toggleWallpaper('#profile-section',5)
+            toggleWallpaper('#profile-section',3)
         } else {
             toggleWallpaper('.main',1)
-            toggleWallpaper('.skill',3)
-            toggleWallpaper('#profile-section',4)
+            toggleWallpaper('#profile-section',2)
         }
     });
     
@@ -53,13 +51,11 @@ function toggleTime(){
     if(!isDayTime){
         checkbox.checked = true
         toggleWallpaper('.main',0)
-        toggleWallpaper('.skill',2)
-        toggleWallpaper('#profile-section',5)
+        toggleWallpaper('#profile-section',3)
     } else {
         checkbox.checked = false;
         toggleWallpaper('.main',1)
-        toggleWallpaper('.skill',3)
-        toggleWallpaper('#profile-section',4)
+        toggleWallpaper('#profile-section',2)
     }
 }
 
@@ -71,7 +67,7 @@ let summary = document.querySelector('.about');
 let htmlSummaryText = `<div class="summary"></div>`
 summary.innerHTML+= htmlSummaryText;
 
-let summaryTextValue = `你好，世界! 我叫 Edward,我是 University of Nottingham Ningbo 的计算机科学的学生，也是多情的程序员。<br><br> 我来这里要一起帮助更好的改变，也要一起学习.`
+let summaryTextValue = `Hello, world! I'm Edward, a Computer Science student in the University of Nottingham Ningbo and a passionate programmer. <br> I'm here to help making a change, to learn more, and to make code beyond than just binaries.`
 
 let summaryText = document.querySelector(".summary");
 summaryText.innerHTML = '';
