@@ -18,7 +18,7 @@ init();
 
 
 //Day and Night Toggle
-let wallpaper = ["url('images/night.jpg')","url('images/bg2.jpg')","url('images/bg3-night.jpg')","url('images/bg3.jpg')","url('images/bg4.2_2.jpg')","url('images/bg4-night.jpg')"]
+let wallpaper = ["url('images/night.jpg')","url('images/bg2.jpg')","url('images/bg4.2_2.jpg')","url('images/bg4-night.jpg')"]
 var checkbox = document.querySelector("input[type=checkbox]");
 
 function toggleWallpaper(element,dayOrNight){
@@ -26,17 +26,15 @@ function toggleWallpaper(element,dayOrNight){
     document.querySelector(element).style.WebkitTransition = "all 2s"
     document.querySelector(element).style.transition = "all 2s"
 }
-
+//skill 2 3
 if(checkbox){
     checkbox.addEventListener( 'change', function() {
         if(this.checked) {
             toggleWallpaper('.main',0)
-            toggleWallpaper('.skill',2)
-            toggleWallpaper('#profile-section',5)
+            toggleWallpaper('#profile-section',3)
         } else {
             toggleWallpaper('.main',1)
-            toggleWallpaper('.skill',3)
-            toggleWallpaper('#profile-section',4)
+            toggleWallpaper('#profile-section',2)
         }
     });
     
@@ -53,13 +51,11 @@ function toggleTime(){
     if(!isDayTime){
         checkbox.checked = true
         toggleWallpaper('.main',0)
-        toggleWallpaper('.skill',2)
-        toggleWallpaper('#profile-section',5)
+        toggleWallpaper('#profile-section',3)
     } else {
         checkbox.checked = false;
         toggleWallpaper('.main',1)
-        toggleWallpaper('.skill',3)
-        toggleWallpaper('#profile-section',4)
+        toggleWallpaper('#profile-section',2)
     }
 }
 

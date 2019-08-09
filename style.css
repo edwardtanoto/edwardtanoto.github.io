@@ -29,15 +29,6 @@ html{scroll-behavior:smooth !important}
     padding-top: 30%;
     word-wrap: break-word;
 }
-.skill-summary{
-  font-family: 'Hind', sans-serif;
-  color:white;
-  line-height: 1;
-  margin: auto;
-  padding-top: 10%;
-  word-wrap: break-word;
-  margin-left: 30px;
-}
 .name-title{
     font-family: 'Hind', sans-serif;
     color:white;
@@ -93,15 +84,6 @@ h1,h2 {
     line-height: 0;
 }
 
-.skill{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -1
-}
 
 .opening {
   text-align: center
@@ -127,9 +109,6 @@ h1,h2 {
 }
 .b:hover{
   color:white;
-}
-.skill-title{
-  color:#3E50A0  
 }
 
 /** Media */
@@ -161,15 +140,6 @@ h1,h2 {
   }
 }
 
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF4E4E  ' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
- 
- }
- 
- .carousel-control-next-icon {
-   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF4E4E    ' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-   
-  }
 
 
 
@@ -592,10 +562,6 @@ footer {
         color:#FF9FBC  
      }
 /** Footer */
-#room{
-  background: inherit;
-  border:none;
-}
 .skill-category{
 
   opacity: 1;
