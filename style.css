@@ -19,6 +19,12 @@ html{scroll-behavior:smooth !important}
     padding-right: 0;
     padding-left: 0; }
 
+.intro-socials {
+  font-size: 0.5em;
+  margin-left: 10px;
+}
+
+
 .about{
     text-align: left;
     font-family: 'Hind', sans-serif;
@@ -42,7 +48,7 @@ html{scroll-behavior:smooth !important}
 .separator{
     font-size: 2em;
     font-family: 'Hind', sans-serif;
-    color:#BD83CA
+    color:#EAF2F8
 }
 #intro{
     height: 100vh;
@@ -141,7 +147,12 @@ h1,h2 {
 }
 
 
-
+.d {
+  color: #85C1E9    ;
+}
+.d:hover {
+  color: #EAF2F8  ;
+}
 
 .c{
   width: 80%; margin: auto;
