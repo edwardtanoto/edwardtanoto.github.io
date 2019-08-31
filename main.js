@@ -9,8 +9,8 @@ function init() {
 
     main.style.display = 'block';
     setTimeout(() => (main.style.opacity = 1), 50);
-  }, 7000);
-  setTimeout(typeAnim, 7000);
+  }, 5000);
+  setTimeout(typeAnim, 5000);
   
 }
 
