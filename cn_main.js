@@ -67,7 +67,7 @@ let summary = document.querySelector('.about');
 let htmlSummaryText = `<div class="summary"></div>`
 summary.innerHTML+= htmlSummaryText;
 
-let summaryTextValue = `Hello, world! I'm Edward, a Computer Science student in the University of Nottingham Ningbo and a passionate programmer. <br> I'm here to help making a change, to learn more, and to make code beyond than just binaries.`
+let summaryTextValue = `你好，世界！我叫陈永德，我是宁波诺丁汉大学的计算机科学学生，也是热情的程序员。<br> 我在这里要出改变，要学习，也想制作超越二进制的代码。`
 
 let summaryText = document.querySelector(".summary");
 summaryText.innerHTML = '';
@@ -80,7 +80,7 @@ function typeAnim(){
     text = summaryTextValue.substring(0, text.length + wordIndex);
     summaryText.innerHTML = text
     if(wordIndex!=summaryTextValue.length){
-        setTimeout(typeAnim, 50);
+        setTimeout(typeAnim, 100);
         wordIndex++;
     }
 }
