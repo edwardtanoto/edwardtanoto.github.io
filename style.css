@@ -157,7 +157,7 @@ h1,h2 {
   display: none;
 }
 .c{
-  width: 80%; margin: auto;
+  text-decoration: none !important; 
 }
 
 /** Loader */
