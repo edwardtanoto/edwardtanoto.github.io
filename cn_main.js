@@ -1,6 +1,7 @@
 //Loader
 const loader = document.querySelector('.loader');
 const main = document.querySelector('.main');
+const body = document.querySelector('body');
 
 function init() {
   setTimeout(() => {
@@ -52,10 +53,12 @@ function toggleTime(){
         checkbox.checked = true
         toggleWallpaper('.main',0)
         toggleWallpaper('#profile-section',3)
+        body.style.backgroundColor = "#0c0b27"
     } else {
         checkbox.checked = false;
         toggleWallpaper('.main',1)
         toggleWallpaper('#profile-section',2)
+        body.style.backgroundColor = "#3b1b32"
     }
 }
 
