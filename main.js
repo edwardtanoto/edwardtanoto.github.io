@@ -86,7 +86,7 @@ function typeAnim(){
     text = summaryTextValue.substring(0, text.length + wordIndex);
     summaryText.innerHTML = text
     if(wordIndex!=summaryTextValue.length){
-        setTimeout(typeAnim, 100);
+        setTimeout(typeAnim, 30);
         wordIndex++;
     }
 }
