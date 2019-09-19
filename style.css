@@ -22,14 +22,6 @@ html{scroll-behavior:smooth !important}
   font-size: 0.5em;
   margin-left: 10px;
 }
-.rotate90 {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  opacity: 0.9;
-}
 
 .about{
     text-align: left;
@@ -100,7 +92,7 @@ h1,h2 {
 
 
 .opening {
-  text-align: center
+  text-align:center
 }
 
 #profile-section {
