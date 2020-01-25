@@ -19,7 +19,7 @@ html{
   color: white;
   font-weight: bold;
   margin: 0 auto; /* Center the text container */
-  padding: 10px;
+  padding: 20px;
   width: 50%;
   text-align: center; /* Center text */
   position: absolute; /* Position text */
@@ -108,7 +108,7 @@ body{
     font-family: montserrat, sans-serif;
 text-align: center;
 font-weight: 800;
-font-size: 40px;
+font-size: 4.5em;
 font-style: normal;
 }
 .sub-header{
@@ -172,7 +172,7 @@ font-style: normal;
     background-image: url('./img/sh2.png');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
+    height: 100%;
     background-position: left;
   }
   .education{
@@ -254,12 +254,12 @@ font-style: normal;
     transition: width .3s;
    }
 
-   @media (min-width: 767px) {
+   @media (max-width: 768px) {
     .header{
       font-family: montserrat, sans-serif;
       text-align: center;
       font-weight: 800;
-      font-size: 5vw;
+      font-size: 2em;
       font-style: normal;
     }
   }
